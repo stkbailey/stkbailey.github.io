@@ -16,8 +16,8 @@ permalink: /resume/
 - Graduated summa cum laude
 
 ### Experience
-#### Education & Brain Sciences Research Lab at Vanderbilt University (2013 - Present)
-**NIH Pre-doctoral Fellow**
+#### Education & Brain Sciences Research Lab at Vanderbilt University
+**NIH Pre-doctoral Fellow (2013 - Present)**
 - Published 5 papers (one first-author) on the relationships between children?s reading ability in and their brain structure and function. 
 - Used machine learning techniques to differentiate children with reading disability from typically developing children (Annals of Dyslexia, 2016).
 - Designed and executed a word-reading experiment using state-of-the-art multiband MRI acquisition techniques, which have now been adopted now by several labs.
@@ -25,14 +25,14 @@ permalink: /resume/
 - Performed more than 200 MRI scans with children, ages 6-14.
 - Advanced Python user. Intermediate in SQL, R, MATLAB, bash and HTML.
 
-#### Metro Nashville Public Schools (2017)
-**Data Analyst**
+#### Metro Nashville Public Schools
+**Data Analyst (2017)**
 - Special assistant to the Executive Director of Talent Strategy ? synthesized data from multiple systems (state, local government, internal databases) to create reports on teaching force retention and hiring trends. 
 - Helped analytics team with transition to Microsoft Power BI data reporting software.
 
-#### Teach For America (2011 - 2013)
-**Director of Institute Technology**
-**Manager of Alabama Regional Operations**
+#### Teach For America
+**Director of Institute Technology  (2013)**
+**Manager of Alabama Regional Operations  (2011 - 2013)**
 - Oversaw $119,000 Americorps grant and managed relationships with key parties. We were awarded an additional $66,000 in my 2nd year, a 55% increase over first year.
 - Designed year-long orientation program to support more than 80 incoming teachers with the transition to Alabama, including creating 10 online training presentations, 4 annual recruitment campaigns, and week-long orientation program.
 - Organized logistics of two week-long conferences for more than 90 attendees and more than 10 other large professional development events.
