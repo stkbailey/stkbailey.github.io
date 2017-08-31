@@ -19,9 +19,9 @@ permalink: /resume/
 
 
 ## Experience
-### Education & Brain Sciences Research Lab at Vanderbilt University (2013 – Present)
+### Education & Brain Sciences Research Lab at Vanderbilt University (2013 ? Present)
 #####NIH Pre-doctoral Fellow
-- Published 5 papers (one first-author) on the relationships between children’s reading ability in and their brain structure and function. 
+- Published 5 papers (one first-author) on the relationships between children?s reading ability in and their brain structure and function. 
 	- Used machine learning techniques to differentiate children with reading disability from typically developing children (Annals of Dyslexia, 2016).
 	- Designed and executed a word-reading experiment using state-of-the-art multiband MRI acquisition techniques, which have now been adopted now by several labs.
 - Orchestrated a migration of 8000+ MRI scans into web-based storage platform. Consequently, re-discovered 500+ scan sessions previously unusable, worth $10,000+.
@@ -30,7 +30,7 @@ permalink: /resume/
 
 ### Metro Nashville Public Schools (2017)
 #####Data Analyst
-- Special assistant to the Executive Director of Talent Strategy – synthesized data from multiple systems (state, local government, internal databases) to create reports on teaching force retention and hiring trends. 
+- Special assistant to the Executive Director of Talent Strategy ? synthesized data from multiple systems (state, local government, internal databases) to create reports on teaching force retention and hiring trends. 
 - Helped analytics team with transition to Microsoft Power BI data reporting software.
 
 ### Teach For America (2011 - 2013)
@@ -40,11 +40,6 @@ permalink: /resume/
 - Designed year-long orientation program to support more than 80 incoming teachers with the transition to Alabama, including creating 10 online training presentations, 4 annual recruitment campaigns, and week-long orientation program.
 - Organized logistics of two week-long conferences for more than 90 attendees and more than 10 other large professional development events.
 
-### Conexión Americas & Nashville Adult Literacy Council		
-#####Teacher, Adult English Learner Class (2016 – 2017)
+### Conexi? Americas & Nashville Adult Literacy Council		
+#####Teacher, Adult English Learner Class (2016 ? 2017)
 #####One-on-one English and Literacy Tutor (2014 - Present)
-
-
--- 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
-
