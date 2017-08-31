@@ -30,14 +30,6 @@
 
 
           {% if site.linkedin_username %}
-            <li>
-              <a href="https://linkedin.com/in/{{ site.linkedin_username }}">
-                <i class="fa fa-linkedin"></i> LinkedIn
-              </a>
-            </li>
-          {% endif %}
-
-          {% if site.linkedin_username %}
           <li>
             <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}">
               <span class="icon  icon--linkedin">
@@ -46,7 +38,7 @@
                 </svg>
               </span>
 
-              <span class="username">{{ site.linkedin_username }}</span>
+              <span class="username">{{ site.author }}</span>
             </a>
           </li>
           {% endif %}
