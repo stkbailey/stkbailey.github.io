@@ -6,7 +6,7 @@ permalink: /resume/
 
 ### Education
 #### Ph.D. in Educational Cognitive Neuroscience
-**Vanderbilt University (2013 - Present)**
+**Vanderbilt University (2013 - Present)**  
 **Dissertation: "Connecting Brain Networks to the Cognitive Components of Reading Comprehension"**
 - Awarded **[National Institute of Health F31 Research Fellowship](https://projectreporter.nih.gov/project_info_description.cfm?aid=9328269&icde=35806628)**
 - Endorsement in Statistical/Quantitative Methods
@@ -31,12 +31,12 @@ permalink: /resume/
 - Helped analytics team with transition to Microsoft Power BI data reporting software.
 
 #### Teach For America
-**Director of Institute Technology  (2013)**
+**Director of Institute Technology  (2013)**  
 **Manager of Alabama Regional Operations  (2011 - 2013)**
 - Oversaw $119,000 Americorps grant and managed relationships with key parties. We were awarded an additional $66,000 in my 2nd year, a 55% increase over first year.
 - Designed year-long orientation program to support more than 80 incoming teachers with the transition to Alabama, including creating 10 online training presentations, 4 annual recruitment campaigns, and week-long orientation program.
 - Organized logistics of two week-long conferences for more than 90 attendees and more than 10 other large professional development events.
 
 #### Conexion Americas & Nashville Adult Literacy Council		
-**Teacher, Adult English Learner Class (2016 - 2017)**
+**Teacher, Adult English Learner Class (2016 - 2017)**  
 **One-on-one English and Literacy Tutor (2014 - Present)**
