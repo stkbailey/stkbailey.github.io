@@ -8,10 +8,12 @@ permalink: /cv/
 
 ## Predoctoral Research: Investigating the Neurobiological Basis for Individual Differences in Reading
 Most of my current predoctoral research is focused on investigating the neurobiological basis for differences in reading skill. In my first published manuscript, I led an investigation into whether individuals with different profiles of reading deficits (dyslexia and specific reading comprehension deficits [SRCD]) could be differentiated from typically developing controls using structural imaging measures. We found that they could, suggesting that SRCD is not simply a less severe type of dyslexia, but a neurobiologically distinct condition. Other contributions include using diffusion-weighted MRI measures (e.g. fractional anisotropy) to predict reading improvement or individual differences in compensated readers. The research proposed here will continue this line of research by investigating the role of brain connectivity in skilled reading. 
+
 ###Publications
 - Bailey, SK; Hoeft, F; Aboud, KS; and Cutting, LE. (2016) Anomalous Gray Matter Differences in Reading Comprehension Deficits are Independent of Dyslexia. Annals of Dyslexia. 
 - Aboud, KS; Bailey, SK; Petrill, SA; and Cutting, LE. (2016) Comprehending text versus reading words in young readers with varying reading ability: Distinct patterns of functional connectivity from common processing hubs. Developmental Science.
 - Reineberg, AE; Banich, MT; Leopold, DR; Bailey, SK; Cutting, LE; Thompson, LA; Willcutt, EG; Petrill, SA. (2016) Variation within and between resting-state networks associated with individual differences in reading ability. In preparation for Cerebral Cortex.
+
 ###Book Chapters
 - Bailey, SK; Swett, K; and Cutting, LE. “Neurocognitive Basis of Sentence Comprehension in Dyslexia.” Wiley Handbook on the Cognitive Neuroscience of Developmental Dyslexia. Ed. Guinevere Eden. Wiley, 2014. 
 - Swett, K; Bailey, SK; Sefcik, A; and Cutting, LE. “Neurobiological Correlates of Reading Disorders.” The Cambridge Handbook of Child Language, 2nd Edition. Ed. Edith Bavins and Letitia Naigles. Cambridge University Press, 2014. 
