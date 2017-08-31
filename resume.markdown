@@ -7,12 +7,12 @@ permalink: /resume/
 ## Education
 ### Vanderbilt University (2013 - Present)
 #### Ph.D. in Educational Cognitive Neuroscience
-*Dissertation: "Connecting Brain Networks to the Cognitive Components of Reading Comprehension"* 
-- Awarded [National Institute of Health F31 Research Fellowship](https://projectreporter.nih.gov/project_info_description.cfm?aid=9328269&icde=35806628) (9th Percentile, 2016)
+**Dissertation: "Connecting Brain Networks to the Cognitive Components of Reading Comprehension"**
+- Awarded **[National Institute of Health F31 Research Fellowship](https://projectreporter.nih.gov/project_info_description.cfm?aid=9328269&icde=35806628)**
 - Endorsement in Statistical/Quantitative Methods
 
 ### Samford University (2007 - 2011) 
-#####B.S. in Chemistry, B.A. in Philosophy
+#### B.S. in Chemistry, B.A. in Philosophy
 - Graduated summa cum laude
 
 ## Experience
