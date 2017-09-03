@@ -15,7 +15,7 @@ permalink: /resume/
 *Samford University (2007 - 2011)*
 - Graduated *summa cum laude*
 - Recipient of Omicron Delta Kappa's John D. Morgan Award for outstanding scholarship and leadership
-- Recipient of University Service Award for starting *[Samford Gives Back]*(https://www.samford.edu/mann-center-for-ethics-and-leadership/events/Samford-Gives-Back)
+- Recipient of University Service Award for starting *[Samford Gives Back](https://www.samford.edu/mann-center-for-ethics-and-leadership/events/Samford-Gives-Back)*
 
 ### Contributions
 #### Education & Brain Sciences Research Lab at Vanderbilt University
