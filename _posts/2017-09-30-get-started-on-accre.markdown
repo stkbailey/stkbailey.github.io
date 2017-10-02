@@ -1,9 +1,5 @@
----
-layout: post
-title:  "Doing Neuroimaging on ACCRE"
-date:   2017-09-30 13:46:40
-categories: ebrl, vanderbilt
----
+October 2, 2017
+
 # Setting up ACCRE for Neuroimaging
 
 So you want to do neuroimaging research on Vanderbilt's Advanced Computing Cluster for Research and Engineering? This quick-start guide should help you set up your *.bashrc* and other supporting files. It will also explain some of the particularities of working on the cluster.
