@@ -1,4 +1,9 @@
-October 2, 2017
+---
+layout: post
+title:  "Doing Neuroimaging on ACCRE"
+date:   2017-09-30 13:46:40
+categories: ebrl, vanderbilt
+---
 
 # Setting up ACCRE for Neuroimaging
 
