@@ -1,0 +1,54 @@
+#!/bin/bash
+
+# Load neuroimaging-related packages
+# Run this code once to save a "default" environment
+module load GCC/5.4.0-2.26 OpenMPI/1.10.3 Anaconda3 FSL/5.0.10 FreeSurfer/5.3.0-centos6_x86_64 MATLAB git/2.12.2
+
+# Activate your python 2 conda environment
+source activate py2
+
+# Set Freesurfer subjects directory 
+export SUBJECTS_DIR=~/freesurfer-subjects
+
+# Set alias to start Matlab in terminal (just type `mat` to launch)
+alias mat="matlab -nosplash -nodesktop "
+
+# Export XNAT variables
+. ~/.xnat_profile
+
+# Add AFNI to path
+export PATH=/scratch/cutting/software/afni/:$PATH
+
+
+
+
+
+
+
+
+
+
+# Uncomment and run this code once to set up your python environment
+module load Anaconda3
+
+# Create a Python 2 environment
+conda create -y --name=py2 python=2.7
+
+# Create a Python 3 environment
+conda create -y --name=py3 python=3.6
+
+# One-time install of DAX into your Python environment
+source activate py2 	
+pip install -y dax
+
+# Perform one-time setup of ~/.dax_settings.ini
+dax_setup
+
+echo """
+# Add XNAT Variables to Global Environment (for DAX tools)
+export XNAT_HOST=http://xnat.vanderbilt.edu:8080/xnat
+export XNAT_USER=YOUR_XNAT_USER_NAME
+export XNAT_PASS=YOUR_XNAT_PASSWORD
+""" > ~/.xnat_profile
+
+

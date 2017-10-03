@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Doing Neuroimaging on ACCRE"
+title:  "Neuroimaging on ACCRE"
 date:   2017-09-30 13:46:40
 categories: ebrl, vanderbilt
 ---
@@ -30,7 +30,7 @@ ACCRE uses [Lmod](http://www.accre.vanderbilt.edu/?page_id=3358) for managing so
 
 There are are a lot of packages (use `module spider` to list them), and sometimes multiple packages need to be loaded at the same time to function correctly. Below is an example `module load` command. That set of packages is then saved as a "default" set of packages.
 
-```
+{% highlight ruby %}
 # Load neuroimaging-related packages
 module load GCC/5.4.0-2.26 \
 	OpenMPI/1.10.3 \
@@ -44,31 +44,31 @@ module load GCC/5.4.0-2.26 \
 module save default
 
 # Now, to reload these packages, type `module restore default`
-```
+{% endhighlight %}
 
 #### Freesurfer
 
 If you want to use Freesurfer, you need to set the `SUBJECTS_DIR` environment variable after loading Freesurfer. To do that, add a line like the following to your `.bashrc`. 
 
-```
+{% highlight ruby %}
 # Set Freesurfer subjects directory 
 export SUBJECTS_DIR=~/freesurfer-subjects
-```
+{% endhighlight %}
 
 #### Matlab
 
 Matlab use requires an ACCRE license which can be purchased on an annual basis. Because Matlab can be graphics-heavy, I prefer to work directly in the terminal by starting Matlab with the `-nosplash` and `-nodesktop` flags. 
 
-```
+{% highlight ruby %}
 # Set alias to start Matlab in terminal (just type `mat` to launch)
 alias mat="matlab -nosplash -nodesktop "
-```
+{% endhighlight %}
 
 ### 3. Set up a Conda environment for Python
 
 [Anaconda](https://www.anaconda.com/download/) is an excellent way to create an manage virtual Python environments, and it's ACCRE's preferred method. Among other things, it allows users to install custom packages, Python distributions, etc., without messing with the "core" Python that serves all of ACCRE.  
 
-```
+{% highlight ruby %}
 module load Anaconda3
 
 # Create a Python 2 environment
@@ -76,8 +76,7 @@ conda create -y --name=py2 python=2.7
 
 # Create a Python 3 environment
 conda create -y --name=py3 python=3.6
-
-```
+{% endhighlight %}
 
 To load "py2" environment, type `source activate py2`. Note that you will have to do this *every time you log on to the cluster*, or you can include it in your ~/.bashrc so it activates the environment automatically on startup. To detach an environment, type `source deactivate` -- you can then load a new environment if you wish.  
 
@@ -88,30 +87,30 @@ To install new packages into your Conda environment, type `conda install PACKAGE
 [DAX (Distributed Automation for XNAT](https://github.com/VUIIS/dax) is a set of tools that will help you interface with XNAT data. It's managed by VUIIS, and although you probably won't need to use much of the toolbox, you might need `Xnatdownload`. 
 
 #### Setting it all up
-```
+{% highlight ruby %}
 # One-time install of DAX into your Python environment
 source activate py2 	
 pip install -y dax
 
 # One-time setup of ~/.dax_settings.ini
 dax_setup
-```
+{% endhighlight %}
 
 Now that you have installed and set up DAX, you need to create a `~/.xnat_profile` file. Type `nano ~/.xnat_profile` to open up a new text file and copy/paste the information below, editing appropriately.
 
-```
+{% highlight ruby %}
 # Add XNAT Variables to Global Environment (for DAX tools)
 export XNAT_HOST=http://xnat.vanderbilt.edu:8080/xnat
 export XNAT_USER=YOUR_XNAT_USER_NAME
 export XNAT_PASS=YOUR_XNAT_PASSWORD
-```
+{% endhighlight %}
 
 Finally, add this command to your `~/.bashrc`. 
 
-```
+{% highlight ruby %}
 # Export XNAT variables
 . ~/.xnat_profile
-```
+{% endhighlight %}
 
 #### Using Xnatdownload
 
@@ -123,20 +122,15 @@ Xnatdownload will connect to XNAT, log-in with your credentials and access which
 - Scan Type
 - Scan Resource Type (e.g. NIFTI)
 
-A typical call to one of our lab's projects would look something like this:
-
-`Xnatdownload -p CUTTING --subj LD4001_v1 --sess 207943 -s all --rs NIFTI -d ~./xnat_data`  
+A typical call to one of our lab's projects would look something like this: `Xnatdownload -p CUTTING --subj LD4001_v1 --sess 207943 -s all --rs NIFTI -d ~./xnat_data`  
 
 For further information, see its documentation by typing simply `Xnatdownload`. 
 
-### Using Jupyter Notebook for Pythonic (or R-tastic...?) data analysis
-
-`jupyter notebook --no-browser --ip='*' --port=9999`
-
-
 ### Source the CUTTING lab version of AFNI, if you wanna
 
-```
+If you're interested in using AFNI, you (currently) have to set up your own copy of the binaries on the cluster. Luckily, there are a few that are floating around in publicly accessible spaces -- I believe that `/scratch/cutting/software/afni` is one of them. Simply add this directory to your path, and then try typing any of the AFNI commands (`afni` comes to mind...)!
+
+{% highlight ruby %}
 # Add AFNI to path
 export PATH=/scratch/cutting/software/afni/:$PATH
-```
+{% endhighlight %}
