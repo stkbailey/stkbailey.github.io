@@ -18,37 +18,3 @@ alias mat="matlab -nosplash -nodesktop "
 
 # Add AFNI to path
 export PATH=/scratch/cutting/software/afni/:$PATH
-
-
-
-
-
-
-
-
-
-
-# Uncomment and run this code once to set up your python environment
-module load Anaconda3
-
-# Create a Python 2 environment
-conda create -y --name=py2 python=2.7
-
-# Create a Python 3 environment
-conda create -y --name=py3 python=3.6
-
-# One-time install of DAX into your Python environment
-source activate py2 	
-pip install -y dax
-
-# Perform one-time setup of ~/.dax_settings.ini
-dax_setup
-
-echo """
-# Add XNAT Variables to Global Environment (for DAX tools)
-export XNAT_HOST=http://xnat.vanderbilt.edu:8080/xnat
-export XNAT_USER=YOUR_XNAT_USER_NAME
-export XNAT_PASS=YOUR_XNAT_PASSWORD
-""" > ~/.xnat_profile
-
-
