@@ -82,7 +82,7 @@ To load "py2" environment, type `source activate py2`. Note that you will have t
 
 To install new packages into your Conda environment, type `conda install PACKAGE_NAME_1 PACKAGE_NAME_2 ...`.  Note that for some research software, you may need to add additional "repositories" (or use `pip install`) to manage packages. These additional commands are often found in the documentation.  
 
-### Set up DAX tools for working with XNAT
+### 4. Set up DAX tools for working with XNAT
 
 [DAX (Distributed Automation for XNAT](https://github.com/VUIIS/dax) is a set of tools that will help you interface with XNAT data. It's managed by VUIIS, and although you probably won't need to use much of the toolbox, you might need `Xnatdownload`. 
 
@@ -126,7 +126,7 @@ A typical call to one of our lab's projects would look something like this: `Xna
 
 For further information, see its documentation by typing simply `Xnatdownload`. 
 
-### Source the CUTTING lab version of AFNI, if you wanna
+### 5. Source the CUTTING lab version of AFNI, if you wanna
 
 If you're interested in using AFNI, you (currently) have to set up your own copy of the binaries on the cluster. Luckily, there are a few that are floating around in publicly accessible spaces -- I believe that `/scratch/cutting/software/afni` is one of them. Simply add this directory to your path, and then try typing any of the AFNI commands (`afni` comes to mind...)!
 
