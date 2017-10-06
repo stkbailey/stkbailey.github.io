@@ -5,7 +5,7 @@ permalink: /about/
 ---
 
 
-{:refdef: style="float: right; height: 25%; width: 25%; padding: 10px;"}
+{:refdef: style="float: right; height: 50%; width: 50%; padding: 10px;"}
 ![headshot]({{ site.baseimg }}/assets/Stephen_Bailey_EBRL.jpg)
 {: refdef} 
 
