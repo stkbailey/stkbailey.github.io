@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-{:refdef: style="text-align: center;"}
+{:refdef: style="text-align: right; height: 10%; width: 10%"}
 ![headshot]({{ site.baseimg }}/assets/Stephen_Bailey_Headshot.jpg)
 {: refdef} 
 
