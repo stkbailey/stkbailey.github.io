@@ -11,7 +11,7 @@ So you want to do neuroimaging research on Vanderbilt's Advanced Computing Clust
 
 ### tldr
 
-First, run the code found in the ["sample_setup.txt" file](https://github.com/stkbailey/stkbailey.github.io/tree/master/extras/sample_setup.txt) to set up your Python environment and DAX tools for interfacing with XNAT. Then, copy the contents of *[this ".bashrc" file](https://github.com/stkbailey/stkbailey.github.io/tree/master/extras/sample_bashrc.txt)* to yours in `~/.bashrc`.  
+First, run the code found in the ["sample_setup.txt" file](https://github.com/stkbailey/stkbailey.github.io/tree/master/assets/sample_setup.txt) to set up your Python environment and DAX tools for interfacing with XNAT. Then, copy the contents of *[this ".bashrc" file](https://github.com/stkbailey/stkbailey.github.io/tree/master/assets/sample_bashrc.txt)* to yours in `~/.bashrc`.  
 
 ### 1. Get to know your ~/.bashrc
 
