@@ -10,22 +10,22 @@ categories: data-science vanderbilt
 #### Qualities of a Good Data Scientist Candidate
 Because data science is a relatively young field, applicants come from a variety of backgrounds: academia, programming, business analytics, mathematics -- you name it, there's a data scientist who did it. Dr. Spencer-Smith spoke at length about what he looks for in a data science candidate apart from the raw skills. A few of the themes that emerged were:
 
-- Enthusiastic: has this person done competitions, self-directed learning, extracurricular projects? Do they actually enjoy the work?
-- Learned to learn: can this person rapidly adapt to the changing norms, technologies, and business goals?
-- Speaks straight: can they communicate importance of findings directly to a variety of audiences, both technical and non-technical?
+- **Enthusiastic**: has this person done competitions, self-directed learning, extracurricular projects? Do they actually enjoy the work?
+- **Learned to learn**: can this person rapidly adapt to the changing norms, technologies, and business goals?
+- **Speaks straight**: can they communicate importance of findings directly to a variety of audiences, both technical and non-technical?
 
 
 #### Core Competencies 
 Just as every candidate is unique, every role also taps into different skillsets. Aspiring data scientists don't need to be experts in all of the below competencies, but they should be aware of the different dimensions and their own strengths within them. 
 
-- Programming: works effectively with computers to create reproducible, optimizable solutions; can munge data; **should definitely know Python or R**, and at advanced levels, Java and Scala are a plus.
-- Storytelling: knows how to draw in stakeholders to your work so that they can see its value and the possibility.  
-- Communication: can speak with a variety of audiences to get pass and get information; works well on a team.
-- Machine Learning: knows a variety of tools and techniques for running ML analyses and can discuss relative merits of different approaches.   
-- Statistics: has an intuitive understanding of statistial models and algorithms; Bayesian knowledge is important at higher levels. 
-- Visualization: creates powerful, efficient visualizations that can communicate value; knows psychological principles that make good visualizations (avoid chart junk, data-ink ratio, etc.)  
-- SQL: basic understanding of how to work with relational databases since they are so ubiquitous.
-- Big Data:  if working with *truly* big data, should have some knowledge of tools likes Spark and Hadoop; may not be important for a lot of positions.
+- **Programming**: works effectively with computers to create reproducible, optimizable solutions; can munge data; **should definitely know Python or R**, and at advanced levels, Java and Scala are a plus.
+- **Storytelling**: knows how to draw in stakeholders to your work so that they can see its value and the possibility.  
+- **Communication**: can speak with a variety of audiences to get pass and get information; works well on a team.
+- **Machine Learning**: knows a variety of tools and techniques for running ML analyses and can discuss relative merits of different approaches.   
+- **Statistics**: has an intuitive understanding of statistial models and algorithms; Bayesian knowledge is important at higher levels. 
+- **Visualization**: creates powerful, efficient visualizations that can communicate value; knows psychological principles that make good visualizations (avoid chart junk, data-ink ratio, etc.)  
+- **SQL**: basic understanding of how to work with relational databases since they are so ubiquitous.
+- **Big Data**:  if working with *truly* big data, should have some knowledge of tools likes Spark and Hadoop; may not be important for a lot of positions.
 
 ## The 5 Levels of Organizational Data Maturity
 Like a child growing up, organizations (and even teams within an organization) mature into different stages of data competency. Unlike children, some don't always grow up, though! That can be okay if the business still realizes value -- but aspiring data scientists should head into future workplaces with their eyes wide open. Knowing what stage the company is at will help to determine what type of role you will play, and which skills will be most necessary. 
