@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Using Power BI to Visualize MNPS Vacancies"
+title:  "Visualizing MNPS Vacancies"
 date:   2017-08-15 12:00:00
 categories: data-science power-bi
 ---
@@ -13,6 +13,8 @@ During the summer, one of the most pressing questions is: who do we need to hire
 
 Using Power BI, I built a report that combines data from [Applitrack](https://www.frontlineeducation.com/Home) and the internal onboarding system so that key stakeholders, from HR directors to school principals, could get a look at the current status of job openings across the district with the touch of a button. I spent a great deal of time building out the internal logic using Power BI's Query Editor so that future analysts only need to point the report to the appropriate raw data, and the report will refresh automatically. (I didn't have time to try to setup data streaming from the Applitrack website.)
 
-I got permission to publish the report and source files (with randomized data). Take a look at it below. In a later post, I'll detail how I obtained GIS coordinates for each of the schools -- it was a fun morning project that enabled some nice visualizations. 
+I got permission to publish the report and source files (with randomized data). Take a look at it below -- left-click on charts to re-slice data and right-click to drill-down. It's an oddly satisfying experience. 
 
 <iframe width="800" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiZWVhMmIxMjUtOGM1Yi00MzQ4LWE4M2UtMzVlODA4N2NkNTVmIiwidCI6ImM2ODI4MjU3LTY0MTAtNDA3ZS1iNTU3LWI1ZGM3MjExZGU1NSIsImMiOjN9" frameborder="0" allowFullScreen="true"></iframe>  
+
+In a later post, I'll detail how I obtained GIS coordinates for each of the schools -- it was a fun morning project that enabled some nice visualizations. 
