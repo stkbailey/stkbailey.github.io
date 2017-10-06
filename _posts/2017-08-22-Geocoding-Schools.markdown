@@ -5,7 +5,6 @@ date:   2017-08-22 12:00:00
 categories: data-science python mnps
 ---
 
-## Get Latitude and Longitude for MNPS Schools
 As I mentiond in a previous post, I did some data reporting at MNPS this past summer. One of the fun problems I got to solve one day was how to plot data by school, on a map in Power BI. Here we are going to use a couple of Python tools to make a database of Latitude / Longitude locations for the MNPS schools. 
 
 Our strategy is:
@@ -14,7 +13,7 @@ Our strategy is:
 - Map the addresses / coordinates to the existing school crosswalk
 - Save it as a new file
 
-## Getting Search Terms
+### Getting Search Terms
 We start our task by getting a list of schools / departments. Conveniently, these are all in the School Crosswalk. 
 
 
@@ -152,7 +151,7 @@ print(schools_with_city.head(5))
     Name: School Name (TNC), dtype: object
     
 
-## Talking to Google Maps
+### Talking to Google Maps
 
 We are going to query Google Maps through it's API. Basically, we are searching for a set of keywords - just like if we were searching through the Google Maps app - and then we are going to collect the response in a Python object. Then, we can drill down on that object to get the information we are interested in.
 
@@ -234,7 +233,7 @@ print('  Longitude: ', longitude)
       Longitude:  -86.7670156
     
 
-## Scaling up
+### Scaling up
 
 Now that we know exactly where the data is and how to get it, we need to efficiently get it for each school. We're going to define a function that will take in a search string and return a Pandas series with the Full Address, Latitude and Longitude. 
 
@@ -359,7 +358,7 @@ geodf.sort_index().head(10)
 
 
 
-## Combining with the School Crosswalk
+### Combining with the School Crosswalk
 
 Now that we have a dataframe with the GIS information, we need to re-combine it with the original dataframe.
 
