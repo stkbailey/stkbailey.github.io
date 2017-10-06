@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "3MT 2017"
+date:   2017-06-15 12:00:00
+categories: phd vanderbilt
+---
+
+Earlier this spring, I had the chance to try my hand at Vanderbilt's Three Minute Thesis competition. I've done it the past three years, and I learn something new every time. (Last year, it was to stop on time...) To PhD students -- I highly recommend it! It's a great way to exercise those vital public speaking skills. 
+
+If you're interested in watching this year's effort, check it out below -- and watch a few others. There are some very talented speakers at Vanderbilt.
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/7iRus7fqljs?t=715" frameborder="0" allowfullscreen></iframe>
