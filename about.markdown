@@ -6,7 +6,7 @@ permalink: /about/
 
 
 {:refdef: style="float: right; height: 25%; width: 25%; padding: 10px;"}
-![headshot]({{ site.baseimg }}/assets/Stephen_Bailey_Headshot.jpg)
+![headshot]({{ site.baseimg }}/assets/Stephen_Bailey_EBRL.jpg)
 {: refdef} 
 
 I am always looking to learn, happy to help and up to an intellectual challenge. My interests include computer science, education, philosophy, psychology and, more recently, child-rearing. 
