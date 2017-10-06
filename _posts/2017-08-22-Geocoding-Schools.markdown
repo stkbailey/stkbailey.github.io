@@ -97,10 +97,9 @@ df.head(3)
 
 
 
+We can also treat each row as its own collection of information:
 {% highlight ruby %}
-# We can alos treat each row as its own collection of information:
 df.iloc[0]
-{% endhighlight %}
 
     MNPS Code                                                422
     State Code                                               720
@@ -114,6 +113,7 @@ df.iloc[0]
     Special Status                                     Non-Zoned
     Cluster.1                                         Cane Ridge
     Name: 0, dtype: object
+{% endhighlight %}
 
 We can now pull individual parts of the df to create a list of search terms we want to use with Google.
 
