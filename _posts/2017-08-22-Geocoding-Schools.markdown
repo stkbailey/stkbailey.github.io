@@ -8,14 +8,13 @@ categories: data-science python mnps
 As I mentiond in a previous post, I did some data reporting at MNPS this past summer. One of the fun problems I got to solve one day was how to plot data by school, on a map in Power BI. Here we are going to use a couple of Python tools to make a database of Latitude / Longitude locations for the MNPS schools. 
 
 Our strategy is:
-- Curate a list of addresses for each school
+- Curate a list of addresses for each school (which can be found [here]({P "/assets/SchoolCrosswalk_v1.xlsx" | absolute_url }}))
 - Query Google Maps for each address
 - Map the addresses / coordinates to the existing school crosswalk
 - Save it as a new file
 
 ### Getting Search Terms
 We start our task by getting a list of schools / departments. Conveniently, these are all in the School Crosswalk. 
-
 
 {% highlight ruby %}
 import pandas as pd
@@ -121,7 +120,6 @@ We can now pull individual parts of the df to create a list of search terms we w
 {% highlight ruby %}
 print('The first five schools in the Crosswalk...')
 print(df['School Name (TNC)'].head(5))
-{% endhighlight %}
 
     The first five schools in the Crosswalk...
     0          The Academy at Hickory Hollow
@@ -130,7 +128,8 @@ print(df['School Name (TNC)'].head(5))
     3     Casa Azafran Early Learning Center
     4         Metro Nashville Virtual School
     Name: School Name (TNC), dtype: object
-    
+{% endhighlight %}
+
 
 But as anyone who has used Google maps knows, if you just use a name, the top search result might end up in Wyoming. So, we actually want to give Google more information than just the school. Let's tell it we're in Nashville.
 
@@ -140,7 +139,6 @@ schools_with_city = df['School Name (TNC)'].apply(lambda x: '{} Nashville TN USA
 
 print('The first five schools, with "Nashville TN" appended...')
 print(schools_with_city.head(5))
-{% endhighlight %}
 
     The first five schools, with "Nashville TN" appended...
     0       The Academy at Hickory Hollow Nashville TN USA
@@ -149,6 +147,7 @@ print(schools_with_city.head(5))
     3    Casa Azafran Early Learning Center Nashville T...
     4      Metro Nashville Virtual School Nashville TN USA
     Name: School Name (TNC), dtype: object
+{% endhighlight %}
     
 
 ### Talking to Google Maps
@@ -171,7 +170,6 @@ from pprint import pprint
 
 # Let's print out Google's response
 pprint(response_from_google)
-{% endhighlight %}
 
     {'results': [{'address_components': [{'long_name': '2601',
                                           'short_name': '2601',
@@ -213,24 +211,25 @@ pprint(response_from_google)
                   'place_id': 'ChIJxXnGqsRlZIgR6BS97uArY0A',
                   'types': ['establishment', 'point_of_interest', 'school']}],
      'status': 'OK'}
-    
+{% endhighlight %}
+
+
+Now, let's drill in on the data we want, then print out the results.
 {% highlight ruby %}
-# Let's drill in on the data we want
 address = response_from_google['results'][0]['formatted_address']
 latitude = response_from_google['results'][0]['geometry']['location']['lat']
 longitude = response_from_google['results'][0]['geometry']['location']['lng']
 
-# And let's print out the results
 print('For the search string, "', search_string.replace('+', ' '), '", we received...')
 print('  Full address: ', address)
 print('  Latitude: ', latitude)
 print('  Longitude: ', longitude)
-{% endhighlight %}
 
     For the search string, " metro nashville board of education ", we received...
       Full address:  2601 Bransford Ave, Nashville, TN 37204, USA
       Latitude:  36.1209504
       Longitude:  -86.7670156
+{% endhighlight %}
     
 
 ### Scaling up
@@ -238,8 +237,6 @@ print('  Longitude: ', longitude)
 Now that we know exactly where the data is and how to get it, we need to efficiently get it for each school. We're going to define a function that will take in a search string and return a Pandas series with the Full Address, Latitude and Longitude. 
 
 {% highlight ruby %}
-# Now, we are going to define a function that will do this over and over
-
 def getCoords(search_string):
     '''Takes a search term, queries Google and returns the geocoordinates.'''
     index_name = search_string.replace(' Nashville TN USA', '')
@@ -247,11 +244,11 @@ def getCoords(search_string):
         query = search_string.replace(' ', '+')
         response = requests.get('https://maps.googleapis.com/maps/api/geocode/json?address={}'.format(query))
         response_from_google = response.json()
-
+        \
         address = response_from_google['results'][0]['formatted_address']
         latitude = response_from_google['results'][0]['geometry']['location']['lat']
         longitude = response_from_google['results'][0]['geometry']['location']['lng']
-        
+        \
         return pd.Series(name=index_name, \
                          data={'Address': address, 'Latitude': latitude, 'Longitude': longitude})
     except:
@@ -259,17 +256,16 @@ def getCoords(search_string):
     
 # Now, let's try it out on our central office
 print(getCoords('Metro Nashville Board of Education'))
-{% endhighlight %}
 
     Address      2601 Bransford Ave, Nashville, TN 37204, USA
     Latitude                                           36.121
     Longitude                                         -86.767
     Name: Metro Nashville Board of Education, dtype: object
+{% endhighlight %}
     
-
+It's time to do this for all the schools. We will initialize a new DataFrame and fill it up with data as we get it.
 
 {% highlight ruby %}
-# We want to start with a brand new DataFrame. We'll fill it up with data as we get it.
 geodf = pd.DataFrame()
 
 for school in schools_with_city:
@@ -357,19 +353,14 @@ geodf.sort_index().head(10)
 </div>
 
 
-
 ### Combining with the School Crosswalk
 
-Now that we have a dataframe with the GIS information, we need to re-combine it with the original dataframe.
-
+Now that we have a dataframe with the GIS information, we need to re-combine it with the original dataframe. Checking out an entry will show that the new fields are present.
 
 {% highlight ruby %}
 new_crosswalk = df.join(geodf, on='School Name (TNC)')
 
-# If we look at the first entry, we can see that Address, Latitude and Longitude are now present
 new_crosswalk.iloc[0]
-{% endhighlight %}
-
 
     MNPS Code                                                                  422
     State Code                                                                 720
@@ -386,18 +377,17 @@ new_crosswalk.iloc[0]
     Latitude                                                               36.0494
     Longitude                                                             -86.6567
     Name: 0, dtype: object
+{% endhighlight %}
 
 
 
 Perfect! If we want, we can now split off other information. To get the city, for example, we want the second comma-separated element in the address.
 
-
-
 {% highlight ruby %}
 new_crosswalk.Address.iloc[0:3].apply(lambda x: x.split(',')[1])
-{% endhighlight %}
 
     0       Antioch
     1       Antioch
     2     Nashville
     Name: Address, dtype: object
+{% endhighlight %} 
