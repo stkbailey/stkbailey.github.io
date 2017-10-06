@@ -1,9 +1,9 @@
 # Site settings
-title: Work In Progress
+title: Work and Progress
 author: Stephen Bailey
 email: stkbailey@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Personal website for Stephen Bailey. <br>Always simple, never updated.
+  Personal website for Stephen Bailey. <br>Projects, conversations and more.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://stkbailey.github.io" # the base hostname & protocol for your site
 github_username:  stkbailey

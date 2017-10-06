@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "A Brief Overview of Bayes"
+title:  "Penny U: A Brief Overview of Bayes"
 date:   2017-05-27 12:00:00
 categories: statistics data-science pennyu
 ---
