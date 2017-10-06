@@ -4,6 +4,11 @@ title: About
 permalink: /about/
 ---
 
+
+{:refdef: style="float: right; height: 50%; width: 50%; padding: 10px;"}
+![headshot]({{ site.baseimg }}/assets/Stephen_Bailey_EBRL.jpg)
+{: refdef} 
+
 I am always looking to learn, happy to help and up to an intellectual challenge. My interests include computer science, education, philosophy, psychology and, more recently, child-rearing. 
 
 I am currently a student at Vanderbilt and looking to begin a career in Data Science. I have had the privilege of working with fantastic people on interesting projects, and hope to continue to do so in the next stage of my career. 

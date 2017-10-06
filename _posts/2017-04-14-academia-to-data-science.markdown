@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Penny U: From Academia to Data Science"
+title:  "From Academia to Data Science w/ Aliya Gifford"
 date:   2017-04-14 12:00:00
 categories: data-science pennyu
 ---

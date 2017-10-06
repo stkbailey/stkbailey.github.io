@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Penny U: Handling Exceptions in Python"
+title:  "Handling Exceptions in Python w/ John Still"
 date:   2017-09-13 12:00:40
 categories: python
 ---

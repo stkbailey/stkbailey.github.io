@@ -20,7 +20,7 @@ We start our task by getting a list of schools / departments. Conveniently, thes
 import pandas as pd
 
 # Let's read in the School Crosswalk as a Python DataFrame using Pandas
-crosswalk_file = 'C:\\Users\\stkba\\OneDrive for Business\\SchoolInformation\\SchoolCrosswalk_v1.xlsx'
+crosswalk_file = 'https://github.com/stkbailey/stkbailey.github.io/blob/master/assets/SchoolCrosswalk_v1.xlsx?raw=true'
 df = pd.read_excel(crosswalk_file)
 
 # Print out the first three rows
