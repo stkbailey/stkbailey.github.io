@@ -18,7 +18,7 @@ Our strategy is:
 We start our task by getting a list of schools / departments. Conveniently, these are all in the School Crosswalk. 
 
 
-```python
+{% highlight ruby %}
 import pandas as pd
 
 # Let's read in the School Crosswalk as a Python DataFrame using Pandas
@@ -27,9 +27,7 @@ df = pd.read_excel(crosswalk_file)
 
 # Print out the first three rows
 df.head(3)
-```
-
-
+{% endhighlight %}
 
 
 <div>
@@ -100,13 +98,10 @@ df.head(3)
 
 
 
-```python
+{% highlight ruby %}
 # We can alos treat each row as its own collection of information:
 df.iloc[0]
-```
-
-
-
+{% endhighlight %}
 
     MNPS Code                                                422
     State Code                                               720
@@ -121,15 +116,13 @@ df.iloc[0]
     Cluster.1                                         Cane Ridge
     Name: 0, dtype: object
 
-
-
 We can now pull individual parts of the df to create a list of search terms we want to use with Google.
 
 
-```python
+{% highlight ruby %}
 print('The first five schools in the Crosswalk...')
 print(df['School Name (TNC)'].head(5))
-```
+{% endhighlight %}
 
     The first five schools in the Crosswalk...
     0          The Academy at Hickory Hollow
@@ -143,12 +136,12 @@ print(df['School Name (TNC)'].head(5))
 But as anyone who has used Google maps knows, if you just use a name, the top search result might end up in Wyoming. So, we actually want to give Google more information than just the school. Let's tell it we're in Nashville.
 
 
-```python
+{% highlight ruby %}
 schools_with_city = df['School Name (TNC)'].apply(lambda x: '{} Nashville TN USA'.format(x))
 
 print('The first five schools, with "Nashville TN" appended...')
 print(schools_with_city.head(5))
-```
+{% endhighlight %}
 
     The first five schools, with "Nashville TN" appended...
     0       The Academy at Hickory Hollow Nashville TN USA
@@ -164,22 +157,22 @@ print(schools_with_city.head(5))
 We are going to query Google Maps through it's API. Basically, we are searching for a set of keywords - just like if we were searching through the Google Maps app - and then we are going to collect the response in a Python object. Then, we can drill down on that object to get the information we are interested in.
 
 
-```python
+{% highlight ruby %}
 import requests
 
 search_string = 'metro nashville board of education'.replace(' ', '+')
 response = requests.get('https://maps.googleapis.com/maps/api/geocode/json?address={}'.format(search_string))
 
 response_from_google = response.json()
-```
+{% endhighlight %}
 
 
-```python
+{% highlight ruby %}
 from pprint import pprint
 
 # Let's print out Google's response
 pprint(response_from_google)
-```
+{% endhighlight %}
 
     {'results': [{'address_components': [{'long_name': '2601',
                                           'short_name': '2601',
@@ -222,9 +215,7 @@ pprint(response_from_google)
                   'types': ['establishment', 'point_of_interest', 'school']}],
      'status': 'OK'}
     
-
-
-```python
+{% highlight ruby %}
 # Let's drill in on the data we want
 address = response_from_google['results'][0]['formatted_address']
 latitude = response_from_google['results'][0]['geometry']['location']['lat']
@@ -235,7 +226,7 @@ print('For the search string, "', search_string.replace('+', ' '), '", we receiv
 print('  Full address: ', address)
 print('  Latitude: ', latitude)
 print('  Longitude: ', longitude)
-```
+{% endhighlight %}
 
     For the search string, " metro nashville board of education ", we received...
       Full address:  2601 Bransford Ave, Nashville, TN 37204, USA
@@ -245,12 +236,9 @@ print('  Longitude: ', longitude)
 
 ## Scaling up
 
-
-
 Now that we know exactly where the data is and how to get it, we need to efficiently get it for each school. We're going to define a function that will take in a search string and return a Pandas series with the Full Address, Latitude and Longitude. 
 
-
-```python
+{% highlight ruby %}
 # Now, we are going to define a function that will do this over and over
 
 def getCoords(search_string):
@@ -272,7 +260,7 @@ def getCoords(search_string):
     
 # Now, let's try it out on our central office
 print(getCoords('Metro Nashville Board of Education'))
-```
+{% endhighlight %}
 
     Address      2601 Bransford Ave, Nashville, TN 37204, USA
     Latitude                                           36.121
@@ -281,7 +269,7 @@ print(getCoords('Metro Nashville Board of Education'))
     
 
 
-```python
+{% highlight ruby %}
 # We want to start with a brand new DataFrame. We'll fill it up with data as we get it.
 geodf = pd.DataFrame()
 
@@ -292,10 +280,7 @@ for school in schools_with_city:
         
 # Now, let's look at the first ten schools!
 geodf.sort_index().head(10)
-```
-
-
-
+{% endhighlight %}
 
 <div>
 <table border="1" class="dataframe">
@@ -379,14 +364,12 @@ geodf.sort_index().head(10)
 Now that we have a dataframe with the GIS information, we need to re-combine it with the original dataframe.
 
 
-```python
+{% highlight ruby %}
 new_crosswalk = df.join(geodf, on='School Name (TNC)')
 
 # If we look at the first entry, we can see that Address, Latitude and Longitude are now present
 new_crosswalk.iloc[0]
-```
-
-
+{% endhighlight %}
 
 
     MNPS Code                                                                  422
@@ -411,145 +394,11 @@ Perfect! If we want, we can now split off other information. To get the city, fo
 
 
 
-```python
+{% highlight ruby %}
 new_crosswalk.Address.iloc[0:3].apply(lambda x: x.split(',')[1])
-```
-
-
-
+{% endhighlight %}
 
     0       Antioch
     1       Antioch
     2     Nashville
     Name: Address, dtype: object
-
-
-
-## Extending to All Schools in the State
-
-
-```python
-all_school_file = 'http://www.tn.gov/assets/entities/education/attachments/data_schl_directory_2015-16.xlsx'
-all_state_schools = pd.read_excel(all_school_file)
-all_state_schools.head(3)
-```
-
-
-
-
-<div>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>SCHOOL_YEAR</th>
-      <th>FIPS_CODE</th>
-      <th>LEA_ID</th>
-      <th>LEA_NCES</th>
-      <th>LEA_NAME</th>
-      <th>SCHOOL_NO</th>
-      <th>SCH_NCES</th>
-      <th>SCHOOL_ID</th>
-      <th>SCHOOL_TYPE</th>
-      <th>ADDR1</th>
-      <th>CITY</th>
-      <th>STATE</th>
-      <th>ZIP</th>
-      <th>CHARTER</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>2016</td>
-      <td>47</td>
-      <td>10</td>
-      <td>4700090</td>
-      <td>Anderson County</td>
-      <td>2</td>
-      <td>1871</td>
-      <td>Anderson County High School</td>
-      <td>Public</td>
-      <td>130 Maverick CR</td>
-      <td>Clinton</td>
-      <td>TN</td>
-      <td>37716</td>
-      <td>N</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>2016</td>
-      <td>47</td>
-      <td>10</td>
-      <td>4700090</td>
-      <td>Anderson County</td>
-      <td>3</td>
-      <td>3</td>
-      <td>Anderson County Career  Technical Center</td>
-      <td>Public</td>
-      <td>140 Maverick CR</td>
-      <td>Clinton</td>
-      <td>TN</td>
-      <td>37716</td>
-      <td>N</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>2016</td>
-      <td>47</td>
-      <td>10</td>
-      <td>4700090</td>
-      <td>Anderson County</td>
-      <td>5</td>
-      <td>4</td>
-      <td>Andersonville Elementary</td>
-      <td>Public</td>
-      <td>1951  Mountain  RD</td>
-      <td>Andersonville</td>
-      <td>TN</td>
-      <td>37705</td>
-      <td>N</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
-
-
-
-```python
-# We want to start with a brand new DataFrame. We'll fill it up with data as we get it.
-state_geodf = pd.DataFrame()
-
-for ind, s in all_state_schools.iterrows():
-    search_string = ' '.join([s.SCHOOL_ID, s.ADDR1, s.CITY, s.STATE, str(s.ZIP)])
-    data = getCoords(search_string=search_string, index_name=ind)
-    if type(data) == pd.core.series.Series:
-        state_geodf = state_geodf.append(data)
-        
-# Now, let's look at the first ten schools!
-state_geodf.head(10)
-```
-
-
-
-
-<div>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-  </tbody>
-</table>
-</div>
-
-
-
-
-```python
-ndf = all_state_schools.join(state_geodf[['Latitude', 'Longitude']])
-ndf.to_csv('C://Users/sbailey/OneDrive for Business/TNDOE_School_Directory_16.csv')
-```
