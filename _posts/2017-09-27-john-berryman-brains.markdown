@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Penny U: Brain Scans w/ John Berryman"
+title:  "Brain Scans w/ John Berryman"
 date:   2017-09-27 01:00:00
 categories: pennyu brains
 ---
