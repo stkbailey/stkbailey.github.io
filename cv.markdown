@@ -8,10 +8,12 @@ permalink: /research/
 Most of my current predoctoral research is focused on investigating the neurobiological basis for differences in reading skill. In my first published manuscript, I led an investigation into whether individuals with different profiles of reading deficits (dyslexia and specific reading comprehension deficits) could be differentiated from typically developing controls using structural imaging measures. We found that they could, suggesting that comprehension deficits are not simply a less severe type of dyslexia, but a neurobiologically distinct condition. Other contributions include using diffusion-weighted MRI measures (e.g. fractional anisotropy) to predict reading improvement or individual differences in compensated readers. 
 
 #### Publications
+- Bailey et al. (In preparation) *TBD*. Differences in brain network organization during reading and listening.
+- Bailey et al. (In preparation) *Journal of Neurodevelopmental Disabilities*. Applying a Network Framework to the Study of Reading Disabilities.
+- Aboud et al. (Submitted) *TBD*. Frontoparietal control systems support expository but not narrative text comprehension in developing readers.
+- Wendelken et al. (2017) *Journal of Neuroscience.* Fronto-parietal structural connectivity in childhood predicts development of functional connectivity and reasoning ability: a large-scale longitudinal investigation.
 - Bailey et al. (2016) *Annals of Dyslexia.* Anomalous Gray Matter Differences in Reading Comprehension Deficits are Independent of Dyslexia. 
 - Aboud et al. (2016) *Developmental Science.* Comprehending text versus reading words in young readers with varying reading ability: Distinct patterns of functional connectivity from common processing hubs. 
-- Wendelken et al. (2017) *Journal of Neuroscience.* Fronto-parietal structural connectivity in childhood predicts development of functional connectivity and reasoning ability: a large-scale longitudinal investigation.
-- Reineberg et al. (TBD) Variation within and between resting-state networks associated with individual differences in reading ability. 
 
 #### Book Chapters
 - Bailey et al. (2014) Neurocognitive Basis of Sentence Comprehension in Dyslexia. *Wiley Handbook on the Cognitive Neuroscience of Developmental Dyslexia.* Ed. Guinevere Eden. Wiley. 
@@ -23,5 +25,6 @@ Most of my current predoctoral research is focused on investigating the neurobio
 A separate line of research, spearheaded by Dr. Zhaohua Ding, is the neurobiological significance of the functional MRI signal in white matter. In the past decade, many researchers have focused on what relationships between brain areas can tell us about the brain, cognition and its disorders. However, because of apparently lower signal-to-noise ratio in white matter, functional connectivity studies do not typically include the white matter tracts that facilitate communication between distant brain areas. However, preliminary evidence suggests that the fMRI signal may have valuable information for modelling these tracts. My contribution to this research has been in analyzing changes in this signal across development and in the context of language. 
 
 #### Publications
+- Ding et al. (Submitted) *TBD*. Detection of Synchronous Brain Activity in White Matter Tracts at Rest and Under Functional Loading.
 - Wu et al. (2017) *NeuroImage.* Functional connectivity and activity of white matter in somatosensory pathways under tactile stimulations.
 - Ding et al. (2016) *Magnetic Resonance Imaging.* Visualizing Functional Structure of the Human Brain Using Magnetic Resonance Imaging. 
