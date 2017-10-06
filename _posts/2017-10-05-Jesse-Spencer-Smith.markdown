@@ -18,7 +18,7 @@ Because data science is a relatively young field, applicants come from a variety
 #### Core Competencies 
 Just as every candidate is unique, every role also taps into different skillsets. Aspiring data scientists don't need to be experts in all of the below competencies, but they should be aware of the different dimensions and their own strengths within them. 
 
-- **Programming**: works effectively with computers to create reproducible, optimizable solutions; can munge data; **should definitely know Python or R**, and at advanced levels, Java and Scala are a plus.
+- **Programming**: works effectively with computers to create reproducible, optimizable solutions; *should definitely be competent in Python or R*, and at advanced levels, Java and Scala are a plus; can munge data to get value from messy input.
 - **Storytelling**: knows how to draw in stakeholders to your work so that they can see its value and the possibility.  
 - **Communication**: can speak with a variety of audiences to get pass and get information; works well on a team.
 - **Machine Learning**: knows a variety of tools and techniques for running ML analyses and can discuss relative merits of different approaches.   
