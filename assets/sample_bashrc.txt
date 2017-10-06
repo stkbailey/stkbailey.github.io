@@ -13,8 +13,5 @@ export SUBJECTS_DIR=~/freesurfer-subjects
 # Set alias to start Matlab in terminal (just type `mat` to launch)
 alias mat="matlab -nosplash -nodesktop "
 
-# Export XNAT variables
-. ~/.xnat_profile
-
 # Add AFNI to path
 export PATH=/scratch/cutting/software/afni/:$PATH

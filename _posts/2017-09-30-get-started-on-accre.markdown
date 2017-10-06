@@ -96,21 +96,8 @@ pip install -y dax
 dax_setup
 {% endhighlight %}
 
-Now that you have installed and set up DAX, you need to create a `~/.xnat_profile` file. Type `nano ~/.xnat_profile` to open up a new text file and copy/paste the information below, editing appropriately.
+The program will prompt you to enter your XNAT host (`http://xnat.vanderbilt.edu:8080/xnat`) and login information. For the rest of the questions, you can simply type "no" to select the defaults. 
 
-{% highlight ruby %}
-# Add XNAT Variables to Global Environment (for DAX tools)
-export XNAT_HOST=http://xnat.vanderbilt.edu:8080/xnat
-export XNAT_USER=YOUR_XNAT_USER_NAME
-export XNAT_PASS=YOUR_XNAT_PASSWORD
-{% endhighlight %}
-
-Finally, add this command to your `~/.bashrc`. 
-
-{% highlight ruby %}
-# Export XNAT variables
-. ~/.xnat_profile
-{% endhighlight %}
 
 #### Using Xnatdownload
 
