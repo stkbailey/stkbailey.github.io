@@ -18,7 +18,7 @@ permalink: /resume/
 - Recipient of Omicron Delta Kappa's John D. Morgan Award for outstanding scholarship and leadership
 - Recipient of University Service Award for starting *[Samford Gives Back](https://www.samford.edu/mann-center-for-ethics-and-leadership/events/Samford-Gives-Back)*
 
-### Contributions
+### Experience
 #### Education & Brain Sciences Research Lab at Vanderbilt University
 *NIH Pre-doctoral Fellow (2013 - Present)*
 - Used machine learning techniques to differentiate children with reading disability from typically developing children (*Annals of Dyslexia*, 2016).
