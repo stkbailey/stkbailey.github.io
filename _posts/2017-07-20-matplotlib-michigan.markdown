@@ -14,6 +14,10 @@ The housing data was pulled from Zillow, a real estate tracking website. This da
 
 The second dataset was pulled from the IRS website and contains aggregated tax return data by zip code. This was filtered by the Ann Arbor zip codes found in the housing data. To find out the "high wealth" zip codes, I took the number of returns filed with adjusted gross incomes greater than $200,000, and I divided it by the total number of returns. This is a rough approximation for the distribution of wealth in a given zip code, but it is rough. The IRS has some [nice data](https://www.irs.gov/uac/soi-tax-stats-historic-table-2) I encourage you to check out. Again, the data used here is available on this repo. 
 
+This is a long post, so let's show you the final product first!
+
+![4br]({{ "/assets/matplotlib_michigan/4br.png" | absolute_url }})
+
 ### Build the Income Distributions
 
 The field `agi_stub` shows the size of Adjusted Gross Income for tax returns filed in this area. The IRS bins people into groups based on their overall Adjusted Gross Income (e.g., an `agi_stub` of 1 indicates <$25k and a stub of 6 is >$200k). 
@@ -196,9 +200,7 @@ We're going to make a couple of plots:
 
 I also made this plot **interactive** -- at the push of a button, you can select which number of bedrooms you want to use. Unfortunately, this feature isn't available in Jekyll, so you'll have to take my word for it. 
 
-For the sake of brevity, I'm only going to show you the code for the overall plot and button functionality. But let's show you the final product first!
-
-![4br]({{ "/assets/matplotlib_michigan/4br.png" | absolute_url }})
+For the sake of brevity, I'm only going to show you the code for the overall plot and button functionality. B
 
 #### Setup the figure using GridSpec
 GridSpec is a nifty tool to give you tighter control over figures with multiple subplots. It creates a grid over your figure and gives you the ability to specify which portions should be covered by new figures.
