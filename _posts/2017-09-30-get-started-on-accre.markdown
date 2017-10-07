@@ -30,7 +30,7 @@ ACCRE uses [Lmod](http://www.accre.vanderbilt.edu/?page_id=3358) for managing so
 
 There are are a lot of packages (use `module spider` to list them), and sometimes multiple packages need to be loaded at the same time to function correctly. Below is an example `module load` command. That set of packages is then saved as a "default" set of packages.
 
-{% highlight ruby %}
+{% highlight python %}
 # Load neuroimaging-related packages
 module load GCC/5.4.0-2.26 \
 	OpenMPI/1.10.3 \
@@ -50,7 +50,7 @@ module save default
 
 If you want to use Freesurfer, you need to set the `SUBJECTS_DIR` environment variable after loading Freesurfer. To do that, add a line like the following to your `.bashrc`. 
 
-{% highlight ruby %}
+{% highlight python %}
 # Set Freesurfer subjects directory 
 export SUBJECTS_DIR=~/freesurfer-subjects
 {% endhighlight %}
@@ -59,7 +59,7 @@ export SUBJECTS_DIR=~/freesurfer-subjects
 
 Matlab use requires an ACCRE license which can be purchased on an annual basis. Because Matlab can be graphics-heavy, I prefer to work directly in the terminal by starting Matlab with the `-nosplash` and `-nodesktop` flags. 
 
-{% highlight ruby %}
+{% highlight python %}
 # Set alias to start Matlab in terminal (just type `mat` to launch)
 alias mat="matlab -nosplash -nodesktop "
 {% endhighlight %}
@@ -68,7 +68,7 @@ alias mat="matlab -nosplash -nodesktop "
 
 [Anaconda](https://www.anaconda.com/download/) is an excellent way to create an manage virtual Python environments, and it's ACCRE's preferred method. Among other things, it allows users to install custom packages, Python distributions, etc., without messing with the "core" Python that serves all of ACCRE.  
 
-{% highlight ruby %}
+{% highlight python %}
 module load Anaconda3
 
 # Create a Python 2 environment
@@ -87,7 +87,7 @@ To install new packages into your Conda environment, type `conda install PACKAGE
 [DAX (Distributed Automation for XNAT](https://github.com/VUIIS/dax) is a set of tools that will help you interface with XNAT data. It's managed by VUIIS, and although you probably won't need to use much of the toolbox, you might need `Xnatdownload`. 
 
 #### Setting it all up
-{% highlight ruby %}
+{% highlight python %}
 # One-time install of DAX into your Python environment
 source activate py2 	
 pip install -y dax
@@ -117,7 +117,7 @@ For further information, see its documentation by typing simply `Xnatdownload`.
 
 If you're interested in using AFNI, you (currently) have to set up your own copy of the binaries on the cluster. Luckily, there are a few that are floating around in publicly accessible spaces -- I believe that `/scratch/cutting/software/afni` is one of them. Simply add this directory to your path, and then try typing any of the AFNI commands (`afni` comes to mind...)!
 
-{% highlight ruby %}
+{% highlight python %}
 # Add AFNI to path
 export PATH=/scratch/cutting/software/afni/:$PATH
 {% endhighlight %}

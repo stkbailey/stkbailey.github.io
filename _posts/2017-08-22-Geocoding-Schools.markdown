@@ -16,7 +16,7 @@ Our strategy is:
 ### Getting Search Terms
 We start our task by getting a list of schools / departments. Conveniently, these are all in the School Crosswalk. 
 
-{% highlight ruby %}
+{% highlight python %}
 import pandas as pd
 
 # Let's read in the School Crosswalk as a Python DataFrame using Pandas
@@ -97,7 +97,7 @@ df.head(3)
 
 
 We can also treat each row as its own collection of information:
-{% highlight ruby %}
+{% highlight python %}
 df.iloc[0]
 
     MNPS Code                                                422
@@ -117,7 +117,7 @@ df.iloc[0]
 We can now pull individual parts of the df to create a list of search terms we want to use with Google.
 
 
-{% highlight ruby %}
+{% highlight python %}
 print('The first five schools in the Crosswalk...')
 print(df['School Name (TNC)'].head(5))
 
@@ -134,7 +134,7 @@ print(df['School Name (TNC)'].head(5))
 But as anyone who has used Google maps knows, if you just use a name, the top search result might end up in Wyoming. So, we actually want to give Google more information than just the school. Let's tell it we're in Nashville.
 
 
-{% highlight ruby %}
+{% highlight python %}
 schools_with_city = df['School Name (TNC)'].apply(lambda x: '{} Nashville TN USA'.format(x))
 
 print('The first five schools, with "Nashville TN" appended...')
@@ -155,7 +155,7 @@ print(schools_with_city.head(5))
 We are going to query Google Maps through it's API. Basically, we are searching for a set of keywords - just like if we were searching through the Google Maps app - and then we are going to collect the response in a Python object. Then, we can drill down on that object to get the information we are interested in.
 
 
-{% highlight ruby %}
+{% highlight python %}
 import requests
 
 search_string = 'metro nashville board of education'.replace(' ', '+')
@@ -165,7 +165,7 @@ response_from_google = response.json()
 {% endhighlight %}
 
 
-{% highlight ruby %}
+{% highlight python %}
 from pprint import pprint
 
 # Let's print out Google's response
@@ -215,7 +215,7 @@ pprint(response_from_google)
 
 
 Now, let's drill in on the data we want, then print out the results.
-{% highlight ruby %}
+{% highlight python %}
 address = response_from_google['results'][0]['formatted_address']
 latitude = response_from_google['results'][0]['geometry']['location']['lat']
 longitude = response_from_google['results'][0]['geometry']['location']['lng']
@@ -236,7 +236,7 @@ print('  Longitude: ', longitude)
 
 Now that we know exactly where the data is and how to get it, we need to efficiently get it for each school. We're going to define a function that will take in a search string and return a Pandas series with the Full Address, Latitude and Longitude. 
 
-{% highlight ruby %}
+{% highlight python %}
 def getCoords(search_string):
     '''Takes a search term, queries Google and returns the geocoordinates.'''
     index_name = search_string.replace(' Nashville TN USA', '')
@@ -265,7 +265,7 @@ print(getCoords('Metro Nashville Board of Education'))
     
 It's time to do this for all the schools. We will initialize a new DataFrame and fill it up with data as we get it.
 
-{% highlight ruby %}
+{% highlight python %}
 geodf = pd.DataFrame()
 
 for school in schools_with_city:
@@ -357,7 +357,7 @@ geodf.sort_index().head(10)
 
 Now that we have a dataframe with the GIS information, we need to re-combine it with the original dataframe. Checking out an entry will show that the new fields are present.
 
-{% highlight ruby %}
+{% highlight python %}
 new_crosswalk = df.join(geodf, on='School Name (TNC)')
 
 new_crosswalk.iloc[0]
@@ -383,7 +383,7 @@ new_crosswalk.iloc[0]
 
 Perfect! If we want, we can now split off other information. To get the city, for example, we want the second comma-separated element in the address.
 
-{% highlight ruby %}
+{% highlight python %}
 new_crosswalk.Address.iloc[0:3].apply(lambda x: x.split(',')[1])
 
     0       Antioch

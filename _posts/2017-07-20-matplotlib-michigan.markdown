@@ -10,9 +10,9 @@ categories: coursera, python visualization data-science
 ### Introduction
 **Are home prices in wealthier areas more susceptible to economic variability?** For example -- when there is a recession, there's a strong possibility that it will be the largest houses that people stop paying for, rather than the smaller ones. 
 
-The housing data was pulled from Zillow, a real estate tracking website. This data covers the period 1997-2016, and is broken out by the house size (number of beds) and zip code. The data api can be seen here (https://www.zillow.com/mi/home-values/) and the actual datasets are available on Github ([1_bedroom]({{ site.baseurl ....}}), 2_bedroom, etc.) This data includes a "Metro" field, which associates all zip codes near Ann Arbor with the city, and this is what I used to filter on. 
+The housing data was pulled from Zillow, a real estate tracking website. This data covers the period 1997-2016, and is broken out by the house size (number of beds) and zip code. Zillow hosts a [nice database]((https://www.zillow.com/mi/home-values/), although only aggregated results are available. The datasets I use here are available on [Github]({{ "/assets/matplotlib_michigan" | absolute_url }}). This data includes a "Metro" field, which associates all zip codes near Ann Arbor with the city, and this is what I used to filter on. 
 
-The second dataset was pulled from the IRS website and contains aggregated tax return data by zip code. This was filtered by the Ann Arbor zip codes found in the housing data. To find out the "high wealth" zip codes, I took the number of returns filed with adjusted gross incomes greater than $200,000, and I divided it by the total number of returns. This is a rough approximation for the distribution of wealth in a given zip code, but it is rough. The link to the IRS data is https://www.irs.gov/uac/soi-tax-stats-historic-table-2. The link to the excel data is available on Github: https://raw.githubusercontent.com/stkbailey/Coursera_Plotting/master/AGI2014_Michigan.csv. 
+The second dataset was pulled from the IRS website and contains aggregated tax return data by zip code. This was filtered by the Ann Arbor zip codes found in the housing data. To find out the "high wealth" zip codes, I took the number of returns filed with adjusted gross incomes greater than $200,000, and I divided it by the total number of returns. This is a rough approximation for the distribution of wealth in a given zip code, but it is rough. The IRS has some [nice data](https://www.irs.gov/uac/soi-tax-stats-historic-table-2) I encourage you to check out. Again, the data used here is available on this repo. 
 
 ### Build the Income Distributions
 
@@ -282,7 +282,7 @@ Voila! Now, we just have to make sure that the figure is drawn in an interactive
 ![2br]({{ "/assets/matplotlib_michigan/2br.png" | absolute_url }})
 ![3br]({{ "/assets/matplotlib_michigan/3br.png" | absolute_url }})
 
-##### Additional code
+### Additional code
 
 {% highlight python %}
 # Define plotting functions
