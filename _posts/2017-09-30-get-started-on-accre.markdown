@@ -3,7 +3,7 @@ layout: post
 title:  "Neuroimaging on ACCRE"
 date:   2017-09-30 13:46:40
 categories: ebrl, vanderbilt
-comment: true
+comments: true
 ---
 
 # Setting up ACCRE for Neuroimaging
