@@ -4,16 +4,12 @@ title: Posts
 permalink: /posts/
 ---
 
-<div class="home">
+<ul class="post-page-list">
+{% for post in site.posts %}
+  <li>
+    <span class="post-page-meta">{{ post.date | date: "%b %-d, %Y" append: ":   " }}<a class="post-page-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></span>
+  </li>
+{% endfor %}
+</ul>
 
-  <ul class="post-page-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-page-meta">{{ post.date | date: "%b %-d, %Y" append: ":   " }}<a class="post-page-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></span>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
