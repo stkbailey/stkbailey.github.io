@@ -6,10 +6,10 @@ permalink: /posts/
 
 <div class="home">
 
-  <ul class="post-list">
+  <ul class="post-page-list">
     {% for post in site.posts %}
       <li>
-        <span class="post-page-meta">{{ post.date | date: "%b %-d, %Y" }}:   <a class="post-page-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></span>
+        <span class="post-page-meta">{{ post.date | date: "%b %-d, %Y" }}<a class="post-page-link" href="{{ post.url | prepend: site.baseurl }}">   {{ post.title }}</a></span>
       </li>
     {% endfor %}
   </ul>
