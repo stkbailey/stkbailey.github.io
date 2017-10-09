@@ -101,10 +101,12 @@ We can also treat each row as its own collection of information:
 {% highlight python %}
 df.iloc[0]
 {% endhighlight %}
->    MNPS Code                                                422
->    State Code                                               720
->    TNC                                                      720
->    School Name (TNC)              The Academy at Hickory Hollow
+    MNPS Code                                                422
+    State Code                                               720
+
+    TNC                                                      720
+    School Name (TNC)              The Academy at Hickory Hollow
+
 >    School Name (EBS)             MNPS TheAcademy-Hickory Hollow
 >    Location Name (Applitrack)     The Academy at Hickory Hollow
 >    Tier                                                    High
