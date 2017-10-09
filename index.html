@@ -11,17 +11,15 @@ layout: default
       <li>
         <div style="padding-bottom: 0">
           <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-          <h2>
-            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-
+          <h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
           <span class="post-excerpt">{{ post.content | markdownify | strip_html | truncatewords: 50 }}</span>
         </div>
       </li>
     {% endfor %}
       <li>
         <h2>
-          <span class="post-meta">Archives</span>
-          <a class="post-link" href="{{ '/posts/' | absolute_url }}">View All Posts</a>
+          <span class="post-meta">Not bored yet?</span>
+          <a class="post-link" href="{{ '/posts/' | absolute_url }}">View older posts</a>
         </h2>
       </li>
 
