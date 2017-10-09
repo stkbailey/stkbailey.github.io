@@ -3,6 +3,7 @@ layout: post
 title:  "Data Science Perspective w/ Dr. Jesse Spencer-Smith"
 date:   2017-10-05 10:44:40
 categories: data-science vanderbilt
+comments: true
 ---
 
 [Dr. Jesse Spencer-Smith](https://www.linkedin.com/in/jesse-spencer-smith-7092a0/), the director of Enterprise Data Science at HCA, came to Vanderbilt's campus to speak to students and faculty about the qualities of a good data scientist and data science team. He spoke to a packed house, and I was lucky enough to have time to chat with him over lunch. Below are some of my notes from our discussion and his presentation. Hopefully they will help you as much as they did me!
