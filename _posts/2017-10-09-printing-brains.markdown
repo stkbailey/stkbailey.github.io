@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Geocoding MNPS School Locations"
-date:   2017-08-22 12:00:00
+title:  "3D-Printing Brains at Vanderbilt"
+date:   2017-10-09 1:47:00
 categories: accre python neuroimaging
 comments: true
 ---
