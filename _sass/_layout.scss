@@ -188,8 +188,22 @@
     font-size: 18px;
 }
 
+.post-page-list {
+    margin-left: 1;
+    list-style: none;
+
+    > li {
+        margin-bottom: 0);
+    }
+}
+
+.post-page-meta {
+    font-size: $base-font-size;
+    color: $grey-color;
+}
+
 .post-page-link {
-    font-size: $small-font-size;
+    font-size: $base-font-size;
 }
 
 
