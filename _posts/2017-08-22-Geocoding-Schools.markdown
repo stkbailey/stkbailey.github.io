@@ -3,6 +3,7 @@ layout: post
 title:  "Geocoding MNPS School Locations"
 date:   2017-08-22 12:00:00
 categories: data-science python mnps
+comments: true
 ---
 
 As I mentiond in a previous post, I did some data reporting at MNPS this past summer. One of the fun problems I got to solve one day was how to plot data by school, on a map in Power BI. Here we are going to use a couple of Python tools to make a database of Latitude / Longitude locations for the MNPS schools. 

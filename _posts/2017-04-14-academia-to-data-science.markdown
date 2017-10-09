@@ -3,6 +3,7 @@ layout: post
 title:  "From Academia to Data Science w/ Aliya Gifford"
 date:   2017-04-14 12:00:00
 categories: data-science pennyu
+comments: true
 ---
 
 Earlier this week, I met with Aliya Gifford to talk about getting into the "data science" field from academia. She had a lot of great insights into the job search process, and some really helpful ones for someone coming out of a PhD. 

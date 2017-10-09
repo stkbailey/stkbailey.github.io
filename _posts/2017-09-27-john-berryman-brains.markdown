@@ -3,6 +3,7 @@ layout: post
 title:  "Brain Scans w/ John Berryman"
 date:   2017-09-27 01:00:00
 categories: pennyu brains
+comments: true
 ---
 
 Had a great chance to chat with John Berryman recently about the brain and how it might translate to building "thinking machines". Spoiler alert: we didn't get there. But we had a great chat about brain networks, sensory processing and different neuroimaging methods.  

@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "Visualizing MNPS Vacancies"
+title:  "Seeing School Vacancies through Power BI"
 date:   2017-08-15 12:00:00
 categories: data-science power-bi
+comments: true
 ---
 
 This summer, I had the pleasure of completing a brief stint as a Data Analyst at Metro Nashville Public Schools. I got to work with a great group of people, including Sharon Pertiller and Amber Tyus in the Human Resources department, and to learn a new tool: [Microsoft Power BI](https://powerbi.microsoft.com/en-us/).

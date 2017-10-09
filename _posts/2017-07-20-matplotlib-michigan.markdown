@@ -3,6 +3,7 @@ layout: post
 title:  "Matplotlibbing Michigan Housing Data"
 date:   2017-07-20 13:46:40
 categories: coursera, python visualization data-science
+comments: true
 ---
 
 *This exercise was part of the "Applied Plotting and Data Representation" course from University of Michigan. As the capstone project, the goal was to state a question about "economic activity" in Ann Arbor, MI. Then, we had to combine two datasets and create a figure that answered that question.*

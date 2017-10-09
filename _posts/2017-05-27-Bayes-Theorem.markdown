@@ -3,6 +3,7 @@ layout: post
 title:  "A Brief Overview of Bayes w/ Chris Fonnesbeck"
 date:   2017-05-27 12:00:00
 categories: statistics data-science pennyu
+comments: true
 ---
 
 Yesterday, several of us met with John Berryman and Chris Fonnesbeck to discuss the basics of Bayesian analysis. We mostly discussed Bayes theorem and its differences from frequentist statistics. Some highlights were:

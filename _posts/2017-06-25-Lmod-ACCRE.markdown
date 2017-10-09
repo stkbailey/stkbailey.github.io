@@ -3,6 +3,7 @@ layout: post
 title:  "A Quick-Start to Lmod"
 date:   2017-06-25 12:00:00
 categories: vanderbilt accre ebrl
+comments: true
 ---
 
 I took some time to watch the [ACCRE team’s Pizza & Programming presentation](https://www.youtube.com/watch?v=La92_3hcw-k&index=4&list=PL8Q6Imidwz82Lk37fjv0ImSqsOjTwuKsZ) on the rollout of Lmod package manager, and wanted to provide a high-level summary and cookbook for what typical neuroimaging users will need to know.

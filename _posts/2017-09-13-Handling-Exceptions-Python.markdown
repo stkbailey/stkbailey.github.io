@@ -3,6 +3,7 @@ layout: post
 title:  "Handling Exceptions in Python w/ John Still"
 date:   2017-09-13 12:00:40
 categories: python
+comments: true
 ---
 
 A  few weeks ago, I had an extremely helpful conversation with John Still about exception handling in Python, and how to build useful tests for your functions. I was a beginner in this area, and we covered a lot of ground, so I'm going to bullet point some of my major take-aways.
