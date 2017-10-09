@@ -188,12 +188,16 @@
     font-size: 18px;
 }
 
+.post-excerpt {
+    font-size: $small-font-size;
+}
+
 .post-page-list {
     margin-left: 1;
     list-style: none;
 
     > li {
-        margin-bottom: 0;
+        margin-bottom: 1;
     }
 }
 
