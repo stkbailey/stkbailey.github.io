@@ -109,12 +109,14 @@ df.iloc[0]
 
 >    School Name (EBS)             MNPS TheAcademy-Hickory Hollow
 >    Location Name (Applitrack)     The Academy at Hickory Hollow
->    Tier                                                    High
->    Quadrant                                           Southeast
->    Cluster                                           Cane Ridge
->    Special Status                                     Non-Zoned
->    Cluster.1                                         Cane Ridge
->    Name: 0, dtype: object
+
+    Tier                                                    High
+    Quadrant                                           Southeast
+
+> Cluster                                           Cane Ridge
+> Special Status                                     Non-Zoned
+> Cluster.1                                         Cane Ridge
+> Name: 0, dtype: object
 
 
 We can now pull individual parts of the df to create a list of search terms we want to use with Google.
