@@ -6,7 +6,7 @@ categories: data-science vanderbilt
 comments: true
 ---
 
-[Dr. Jesse Spencer-Smith](https://www.linkedin.com/in/jesse-spencer-smith-7092a0/), the director of Enterprise Data Science at HCA, came to Vanderbilt's campus to speak to students and faculty about the qualities of a good data scientist and data science team. He spoke to a packed house, and I was lucky enough to have time to chat with him over lunch. Below are some of my notes from our discussion and his presentation. Hopefully they will help you as much as they did me!
+[Dr. Jesse Spencer-Smith](https://www.linkedin.com/in/jesse-spencer-smith-7092a0/), the director of Enterprise Data Science at HCA, came to Vanderbilt's campus to speak to students and faculty about the qualities of a good data scientist and data science team. He spoke to a packed house, and a few other students and I were lucky to also chat with him over lunch. Below are some of my notes from our discussion and his presentation. Hopefully they will help you as much as they did me!
 
 #### Qualities of a Good Data Scientist Candidate
 Because data science is a relatively young field, applicants come from a variety of backgrounds: academia, programming, business analytics, mathematics -- you name it, there's a data scientist who did it. Dr. Spencer-Smith spoke at length about what he looks for in a data science candidate apart from the raw skills. A few of the themes that emerged were:
