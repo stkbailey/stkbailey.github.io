@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "3D-Printing Brains at Vanderbilt"
+title:  "3D Printing Brains at Vanderbilt"
 date:   2017-10-09 1:47:00
 categories: accre python neuroimaging
 comments: true
@@ -48,8 +48,10 @@ for HEMI in lh rh; do
     mris_decimate /scratch/bailesk1/freesurfer-subjects/LM1304_vG/surf/$HEMI.pial -d 0.15 /scratch/bailesk1/freesurfer-subjects/LM1304_vG/surf/$HEMI.d15.pial
     mris_convert /scratch/bailesk1/freesurfer-subjects/LM1304_vG/surf/$HEMI.d15.pial /scratch/bailesk1/freesurfer-subjects/mesh/LM1304_vG_$HEMI.d15.stl
 done
+mris_convert --combinesurfs /scratch/bailesk1/freesurfer-subjects/LM1304_vG/surf/lh.d15.pial mris_convert /scratch/bailesk1/freesurfer-subjects/LM1304_vG/surf/rh.d15.pial /scratch/bailesk1/freesurfer-subjects/mesh/LM1304_vG_2h.d15.stl
 {% endhighlight %}
 
+![Freesurfer traces around the white matter and pial surfaces.]({{"/assets/freesurfer_3d/freesurfer_parc.PNG" | absolute_url }})
 
 ### 3. Submit Script to Computing Cluster
 
@@ -89,7 +91,10 @@ submit_brain_for_printing(subj_id='test_subject',
 
 You can follow up on the job status by using `scontrol` and other commands like `squeue -u bailesk1`. 
 
+![Freesurfer outputs a mesh on top of the surface, which can be 3D printed.]({{"/assets/freesurfer_3d/mesh_hires.PNG" | absolute_url }})
+
 
 ### 5. Outsource it
 
 Finally, you will have a couple of mesh files in your `${fs_subj_dir}/mesh` folder. You can pull these onto your local machine then email VUMC to get your prints. Cost goes up as a function of printing time and material required, so be aware the a full size brain could cost in excess of $30. But can you truly put a price on the fanciest paper weight you'll ever own?
+

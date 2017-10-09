@@ -37,7 +37,10 @@ recon-all -i {ip} -s {sid} -all
 for HEMI in lh rh; do 
     mris_decimate {fs}/{sid}/surf/$HEMI.pial -d {d} {fs}/{sid}/surf/$HEMI.d{dp}.pial
     mris_convert {fs}/{sid}/surf/$HEMI.d{dp}.pial {fs}/mesh/{sid}_$HEMI.d{dp}.stl
-done'''.format(fs=fs_subj_dir, sid=subj_id, ip=image_path,
+done
+mris_convert --combinesurfs {fs}/{sid}/surf/lh.d{dp}.pial {fs}/{sid}/surf/rh.d{dp}.pial \
+    {fs}/mesh/{sid}_2h.d{dp}.stl 
+'''.format(fs=fs_subj_dir, sid=subj_id, ip=image_path,
                d='{}'.format(decimation_level), dp='{}'.format(int(decimation_level*100))) 
 
 
