@@ -17,7 +17,7 @@ There are a few other tutorials out there for doing this. This tutorial is speci
 - Python environment with DAX tools (if downloading from XNAT)
 - A T1-weighted brain image
 
-### 1. Download Image from XNAT
+### 1. Download image from XNAT
 
 The first thing we have to do is get an image file for use with Freesurfer. This should be T1-weighted image, meaning that white matter is bright and gray matter is dark. 
 
@@ -29,7 +29,7 @@ cp $DLPATH /scratch/bailesk1/freesurfer-subjects/tmp/LM1304_vG_raw.nii.gz
 
 If you already have the image data on ACCRE, you can just put it in a location accessible by the cluster (e.g. `/scratch/$USERNAME`)
 
-### 2. Scripting a Freesurfer Reconstruction w/ Edge Decimation
+### 2. Scripting a Freesurfer reconstruction w/ edge decimation
 
 Freesurfer will "trace" the gray and white matter boundaries to create a 3D reconstruction of the brain surface.  The process can take a while but is easy to submit to the ACCRE cluster. 
 
@@ -53,7 +53,7 @@ mris_convert --combinesurfs /scratch/bailesk1/freesurfer-subjects/LM1304_vG/surf
 
 ![Freesurfer traces around the white matter and pial surfaces.]({{"/assets/freesurfer_3d/freesurfer_parc.PNG" | absolute_url }})
 
-### 3. Submit Script to Computing Cluster
+### 3. Wrap script for SLURM
 
 Now, we just need to submit the job to the cluster via `SLURM`. We create a text file with a few flags denoting how much time and resources we want to allocate, then we'll add in the Freesurfer commands  below. We submit it by entering `sbatch <text_file>`. 
 
@@ -73,7 +73,7 @@ Here's what the header will look like.
 # Put commands for executing job below this line
 {% endhighlight %}
 
-### 4. Submit it!
+### 4. Enlist the robots!
 
 Finally, we put it all together into a [single function]({{"/assets/print_brain.py" | absolute_url }}) to make the prints. The key variabiles here are `subj_id`, the `scratch_dir` for Freesurfer output, and the input `image_path`. 
 
@@ -94,7 +94,7 @@ You can follow up on the job status by using `scontrol` and other commands like 
 ![Freesurfer outputs a mesh on top of the surface, which can be 3D printed.]({{"/assets/freesurfer_3d/mesh_hires.PNG" | absolute_url }})
 
 
-### 5. Outsource it
+### 5. Outsource the printing and reap the rewards
 
 Finally, you will have a couple of mesh files in your `${fs_subj_dir}/mesh` folder. You can pull these onto your local machine then email VUMC to get your prints. Cost goes up as a function of printing time and material required, so be aware the a full size brain could cost in excess of $30. But can you truly put a price on the fanciest paper weight you'll ever own?
 
