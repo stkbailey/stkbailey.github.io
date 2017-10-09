@@ -7,7 +7,7 @@ permalink: /posts/
 <ul class="post-page-list">
 {% for post in site.posts %}
   <li>
-    <span class="post-page-meta">{{ post.date | date: "%b %-d, %Y"  }}</span><a class="post-page-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></span><a class="post-page-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+    <span class="post-page-meta">{{ post.date | date: "%b %-d, %Y"  }} • </span><a class="post-page-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
   </li>
 {% endfor %}
 </ul>
