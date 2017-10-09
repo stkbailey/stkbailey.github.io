@@ -12,3 +12,6 @@ linkedin_username:  stephen-bailey-5b376222
 # Build settings
 markdown: kramdown
 theme: jekyll-theme-slate
+
+# Analytics
+google_analytics: UA-107714752-1
