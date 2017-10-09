@@ -92,4 +92,4 @@ You can follow up on the job status by using `scontrol` and other commands like 
 
 ### 5. Outsource it
 
-Finally, you will have a couple of mesh files in your `${fs_subj_dir}/mesh` folder. You can pull these onto your local machine then email VUMC to get your prints. Cost goes up as a function of printing time and material required, so be aware the a full size brain could cost in excess of $30. But at the end of the day -- you might finally know what's going on in there. 
+Finally, you will have a couple of mesh files in your `${fs_subj_dir}/mesh` folder. You can pull these onto your local machine then email VUMC to get your prints. Cost goes up as a function of printing time and material required, so be aware the a full size brain could cost in excess of $30. But can you truly put a price on the fanciest paper weight you'll ever own?
