@@ -2,7 +2,7 @@
 layout: post
 title:  "A Quick-Start to Lmod"
 date:   2017-06-25 12:00:00
-categories: vanderbilt accre ebrl
+categories: vanderbilt
 comments: true
 ---
 

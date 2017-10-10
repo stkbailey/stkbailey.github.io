@@ -2,7 +2,7 @@
 layout: post
 title:  "Brain Scans w/ John Berryman"
 date:   2017-09-27 01:00:00
-categories: pennyu brains
+categories: penny-university neuroimaging
 comments: true
 ---
 

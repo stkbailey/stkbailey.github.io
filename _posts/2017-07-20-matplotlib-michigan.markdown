@@ -2,7 +2,7 @@
 layout: post
 title:  "Matplotlibbing Michigan Housing Data"
 date:   2017-07-20 13:46:40
-categories: coursera, python visualization data-science
+categories: python data-science
 comments: true
 ---
 

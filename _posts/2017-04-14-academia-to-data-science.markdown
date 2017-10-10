@@ -2,7 +2,7 @@
 layout: post
 title:  "From Academia to Data Science w/ Dr. Aliya Gifford"
 date:   2017-04-14 12:00:00
-categories: data-science pennyu
+categories: data-science penny-university vanderbilt
 comments: true
 ---
 
