@@ -9,6 +9,7 @@ permalink: /posts/
   <ul class="post-page-list">
   {% for posts in category %}
     {% for post in posts %}
+      {% if post.url %}
       <li>
         <span class="post-page-meta">{{ post.date | date: "%b %-d, %Y"  }} • </span><a class="post-page-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
       </li>
