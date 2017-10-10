@@ -13,6 +13,7 @@ permalink: /posts/
       <li>
         <span class="post-page-meta">{{ post.date | date: "%b %-d, %Y"  }} • </span><a class="post-page-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
       </li>
+      {% endif %}
     {% endfor %}
   {% endfor %}
   </ul>
