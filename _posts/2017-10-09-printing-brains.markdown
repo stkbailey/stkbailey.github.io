@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "3D Printing Brains at Vanderbilt"
+title:  "Printing 3D Brains at Vanderbilt"
 date:   2017-10-09 1:47:00
 categories: accre python neuroimaging
 comments: true
