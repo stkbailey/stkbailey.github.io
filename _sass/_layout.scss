@@ -195,8 +195,14 @@
     padding: 0 0;
 }
 
-.post-page-list {
+.post-page-header {
     margin-left: 0 ;
+    margin-bottom: $spacing-unit;
+    font-size: 24px;
+}
+
+.post-page-list {
+    margin-left: 0.5 ;
     list-style: none;
 
     > li {
@@ -205,12 +211,12 @@
 }
 
 .post-page-meta {
-    font-size: 20px;
+    font-size: 18px;
     color: $grey-color;
 }
 
 .post-page-link {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 
