@@ -1,10 +1,11 @@
 ---
 layout: post
 title:  "Data Science Quotables w/ Damien Mingle"
-date:   2017-10-11 12:00:00
 categories: data-science penny-university
 comments: true
 ---
+
+date:   2017-10-11 12:00:00
 
 The "Data Nerds" meetup got a chance to chat with Damien Mingle, Chief Data Scientist at Intermedix. He has had a long careerDamien's first decade in the field was based on Excel
 
