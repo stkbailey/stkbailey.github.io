@@ -6,7 +6,7 @@ categories: data-science penny-university
 comments: true
 ---
 
-Several of us in the "Data Nerds" meetup recently chatted with [Damien Mingle](https://www.linkedin.com/in/damianrmingle/), Chief Data Scientist at [Intermedix])https://www.intermedix.com/). He told us the story of his career -- how he went from building predictive real estate algorithms to being a scrappy, Excel-using Kaggle competitor to leading a 16+ person data science team at Intermedix that improves health outcomes for hunderds of thousands of patients. 
+Several of us in the "Data Nerds" meetup recently chatted with [Damien Mingle](https://www.linkedin.com/in/damianrmingle/), Chief Data Scientist at [Intermedix](https://www.intermedix.com/). He told us the story of his career -- how he went from building predictive real estate algorithms to being a scrappy, Excel-using Kaggle competitor to leading a 16+ person data science team at Intermedix that improves health outcomes for hunderds of thousands of patients. 
 
 We drank knowledge from a fire hose for an hour, but I've jotted down a few of my favorite bits of advice from the discussion. Enjoy!
 
@@ -32,6 +32,6 @@ In short, be confident in yourself! Analytical folks are often hesitant to be wr
 #### "We can't all be Supergirl." 
 Referencing the hit CW show all data scientists *must* watch, Damien concluded with reassuring advice: it's okay to not know everything. Even though the executives pushing for the new data science division want you to have laser vision, super strength, super speed, invulnerability and a tight leotard -- it is sometimes enough to be there, solving business problems and mining whatever value you can with the existing systems and your particular strengths.  
 
-'---
+---
 
 Thanks a lot, Damien, for the great chat -- and John for organizing, despite being on the verge of second-fatherhood. Another wonderful Data Nerds meetup!
