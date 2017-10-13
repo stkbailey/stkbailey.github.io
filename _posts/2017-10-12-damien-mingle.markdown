@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "Data Science Perspective w/ Damien Mingle"
+title:  "Data Science Perspective w/ Damian Mingle"
 date:   2017-10-12 10:05:00
 categories: data-science penny-university
 comments: true
 ---
 
-Several of us in the "Data Nerds" meetup recently chatted with [Damien Mingle](https://www.linkedin.com/in/damianrmingle/), Chief Data Scientist at [Intermedix](https://www.intermedix.com/). He told us the story of his career -- how he went from building predictive real estate algorithms to being a scrappy, Excel-using Kaggle competitor to leading a 16+ person data science team at Intermedix that improves health outcomes for hunderds of thousands of patients. 
+Several of us in the "Data Nerds" meetup recently chatted with [Damian Mingle](https://www.linkedin.com/in/damianrmingle/), Chief Data Scientist at [Intermedix](https://www.intermedix.com/). He told us the story of his career -- how he went from building predictive real estate algorithms to being a scrappy, Excel-using Kaggle competitor to leading a 16+ person data science team at Intermedix that improves health outcomes for hunderds of thousands of patients. 
 
 We drank knowledge from a fire hose for an hour, but I've jotted down a few of my favorite bits of advice from the discussion. Enjoy!
 
