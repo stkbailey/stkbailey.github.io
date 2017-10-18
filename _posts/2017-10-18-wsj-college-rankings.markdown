@@ -8,7 +8,7 @@ comments: true
 
 How many top colleges are in your state? That was one of the questions I had after reading this year's [THE/Wall Street Journal's 2018 college rankings](https://www.timeshighereducation.com/rankings/united-states/2018#!/page/0/length/25/sort_by/rank/sort_order/asc/cols/stats). Since I'm in the middle of writing a few manuscripts for my dissertation and needed a "break" (i.e. diversion), I decided to answer it.
 
-<iframe width="800" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiYWM3MmYzODktNmMwNi00NjQ3LWFlY2QtY2I3MWMxN2JiY2NkIiwidCI6ImJhNWE3ZjM5LWUzYmUtNGFiMy1iNDUwLTY3ZmE4MGZhZWNhZCIsImMiOjN9" frameborder="0" allowFullScreen="true"></iframe>
+<iframe width="750" height="500" src="https://app.powerbi.com/view?r=eyJrIjoiYWM3MmYzODktNmMwNi00NjQ3LWFlY2QtY2I3MWMxN2JiY2NkIiwidCI6ImJhNWE3ZjM5LWUzYmUtNGFiMy1iNDUwLTY3ZmE4MGZhZWNhZCIsImMiOjN9" frameborder="0" allowFullScreen="true"></iframe>
 
 Here are some of the most interesting insights:
 - The Northeast has the most colleges in the Top 100 (46 of them!) but nearly 100% are private.
