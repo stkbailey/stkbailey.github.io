@@ -8,9 +8,8 @@ permalink: /research/
 Most of my current predoctoral research is focused on investigating the neurobiological basis for differences in reading skill. In my first published manuscript, I led an investigation into whether individuals with different profiles of reading deficits (dyslexia and specific reading comprehension deficits) could be differentiated from typically developing controls using structural imaging measures. We found that they could, suggesting that comprehension deficits are not simply a less severe type of dyslexia, but a neurobiologically distinct condition. Other contributions include using diffusion-weighted MRI measures (e.g. fractional anisotropy) to predict reading improvement or individual differences in compensated readers. 
 
 #### Peer-Reviewed Publications
-- Bailey et al. (Submitted) *TBD*. Applying a network framework to the neurobiology of dyslexia.
 - Aboud et al. (Submitted) *TBD*. Frontoparietal control systems support expository but not narrative text comprehension in developing readers.
-- Bailey et al. (In preparation) *TBD*. Differences in brain network organization during reading and listening.
+- Bailey et al. (In preparation) *TBD*. Applying a network framework to the neurobiology of reading and dyslexia.
 - Whitfield-Gabrieli et al. (In preparation) *TBD* Intrinsic brain architecture predicts future attentional and mood problems in a normative pediatric sample.
 - Wendelken et al. (2017) *Journal of Neuroscience.* [Fronto-parietal structural connectivity in childhood predicts development of functional connectivity and reasoning ability: a large-scale longitudinal investigation](http://www.jneurosci.org/content/37/35/8549).
 - Bailey et al. (2016) *Annals of Dyslexia.* [Anomalous gray matter differences in reading comprehension deficits are independent of dyslexia](https://link.springer.com/article/10.1007/s11881-015-0114-y). 
