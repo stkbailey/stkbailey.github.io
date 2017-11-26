@@ -2,9 +2,9 @@
 layout: post
 title:  "NashNetX: Background & Motivation"
 categories: data-science
+date:   2017-11-26 06:00:00
 comments: true
 ---
-date:   2017-11-27 06:00:00
 
 Who are the kings and queens of the Nashville MeetUp scene? 
 

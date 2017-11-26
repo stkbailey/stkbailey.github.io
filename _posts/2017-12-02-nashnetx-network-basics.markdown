@@ -2,9 +2,9 @@
 layout: post
 title:  "NashNetX: Basic NetworkX"
 categories: data-science
+date:   2017-12-09 06:00:00
 comments: true
 ---
-date:   2017-12-09 06:00:00
 
 
 To start working with NetworkX, we're going to build a graph for a single event. We can do this in a couple of different ways: adding attributes piece-by-piece, building it from list of edges or through a dataframe. Then, we'll play with the measures and do basic plotting. 
