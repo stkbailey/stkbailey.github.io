@@ -6,6 +6,8 @@ date:   2017-11-26 06:00:00
 comments: true
 ---
 
+*This is the first in a series of posts on using NetworkX to analyze Nashville MeetUp data. They are based off a [PyNash talk](https://www.meetup.com/PyNash/events/244713791/) I gave on 11/16, and all data is available on [Github](https://github.com/stkbailey/nashnetx).*
+
 Who are the kings and queens of the Nashville MeetUp scene? 
 
 That's the question we want to answer today. And to do that, we're going to use a branch of mathematics called **Graph Theory** and **[NetworkX](https://networkx.github.io/)**, an excellent Python package for network analysis. 
