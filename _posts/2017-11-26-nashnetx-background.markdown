@@ -22,7 +22,7 @@ Graphs are mathematical structures used to model pairwise relations between obje
 
 Graphs were first used by Leonhard Euler, a Swiss mathematician, to solve the *Seven Bridges of Konigsberg* problem. The problem was simple: Konigsberg had four land masses connected by seven bridges. Was it possible to traverse every bridge once?
 
-![The seven bridges of Konigsberg](../assets/nashnetx/konigsberg_land.jpg)
+![The seven bridges of Konigsberg]({{ "../assets/nashnetx/konigsberg_land.jpg" | absolute_url }})
 
 However, the answer could not be solved through traditional means, so Euler decided to invent a whole new branch of mathematics. Euler reasoned thus:
 
@@ -31,7 +31,7 @@ However, the answer could not be solved through traditional means, so Euler deci
 3. The first and last land masses may have 1 bridge each. (But if the start has one bridge, the end MUST also have one.)
 4. Therefore, every land mass must have an even number of bridges, or two land masses may have an odd number of bridges. 
 
-![The seven edges of Konigsberg](../assets/nashnetx/konigsberg_graph.png)
+![The seven edges of Konigsberg]({{ "/assets/nashnetx/konigsberg_graph.png" | absolute_url }})
 
 So, the answer is no, the seven bridges are not traversible. But Euler's reasoning about how *relationships* between things may be conceived of mathematically has stuck. Graph theory is now a popular analytical approach in all kinds of domains, including technology, social networks and the human brain! 
 

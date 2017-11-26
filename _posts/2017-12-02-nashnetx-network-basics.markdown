@@ -2,22 +2,20 @@
 layout: post
 title:  "NashNetX: Basic NetworkX"
 categories: data-science
-date:   2017-12-09 06:00:00
 comments: true
 ---
+date:   2017-12-09 06:00:00
 
 
 To start working with NetworkX, we're going to build a graph for a single event. We can do this in a couple of different ways: adding attributes piece-by-piece, building it from list of edges or through a dataframe. Then, we'll play with the measures and do basic plotting. 
 
 The event we'll be working with is:
 
-```
-event_id: 233228364
-name: Tomato Art Festival
-date: 2016-08-13 20:00:00
-group: 20s in Nashville
-yes_rsvps: 10
-```
+	event_id: 233228364
+	name: Tomato Art Festival
+	date: 2016-08-13 20:00:00
+	group: 20s in Nashville
+	yes_rsvps: 10
 
 The member information will come from the `rsvps` data.
 
@@ -37,20 +35,11 @@ print(', '.join(example.name))
 
 ### 1. Creating a graph via declarative syntax.
 
-The first way to create a graph is to explicitly add nodes and edges. 
-
-```
-g.add_node(node_id)
-g.add_edge(node_id, node_id)
-```
-
+The first way to create a graph is to explicitly add nodes and edges using `g.add_node` and `g.add_edge`.
 
 ```python
 import networkx as nx
-```
 
-
-```python
 # Instantiate an undirected graph
 g = nx.Graph()
 
@@ -312,7 +301,7 @@ plt.show()
 ```
 
 
-![png](../assets/nashnetx/basic-networkx-1.png)
+![png]({{"/assets/nashnetx/basic-networkx-1.png" | absolute_url }})
 
 
 
@@ -330,7 +319,7 @@ plt.show()
 ```
 
 
-![png](../assets/nashnetx/basic-networkx-2.png)
+![png]({{"/assets/nashnetx/basic-networkx-2.png" | absolute_url }})
 
 
 
@@ -350,7 +339,7 @@ plt.show()
 ```
 
 
-![png](../assets/nashnetx/basic-networkx-3.png)
+![png]({{"/assets/nashnetx/basic-networkx-3.png" | absolute_url }})
 
 
 Great! We have now seen how to build a simple graph, access measurements from it and make a basic plot. In the next post, we'll see how to do this on the MeetUp data.
