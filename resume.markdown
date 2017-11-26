@@ -18,7 +18,7 @@ permalink: /resume/
 - Recipient of Omicron Delta Kappa's John D. Morgan Award for outstanding scholarship and leadership
 - Recipient of University Service Award for starting *[Samford Gives Back](https://www.samford.edu/mann-center-for-ethics-and-leadership/events/Samford-Gives-Back)*
 
-### Experience
+### Data & Ops Experience
 #### Education & Brain Sciences Research Lab at Vanderbilt University
 *NIH Pre-doctoral Fellow (2013 - Present)*
 - Used machine learning techniques to differentiate children with reading disability from typically developing children (*Annals of Dyslexia*, 2016).
@@ -39,6 +39,10 @@ permalink: /resume/
 - Oversaw $119,000 Americorps grant and managed relationships with key parties. Awarded an additional $66,000 in my 2nd year, a 55% increase over first year.
 - Designed year-long orientation program to support more than 80 incoming teachers with the transition to Alabama, including creating 10 online training presentations, 4 annual recruitment campaigns, and week-long orientation program.
 - Organized logistics of two week-long conferences for more than 90 attendees and more than 10 other large professional development events.
+
+### Teaching and Talking
+#### "Identifying Popular Pythonistas with NetworkX"
+One-hour talk given at PyNash monthly gathering (11/16/17) and at Nashville Software School (11/30/17). Resources and slides available on [Github](https://github.com/stkbailey/nashnetx/presentations).
 
 #### Conexion Americas & Nashville Adult Literacy Council		
 *Teacher, Adult English Learner Class (2016 - 2017)*  
