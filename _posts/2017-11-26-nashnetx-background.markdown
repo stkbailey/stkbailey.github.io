@@ -18,7 +18,7 @@ In this post, we discuss:
 
 ### 1. What's a graph?
 
-Graphs are mathematical structures used to model pairwise relations between objects. A graph in this context is made up of **nodes** connected by **edges**. 
+Graphs are mathematical structures used to model pairwise relations between objects. A graph in this context is made up of **nodes** connected by **edges**. The entire package, including data is available on [Github](https://github.com/stkbailey/nashnetx).
 
 Graphs were first used by Leonhard Euler, a Swiss mathematician, to solve the *Seven Bridges of Konigsberg* problem. The problem was simple: Konigsberg had four land masses connected by seven bridges. Was it possible to traverse every bridge once?
 
