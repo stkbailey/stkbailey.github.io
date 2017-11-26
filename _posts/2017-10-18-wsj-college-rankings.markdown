@@ -2,7 +2,7 @@
 layout: post
 title:  "Geo-diving into the WSJ College Rankings"
 date:   2017-10-18 05:38:00
-categories: data-science power-bi
+categories: data-viz
 comments: true
 ---
 

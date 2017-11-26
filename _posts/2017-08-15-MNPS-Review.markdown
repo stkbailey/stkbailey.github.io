@@ -2,7 +2,7 @@
 layout: post
 title:  "Seeing School Vacancies through Power BI"
 date:   2017-08-15 12:00:00
-categories: data-science power-bi nashville
+categories: data-viz nashville
 comments: true
 ---
 

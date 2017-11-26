@@ -2,7 +2,7 @@
 layout: post
 title:  "Geocoding MNPS School Locations"
 date:   2017-08-22 12:00:00
-categories: data-science python nashville
+categories: nashville python
 comments: true
 ---
 
