@@ -2,7 +2,7 @@
 layout: post
 title:  "Matplotlibbing Michigan Housing Data"
 date:   2017-07-20 13:46:40
-categories: python data-science
+categories: python data-viz
 comments: true
 ---
 
