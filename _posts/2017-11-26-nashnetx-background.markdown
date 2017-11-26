@@ -22,7 +22,7 @@ Graphs are mathematical structures used to model pairwise relations between obje
 
 Graphs were first used by Leonhard Euler, a Swiss mathematician, to solve the *Seven Bridges of Konigsberg* problem. The problem was simple: Konigsberg had four land masses connected by seven bridges. Was it possible to traverse every bridge once?
 
-![The seven bridges of Konigsberg]({{ "../assets/nashnetx/konigsberg_land.jpg" | absolute_url }}  =250x250)
+![The seven bridges of Konigsberg]({{ "../assets/nashnetx/konigsberg_land.jpg" | absolute_url }})
 
 However, the answer could not be solved through traditional means, so Euler decided to invent a whole new branch of mathematics. Euler reasoned thus:
 
