@@ -2,7 +2,7 @@
 layout: post
 title:  "Data Science Perspective w/ Dr. Jesse Spencer-Smith"
 date:   2017-10-05 10:44:40
-categories: data-science vanderbilt
+categories: data-science
 comments: true
 ---
 
