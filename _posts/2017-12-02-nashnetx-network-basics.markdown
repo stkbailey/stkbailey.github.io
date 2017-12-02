@@ -2,10 +2,11 @@
 layout: post
 title:  "NashNetX: Basic NetworkX"
 categories: data-science
+date:   2017-12-03 06:00:00
 comments: true
 ---
 
-# date:   2017-12-09 06:00:00
+*This is the second in a series of posts on using NetworkX to analyze Nashville MeetUp data. They are based off a [PyNash talk](https://www.meetup.com/PyNash/events/244713791/) I gave on 11/16, and all data is available on [Github](https://github.com/stkbailey/nashnetx).*
 
 To start working with NetworkX, we're going to build a graph for a single event. We can do this in a couple of different ways: adding attributes piece-by-piece, building it from list of edges or through a dataframe. Then, we'll play with the measures and do basic plotting. 
 
