@@ -19,6 +19,6 @@ Most of my current predoctoral research is focused on investigating the neurobio
 A separate line of research, spearheaded by Dr. Zhaohua Ding, is the neurobiological significance of the functional MRI signal in white matter. In the past decade, many researchers have focused on what relationships between brain areas can tell us about the brain, cognition and its disorders. However, because of apparently lower signal-to-noise ratio in white matter, functional connectivity studies do not typically include the white matter tracts that facilitate communication between distant brain areas. However, preliminary evidence suggests that the fMRI signal may have valuable information for modelling these tracts. My contribution to this research has been in analyzing changes in this signal across development and in the context of language. 
 
 #### Peer-Reviewed Publications
-- Ding et al. (Submitted) *TBD*. Detection of synchronous brain activity in white matter tracts at rest and under functional loading.
+- Ding et al. (2017) *PNAS*. Detection of synchronous brain activity in white matter tracts at rest and under functional loading.
 - Wu et al. (2017) *NeuroImage.* [Functional connectivity and activity of white matter in somatosensory pathways under tactile stimulations](http://www.sciencedirect.com/science/article/pii/S1053811917301878).
 - Ding et al. (2016) *Magnetic Resonance Imaging.* [Visualizing functional structure of the human brain using magnetic resonance imaging](http://www.sciencedirect.com/science/article/pii/S0730725X15002258). 
