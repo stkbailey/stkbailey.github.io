@@ -1,3 +1,10 @@
+---
+layout: post
+title:  "Accessing REDCap Data from Python"
+date:   2017-12-08 16:00:00
+categories: vanderbilt
+comments: true
+---
 
 In this tutorial, I'm going to walk you through getting data from REDCap via the API. We'll walk through it from the bottom to the top, so even if you've never opened up Python before, we've got you covered.
 
