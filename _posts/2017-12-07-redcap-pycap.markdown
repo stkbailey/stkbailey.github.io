@@ -172,7 +172,7 @@ df_wj = proj.export_records(forms=['wjiv'], format='df')
 
 
 {% highlight python %}
-print('There are {} rows and {} columns.'.format(\*df_wj.shape))
+print('There are {} rows and {} columns.'.format(`*`df_wj.shape))
 {% endhighlight %}
 
 > There are 478 rows and 69 columns.
@@ -222,7 +222,7 @@ df_singlesubj = proj.export_records(records=['RC3001'], format='df')
 
 
 {% highlight python %}
-print('There are {} rows and {} columns.'.format(\*df_singlesubj.shape))
+print('There are {} rows and {} columns.'.format(`*`df_singlesubj.shape))
 {% endhighlight %}
 
 
@@ -237,7 +237,7 @@ df_all = proj.export_records(records=None, fields=None, events=None,  format='df
 
 
 {% highlight python %}
-print('There are {} rows and {} columns.'.format(\*df_all.shape))
+print('There are {} rows and {} columns.'.format(`*`df_all.shape))
 {% endhighlight %}
 
 > There are 478 rows and 1477 columns.
