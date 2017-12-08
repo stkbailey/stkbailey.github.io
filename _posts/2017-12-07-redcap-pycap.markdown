@@ -100,7 +100,7 @@ proj = redcap.Project('https://redcap.vanderbilt.edu/api/', your_rc_api_tkn)
 proj
 {% endhighlight %}
 
-    <redcap.project.Project at 0x22d1f233ac8>
+> <redcap.project.Project at 0x22d1f233ac8>
 
 
 
@@ -110,16 +110,16 @@ proj.forms[0:10]
 {% endhighlight %}
 
 
-    ('prepost_scanner_task_questions',
-     'genetics',
-     'gates_macginite',
-     'eprime',
-     'wmtb',
-     'behavioral_data_screening',
-     'completion_data',
-     'contact_info',
-     'test_of_morph_structure',
-     'scale_for_early_mathematics_anxiety_sema')
+> ('prepost_scanner_task_questions',
+>  'genetics',
+>  'gates_macginite',
+>  'eprime',
+>  'wmtb',
+>  'behavioral_data_screening',
+>  'completion_data',
+>  'contact_info',
+>  'test_of_morph_structure',
+>  'scale_for_early_mathematics_anxiety_sema')
 
 
 
@@ -129,16 +129,16 @@ proj.field_names[0:10]
 {% endhighlight %}
 
 
-    ['rc3_participant_id',
-     'rc3_doa_45c',
-     'rc3_first_name',
-     'rc3_last_name',
-     'rc3_dob',
-     'rc3_parentname_first',
-     'rc3_parentname_last',
-     'rc3_telephone_1',
-     'rc3_telephone_2',
-     'rc3_email']
+> ['rc3_participant_id',
+>  'rc3_doa_45c',
+>  'rc3_first_name',
+>  'rc3_last_name',
+>  'rc3_dob',
+>  'rc3_parentname_first',
+>  'rc3_parentname_last',
+>  'rc3_telephone_1',
+>  'rc3_telephone_2',
+>  'rc3_email']
 
 
 {% highlight python %}
@@ -146,16 +146,16 @@ proj.field_labels[0:10]
 {% endhighlight %}
 
 
-    ['Participant ID',
-     'Date of Acquisition',
-     'First Name',
-     'Last Name',
-     'Date of birth',
-     'Parent First Name',
-     'Parent Last Name',
-     'Phone number',
-     'Second phone number',
-     'E-mail']
+> ['Participant ID',
+>  'Date of Acquisition',
+>  'First Name',
+>  'Last Name',
+>  'Date of birth',
+>  'Parent First Name',
+>  'Parent Last Name',
+>  'Phone number',
+>  'Second phone number',
+>  'E-mail']
 
 
 
@@ -175,8 +175,7 @@ df_wj = proj.export_records(forms=['wjiv'], format='df')
 print('There are {} rows and {} columns.'.format(\*df_wj.shape))
 {% endhighlight %}
 
-    There are 478 rows and 69 columns.
-    
+> There are 478 rows and 69 columns.
 
 
 {% highlight python %}
@@ -186,31 +185,31 @@ df_wj.columns
 
 
 
-    Index(['rc3_wj_visit', 'rc3_wj_lwid_raw_age', 'rc3_wj_lwid_w_age',
-           'rc3_wj_lwid_ss_age', 'rc3_wj_lwid_pile_age', 'rc3_wj_wa_raw_age',
-           'rc3_wj_wa_w_age', 'rc3_wj_wa_ss_age', 'rc3_wj_wa_pile_age',
-           'rc3_wj_pc_raw_age', 'rc3_wj_pc_w_age', 'rc3_wj_pc_ss_age',
-           'rc3_wj_pc_pile_age', 'rc3_wj_calc_raw_age', 'rc3_wj_calc_w_age',
-           'rc3_wj_calc_ss_age', 'rc3_wj_calc_pile_age', 'rc3_wj_appprob_raw_age',
-           'rc3_wj_appprob_w_age', 'rc3_wj_appprob_ss_age',
-           'rc3_wj_appprob_pile_age', 'rc3_wj_oc_raw_age', 'rc3_wj_oc_w_age',
-           'rc3_wj_oc_ss_age', 'rc3_wj_oc_pile_age', 'rc3_wj_re_w_age',
-           'rc3_wj_re_ss_age', 'rc3_wj_re_pile_age', 'rc3_wj_br_w_age',
-           'rc3_wj_br_ss_age', 'rc3_wj_br_pile_age', 'rc3_wj_bm_w_age',
-           'rc3_wj_bm_ss_age', 'rc3_wj_bm_pile_age', 'rc3_wj_lwid_raw_grade',
-           'rc3_wj_lwid_w_grade', 'rc3_wj_lwid_ss_grade', 'rc3_wj_lwid_pile_grade',
-           'rc3_wj_wa_raw_grade', 'rc3_wj_wa_w_grade', 'rc3_wj_wa_ss_grade',
-           'rc3_wj_wa_pile_grade', 'rc3_wj_pc_raw_grade', 'rc3_wj_pc_w_grade',
-           'rc3_wj_pc_ss_grade', 'rc3_wj_pc_pile_grade', 'rc3_wj_calc_raw_grade',
-           'rc3_wj_calc_w_grade', 'rc3_wj_calc_ss_grade', 'rc3_wj_calc_pile_grade',
-           'rc3_wj_appprob_raw_grade', 'rc3_wj_appprob_w_grade',
-           'rc3_wj_appprob_ss_grade', 'rc3_wj_appprob_pile_grade',
-           'rc3_wj_oc_raw_grade', 'rc3_wj_oc_w_grade', 'rc3_wj_oc_ss_grade',
-           'rc3_wj_oc_pile_grade', 'rc3_wj_re_w_grade', 'rc3_wj_re_ss_grade',
-           'rc3_wj_re_pile_grade', 'rc3_wj_br_w_grade', 'rc3_wj_br_ss_grade',
-           'rc3_wj_br_pile_grade', 'rc3_wj_bm_w_grade', 'rc3_wj_bm_ss_grade',
-           'rc3_wj_bm_pile_grade', 'rc3_wj_comment', 'wjiv_complete'],
-          dtype='object')
+> Index(['rc3_wj_visit', 'rc3_wj_lwid_raw_age', 'rc3_wj_lwid_w_age',
+>     'rc3_wj_lwid_ss_age', 'rc3_wj_lwid_pile_age', 'rc3_wj_wa_raw_age',
+>        'rc3_wj_wa_w_age', 'rc3_wj_wa_ss_age', 'rc3_wj_wa_pile_age',
+>        'rc3_wj_pc_raw_age', 'rc3_wj_pc_w_age', 'rc3_wj_pc_ss_age',
+>        'rc3_wj_pc_pile_age', 'rc3_wj_calc_raw_age', 'rc3_wj_calc_w_age',
+>    'rc3_wj_calc_ss_age', 'rc3_wj_calc_pile_age', 'rc3_wj_appprob_raw_age',
+>    'rc3_wj_appprob_w_age', 'rc3_wj_appprob_ss_age',
+>    'rc3_wj_appprob_pile_age', 'rc3_wj_oc_raw_age', 'rc3_wj_oc_w_age',
+>    'rc3_wj_oc_ss_age', 'rc3_wj_oc_pile_age', 'rc3_wj_re_w_age',
+>    'rc3_wj_re_ss_age', 'rc3_wj_re_pile_age', 'rc3_wj_br_w_age',
+>    'rc3_wj_br_ss_age', 'rc3_wj_br_pile_age', 'rc3_wj_bm_w_age',
+>    'rc3_wj_bm_ss_age', 'rc3_wj_bm_pile_age', 'rc3_wj_lwid_raw_grade',
+>    'rc3_wj_lwid_w_grade', 'rc3_wj_lwid_ss_grade', 'rc3_wj_lwid_pile_grade',
+>    'rc3_wj_wa_raw_grade', 'rc3_wj_wa_w_grade', 'rc3_wj_wa_ss_grade',
+>    'rc3_wj_wa_pile_grade', 'rc3_wj_pc_raw_grade', 'rc3_wj_pc_w_grade',
+>    'rc3_wj_pc_ss_grade', 'rc3_wj_pc_pile_grade', 'rc3_wj_calc_raw_grade',
+>    'rc3_wj_calc_w_grade', 'rc3_wj_calc_ss_grade', 'rc3_wj_calc_pile_grade',
+>    'rc3_wj_appprob_raw_grade', 'rc3_wj_appprob_w_grade',
+>    'rc3_wj_appprob_ss_grade', 'rc3_wj_appprob_pile_grade',
+>    'rc3_wj_oc_raw_grade', 'rc3_wj_oc_w_grade', 'rc3_wj_oc_ss_grade',
+>    'rc3_wj_oc_pile_grade', 'rc3_wj_re_w_grade', 'rc3_wj_re_ss_grade',
+>    'rc3_wj_re_pile_grade', 'rc3_wj_br_w_grade', 'rc3_wj_br_ss_grade',
+>    'rc3_wj_br_pile_grade', 'rc3_wj_bm_w_grade', 'rc3_wj_bm_ss_grade',
+>    'rc3_wj_bm_pile_grade', 'rc3_wj_comment', 'wjiv_complete'],
+>   dtype='object')
 
 
 
@@ -227,8 +226,7 @@ print('There are {} rows and {} columns.'.format(\*df_singlesubj.shape))
 {% endhighlight %}
 
 
-    There are 3 rows and 1477 columns.
-    
+> There are 3 rows and 1477 columns.
 
 That's a lot of columns! We are unlikely to ever want to access all of this data. We'll talk about filtering in a minute. For now, let's go ahead and download all of the data -- we'll tell `export_records` that we want no special filtering for forms, fields, events, etc. (Or we could just not type them out at all.)
 
@@ -242,8 +240,8 @@ df_all = proj.export_records(records=None, fields=None, events=None,  format='df
 print('There are {} rows and {} columns.'.format(\*df_all.shape))
 {% endhighlight %}
 
-    There are 478 rows and 1477 columns.
-    
+> There are 478 rows and 1477 columns.
+
 
 ### 3. Trim the data 
 
@@ -257,8 +255,8 @@ cols_to_keep = [c for c in df_all if 'ctopp' in c]
 print(cols_to_keep)
 {% endhighlight %}
 
-    ['rc3_ctopp_el_raw', 'rc3_ctopp_el_ss', 'rc3_ctopp_bw_raw', 'rc3_ctopp_bw_ss', 'rc3_ctopp_md_raw', 'rc3_ctopp_md_ss', 'rc3_ctopp_rdn_raw', 'rc3_ctopp_rdn_ss', 'rc3_ctopp_rln_raw', 'rc3_ctopp_rln_ss', 'rc3_ctopp_ran_com', 'rc3_ctopp_ran_pile', 'rc3_ctopp_comment']
-    
+> ['rc3_ctopp_el_raw', 'rc3_ctopp_el_ss', 'rc3_ctopp_bw_raw', 'rc3_ctopp_bw_ss', 'rc3_ctopp_md_raw', 'rc3_ctopp_md_ss', 'rc3_ctopp_rdn_raw', 'rc3_ctopp_rdn_ss', 'rc3_ctopp_rln_raw', 'rc3_ctopp_rln_ss', 'rc3_ctopp_ran_com', 'rc3_ctopp_ran_pile', 'rc3_ctopp_comment']
+
 
 
 {% highlight python %}
@@ -266,8 +264,7 @@ subjs_to_keep = [(subj, visit) for subj, visit in df_all.index if 'visit_1' in v
 print(subjs_to_keep[0:5])
 {% endhighlight %}
 
-    [('RC3001', 'visit_1_arm_1'), ('RC3002', 'visit_1_arm_1'), ('RC3003', 'visit_1_arm_1'), ('RC3004', 'visit_1_arm_1'), ('RC3005', 'visit_1_arm_1')]
-    
+> [('RC3001', 'visit_1_arm_1'), ('RC3002', 'visit_1_arm_1'), ('RC3003', 'visit_1_arm_1'), ('RC3004', 'visit_1_arm_1'), ('RC3005', 'visit_1_arm_1')]
 
 
 {% highlight python %}
