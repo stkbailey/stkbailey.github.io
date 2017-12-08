@@ -23,9 +23,9 @@ We are going to create our own, self-contained Python playground - otherwise kno
 
 Start the **Anaconda Prompt** by finding it in the "Start" screen on Windows or using Spotlight on your Mac. Once there, we're going to tell Anaconda to create our first environment. We'll call it *redcap*.
 
-```
+{% highlight python %}
 conda create -n redcap python=3.6
-```
+{% endhighlight %}
 `conda` is how we access Anaconda's functionality for managing Python environments. Here we are asking `conda` to `create` a new environment named `redcap`, and to install Python 3.6 in it.
 
 It will ask for permission to download the first packages from online. When it's done, go to the next step.
@@ -35,10 +35,10 @@ It will ask for permission to download the first packages from online. When it's
 
 Once install is complete, we need to add some custom packages to your environment. Start by turning your environment with `source activate redcap` (just `activate redcap` on Windows). Once in, type these two commands: 
 
-```
+{% highlight python %}
 conda install pandas jupyter
 pip install pycap 
-```
+{% endhighlight %}
 
 Here we are asking Anaconda to install `pandas` and `jupyter`, two important libraries for data science / processing. We then ask `pip` to install `pycap`, the library made by Scott Burns for accessing Redcap remotely. 
 
@@ -49,9 +49,9 @@ Here we are asking Anaconda to install `pandas` and `jupyter`, two important lib
 
 Once finished, we want to launch a Jupyter Notebook so that we can interactively work with our data. I recommend passing in the `--notebook-dir` flag so that you know exactly which folder you'll be operating in. 
 
-```
+{% highlight python %}
 jupyter notebook --notebook-dir="C:\\Users\\Stephen\\Desktop"
-```
+{% endhighlight %}
 
 You'll see a "home" screen that shows the files in your directory. In the top-right, click on the "New" button, and under *Notebooks*, select Python 3. This will start a new Jupyter notebook.
 
@@ -82,32 +82,32 @@ It's actually very simple. You only need the "API Token" from your Redcap projec
 First, we import the `redcap` package.
 
 
-```python
+{% highlight python %}
 import redcap
-```
+{% endhighlight %}
 
 Next, we create a `Project` object by passing the Redcap URL and token into the `redcap.Project` function. 
 
 
-```python
+{% highlight python %}
 proj = redcap.Project('https://redcap.vanderbilt.edu/api/', your_rc_api_tkn)
-```
+{% endhighlight %}
 
 `proj` is a Python object that has its own properties and functions attached to it. We can access these by typing `proj.` and then pressing `tab`. You will see a list of possible actions to take on this object.
 
 
-```python
+{% highlight python %}
 proj
-```
+{% endhighlight %}
 
     <redcap.project.Project at 0x22d1f233ac8>
 
 
 
 
-```python
+{% highlight python %}
 proj.forms[0:10]
-```
+{% endhighlight %}
 
 
     ('prepost_scanner_task_questions',
@@ -124,9 +124,9 @@ proj.forms[0:10]
 
 
 
-```python
+{% highlight python %}
 proj.field_names[0:10]
-```
+{% endhighlight %}
 
 
     ['rc3_participant_id',
@@ -141,9 +141,9 @@ proj.field_names[0:10]
      'rc3_email']
 
 
-```python
+{% highlight python %}
 proj.field_labels[0:10]
-```
+{% endhighlight %}
 
 
     ['Participant ID',
@@ -166,22 +166,22 @@ Now, we want to pull data from the project. Think of `proj` as a blueprint of th
 We can select either all of the records (which is the default) or only some of the records by specifying different flags in the `export_records` function. Let's just export the "Woodcock Johnson" form first.
 
 
-```python
+{% highlight python %}
 df_wj = proj.export_records(forms=['wjiv'], format='df')
-```
+{% endhighlight %}
 
 
-```python
-print('There are {} rows and {} columns.'.format(*df_wj.shape))
-```
+{% highlight python %}
+print('There are {} rows and {} columns.'.format(\*df_wj.shape))
+{% endhighlight %}
 
     There are 478 rows and 69 columns.
     
 
 
-```python
+{% highlight python %}
 df_wj.columns
-```
+{% endhighlight %}
 
 
 
@@ -217,14 +217,15 @@ df_wj.columns
 This time, let's pull out just a single subject's data.
 
 
-```python
+{% highlight python %}
 df_singlesubj = proj.export_records(records=['RC3001'], format='df')
-```
+{% endhighlight %}
 
 
-```python
-print('There are {} rows and {} columns.'.format(*df_singlesubj.shape))
-```
+{% highlight python %}
+print('There are {} rows and {} columns.'.format(\*df_singlesubj.shape))
+{% endhighlight %}
+
 
     There are 3 rows and 1477 columns.
     
@@ -232,14 +233,14 @@ print('There are {} rows and {} columns.'.format(*df_singlesubj.shape))
 That's a lot of columns! We are unlikely to ever want to access all of this data. We'll talk about filtering in a minute. For now, let's go ahead and download all of the data -- we'll tell `export_records` that we want no special filtering for forms, fields, events, etc. (Or we could just not type them out at all.)
 
 
-```python
+{% highlight python %}
 df_all = proj.export_records(records=None, fields=None, events=None,  format='df')
-```
+{% endhighlight %}
 
 
-```python
-print('There are {} rows and {} columns.'.format(*df_all.shape))
-```
+{% highlight python %}
+print('There are {} rows and {} columns.'.format(\*df_all.shape))
+{% endhighlight %}
 
     There are 478 rows and 1477 columns.
     
@@ -251,28 +252,28 @@ Knowledge of Python **lists** and **list comprehensions** can be extremely usefu
 In a pinch, you can simply write out the names of the columns or subjects you want, like this: `keep_these_columns = ['rc3_wmtb_list_ss', 'rc3_parent_wj_br_ss', 'rc3_dkefs_sort_cc_ss']`. 
 
 
-```python
+{% highlight python %}
 cols_to_keep = [c for c in df_all if 'ctopp' in c]
 print(cols_to_keep)
-```
+{% endhighlight %}
 
     ['rc3_ctopp_el_raw', 'rc3_ctopp_el_ss', 'rc3_ctopp_bw_raw', 'rc3_ctopp_bw_ss', 'rc3_ctopp_md_raw', 'rc3_ctopp_md_ss', 'rc3_ctopp_rdn_raw', 'rc3_ctopp_rdn_ss', 'rc3_ctopp_rln_raw', 'rc3_ctopp_rln_ss', 'rc3_ctopp_ran_com', 'rc3_ctopp_ran_pile', 'rc3_ctopp_comment']
     
 
 
-```python
+{% highlight python %}
 subjs_to_keep = [(subj, visit) for subj, visit in df_all.index if 'visit_1' in visit]
 print(subjs_to_keep[0:5])
-```
+{% endhighlight %}
 
     [('RC3001', 'visit_1_arm_1'), ('RC3002', 'visit_1_arm_1'), ('RC3003', 'visit_1_arm_1'), ('RC3004', 'visit_1_arm_1'), ('RC3005', 'visit_1_arm_1')]
     
 
 
-```python
+{% highlight python %}
 df_trimmed = df_all.loc[subjs_to_keep, cols_to_keep]
 df_trimmed.head(20)
-```
+{% endhighlight %}
 
 
 
@@ -680,6 +681,6 @@ df_trimmed.head(20)
 Saved the easiest part for last: write the table to a "comma-separated values" file using `df.to_csv(filename)`. Go ahead and pass in `encoding='utf-8'` so that when you open your data on a Windows or Mac, it all looks the same.
 
 
-```python
+{% highlight python %}
 df_trimmed.to_csv('trimmed_rc3_data.csv', encoding='utf-8')
-```
+{% endhighlight %}
