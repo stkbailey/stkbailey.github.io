@@ -21,24 +21,24 @@ The event we'll be working with is:
 The member information will come from the `rsvps` data.
 
 
-```python
+{% highlight python %}
 import pandas as pd
 
 example = pd.read_csv('data\\example_members.csv', index_col='member_id')
 
 print('The members attending this event are:')
 print(', '.join(example.name))
-```
+{% endhighlight %}
 
-    The members attending this event are:
-    Alexandra, Andrea, Christina, Cory, Jermaine, Kealy, Lifeavinash, Shealyn, Tsion, Zack
+> The members attending this event are:
+> Alexandra, Andrea, Christina, Cory, Jermaine, Kealy, Lifeavinash, Shealyn, Tsion, Zack
     
 
 ### 1. Creating a graph via declarative syntax.
 
 The first way to create a graph is to explicitly add nodes and edges using `g.add_node` and `g.add_edge`.
 
-```python
+{% highlight python %}
 import networkx as nx
 
 # Instantiate an undirected graph
@@ -54,53 +54,53 @@ g.add_node('tomato-festival')
 # Add edges
 for member in example.name:
     g.add_edge(member, 'tomato-festival')
-```
+{% endhighlight %}
 
 You can access a "view" of the nodes and edges view the `g.nodes` and `g.edges` methods. Applying a `dict` to the view or passing `data=True` will expose the attributes of the underlying objects.
 
 
-```python
+{% highlight python %}
 g.nodes
-```
+{% endhighlight %}
 
 
 
 
-    NodeView(('Alexandra', 'Andrea', 'Christina', 'Cory', 'Jermaine', 'Kealy', 'Lifeavinash', 'Shealyn', 'Tsion', 'Zack', 'tomato-festival'))
+> NodeView(('Alexandra', 'Andrea', 'Christina', 'Cory', 'Jermaine', 'Kealy', 'Lifeavinash', 'Shealyn', 'Tsion', 'Zack', 'tomato-festival'))
 
 
 
 
-```python
+{% highlight python %}
 g.nodes(data=True) # Notice each node has an empty attribute dict
-```
+{% endhighlight %}
 
 
 
 
-    NodeDataView({'Alexandra': {}, 'Andrea': {}, 'Christina': {}, 'Cory': {}, 'Jermaine': {}, 'Kealy': {}, 'Lifeavinash': {}, 'Shealyn': {}, 'Tsion': {}, 'Zack': {}, 'tomato-festival': {}})
+> NodeDataView({'Alexandra': {}, 'Andrea': {}, 'Christina': {}, 'Cory': {}, 'Jermaine': {}, 'Kealy': {}, 'Lifeavinash': {}, 'Shealyn': {}, 'Tsion': {}, 'Zack': {}, 'tomato-festival': {}})
 
 
 
 
-```python
+{% highlight python %}
 dict(g.nodes) # Similarly, access by coercing into a dict
-```
+{% endhighlight %}
 
 
 
 
-    {'Alexandra': {},
-     'Andrea': {},
-     'Christina': {},
-     'Cory': {},
-     'Jermaine': {},
-     'Kealy': {},
-     'Lifeavinash': {},
-     'Shealyn': {},
-     'Tsion': {},
-     'Zack': {},
-     'tomato-festival': {}}
+> {'Alexandra': {},
+>  'Andrea': {},
+>  'Christina': {},
+>  'Cory': {},
+>  'Jermaine': {},
+>  'Kealy': {},
+>  'Lifeavinash': {},
+>  'Shealyn': {},
+>  'Tsion': {},
+>  'Zack': {},
+>  'tomato-festival': {}}
 
 
 
@@ -111,7 +111,7 @@ You can add attributes in two ways:
 2. Use the `nx.set_XXXX_attributes` function.
 
 
-```python
+{% highlight python %}
 # We can assign attributes in single statements or for loops
 g.nodes['tomato-festival']['node_type'] = 'event'
 
@@ -122,48 +122,48 @@ for member in example.name:
 nx.set_edge_attributes(G = g, 
                        values = {e: 'yes_rsvp' for e in g.edges}, 
                        name = 'edge_type')
-```
+{% endhighlight %}
 
 
-```python
+{% highlight python %}
 dict(g.nodes)
-```
+{% endhighlight %}
 
 
 
 
-    {'Alexandra': {'node_type': 'person'},
-     'Andrea': {'node_type': 'person'},
-     'Christina': {'node_type': 'person'},
-     'Cory': {'node_type': 'person'},
-     'Jermaine': {'node_type': 'person'},
-     'Kealy': {'node_type': 'person'},
-     'Lifeavinash': {'node_type': 'person'},
-     'Shealyn': {'node_type': 'person'},
-     'Tsion': {'node_type': 'person'},
-     'Zack': {'node_type': 'person'},
-     'tomato-festival': {'node_type': 'event'}}
+> {'Alexandra': {'node_type': 'person'},
+>  'Andrea': {'node_type': 'person'},
+>  'Christina': {'node_type': 'person'},
+>  'Cory': {'node_type': 'person'},
+>  'Jermaine': {'node_type': 'person'},
+>  'Kealy': {'node_type': 'person'},
+>  'Lifeavinash': {'node_type': 'person'},
+>  'Shealyn': {'node_type': 'person'},
+>  'Tsion': {'node_type': 'person'},
+>  'Zack': {'node_type': 'person'},
+>  'tomato-festival': {'node_type': 'event'}}
 
 
 
 
-```python
+{% highlight python %}
 dict(g.edges)
-```
+{% endhighlight %}
 
 
 
 
-    {('Alexandra', 'tomato-festival'): {'edge_type': 'yes_rsvp'},
-     ('Andrea', 'tomato-festival'): {'edge_type': 'yes_rsvp'},
-     ('Christina', 'tomato-festival'): {'edge_type': 'yes_rsvp'},
-     ('Cory', 'tomato-festival'): {'edge_type': 'yes_rsvp'},
-     ('Jermaine', 'tomato-festival'): {'edge_type': 'yes_rsvp'},
-     ('Kealy', 'tomato-festival'): {'edge_type': 'yes_rsvp'},
-     ('Lifeavinash', 'tomato-festival'): {'edge_type': 'yes_rsvp'},
-     ('Shealyn', 'tomato-festival'): {'edge_type': 'yes_rsvp'},
-     ('Tsion', 'tomato-festival'): {'edge_type': 'yes_rsvp'},
-     ('Zack', 'tomato-festival'): {'edge_type': 'yes_rsvp'}}
+> {('Alexandra', 'tomato-festival'): {'edge_type': 'yes_rsvp'},
+>  ('Andrea', 'tomato-festival'): {'edge_type': 'yes_rsvp'},
+>  ('Christina', 'tomato-festival'): {'edge_type': 'yes_rsvp'},
+>  ('Cory', 'tomato-festival'): {'edge_type': 'yes_rsvp'},
+>  ('Jermaine', 'tomato-festival'): {'edge_type': 'yes_rsvp'},
+>  ('Kealy', 'tomato-festival'): {'edge_type': 'yes_rsvp'},
+>  ('Lifeavinash', 'tomato-festival'): {'edge_type': 'yes_rsvp'},
+>  ('Shealyn', 'tomato-festival'): {'edge_type': 'yes_rsvp'},
+>  ('Tsion', 'tomato-festival'): {'edge_type': 'yes_rsvp'},
+>  ('Zack', 'tomato-festival'): {'edge_type': 'yes_rsvp'}}
 
 
 
@@ -172,13 +172,13 @@ dict(g.edges)
 There are many other methods for building graphs which might take advantage of your existing data structures. These include building it from a list of edges (which can be useful when combined with listcomps) or from a pandas dataframe.
 
 
-```python
+{% highlight python %}
 # From an edge_list
 g = nx.from_edgelist([(n, 'tomato-festival') for n in example.name])
-```
+{% endhighlight %}
 
 
-```python
+{% highlight python %}
 # From a dataframe
 example['event_name'] = 'tomato-festival'
 example['edge_type'] = 'yes_rsvp'
@@ -191,29 +191,29 @@ g = nx.from_pandas_dataframe(example,
 node_type_dict = dict([(n, 'member') if n in example.name.tolist()
                            else (n, 'event') for n in g.nodes])
 nx.set_node_attributes(g, node_type_dict, 'node_type')
-```
+{% endhighlight %}
 
 ... and there are many other methods available.
 
 
-```python
+{% highlight python %}
 [m for m in dir(nx) if 'from_' in m]
-```
+{% endhighlight %}
 
 
 
 
-    ['from_dict_of_dicts',
-     'from_dict_of_lists',
-     'from_edgelist',
-     'from_nested_tuple',
-     'from_numpy_array',
-     'from_numpy_matrix',
-     'from_pandas_adjacency',
-     'from_pandas_dataframe',
-     'from_pandas_edgelist',
-     'from_prufer_sequence',
-     'from_scipy_sparse_matrix']
+> ['from_dict_of_dicts',
+>  'from_dict_of_lists',
+>  'from_edgelist',
+>  'from_nested_tuple',
+>  'from_numpy_array',
+>  'from_numpy_matrix',
+>  'from_pandas_adjacency',
+>  'from_pandas_dataframe',
+>  'from_pandas_edgelist',
+>  'from_prufer_sequence',
+>  'from_scipy_sparse_matrix']
 
 
 
@@ -224,58 +224,58 @@ There are many built-in functions for calculating graph measures. They typically
 Degree is one exception -- it is so common and useful that it has its own special view. (It can be coerced into a dictionary, however.)
 
 
-```python
+{% highlight python %}
 nx.degree(g)
-```
+{% endhighlight %}
 
 
 
 
-    DegreeView({'Alexandra': 1, 'tomato-festival': 10, 'Andrea': 1, 'Christina': 1, 'Cory': 1, 'Jermaine': 1, 'Kealy': 1, 'Lifeavinash': 1, 'Shealyn': 1, 'Tsion': 1, 'Zack': 1})
+> DegreeView({'Alexandra': 1, 'tomato-festival': 10, 'Andrea': 1, 'Christina': 1, 'Cory': 1, 'Jermaine': 1, 'Kealy': 1, 'Lifeavinash': 1, 'Shealyn': 1, 'Tsion': 1, 'Zack': 1})
 
 
 
 
-```python
+{% highlight python %}
 dict(nx.degree(g))
-```
+{% endhighlight %}
 
 
 
 
-    {'Alexandra': 1,
-     'Andrea': 1,
-     'Christina': 1,
-     'Cory': 1,
-     'Jermaine': 1,
-     'Kealy': 1,
-     'Lifeavinash': 1,
-     'Shealyn': 1,
-     'Tsion': 1,
-     'Zack': 1,
-     'tomato-festival': 10}
+> {'Alexandra': 1,
+>  'Andrea': 1,
+>  'Christina': 1,
+>  'Cory': 1,
+>  'Jermaine': 1,
+>  'Kealy': 1,
+>  'Lifeavinash': 1,
+>  'Shealyn': 1,
+>  'Tsion': 1,
+>  'Zack': 1,
+>  'tomato-festival': 10}
 
 
 
 
-```python
+{% highlight python %}
 nx.betweenness_centrality(g)
-```
+{% endhighlight %}
 
 
 
 
-    {'Alexandra': 0.0,
-     'Andrea': 0.0,
-     'Christina': 0.0,
-     'Cory': 0.0,
-     'Jermaine': 0.0,
-     'Kealy': 0.0,
-     'Lifeavinash': 0.0,
-     'Shealyn': 0.0,
-     'Tsion': 0.0,
-     'Zack': 0.0,
-     'tomato-festival': 1.0}
+> {'Alexandra': 0.0,
+>  'Andrea': 0.0,
+>  'Christina': 0.0,
+>  'Cory': 0.0,
+>  'Jermaine': 0.0,
+>  'Kealy': 0.0,
+>  'Lifeavinash': 0.0,
+>  'Shealyn': 0.0,
+>  'Tsion': 0.0,
+>  'Zack': 0.0,
+>  'tomato-festival': 1.0}
 
 
 
@@ -289,7 +289,7 @@ NetworkX includes functionality for plotting graphs quickly and easily using `ma
     - The plotting call can be done all at once (via `nx.draw_networkx`) or piecemeal through `nx.draw_networkx_nodes`, `nx.draw_networkx_edges`, etc. In each case, you must provide the graph and position dictionary.
 
 
-```python
+{% highlight python %}
 import matplotlib.pyplot as plt
 from utils import setup_graph_plot   # Configures useful matplotlib settings
 
@@ -299,14 +299,14 @@ pos = nx.spring_layout(g)
 nx.draw_networkx(g, pos)
 
 plt.show()
-```
+{% endhighlight %}
 
 
 ![png]({{"/assets/nashnetx/basic-networkx-1.png" | absolute_url }})
 
 
 
-```python
+{% highlight python %}
 # Plotting nodes and edges separately can be helpful
 
 fig, ax = setup_graph_plot()
@@ -317,14 +317,14 @@ pos = nx.circular_layout(g)
 nx.draw_networkx_nodes(g, pos, node_color=colors) # No labels are plotted either
 
 plt.show()
-```
+{% endhighlight %}
 
 
 ![png]({{"/assets/nashnetx/basic-networkx-2.png" | absolute_url }})
 
 
 
-```python
+{% highlight python %}
 # Plotting nodes and edges separately can be helpful
 
 fig, ax = setup_graph_plot()
@@ -337,7 +337,7 @@ nx.draw_networkx_nodes(g, pos, node_color=colors, node_size=sizes)
 nx.draw_networkx_edges(g, pos)
 
 plt.show()
-```
+{% endhighlight %}
 
 
 ![png]({{"/assets/nashnetx/basic-networkx-3.png" | absolute_url }})
