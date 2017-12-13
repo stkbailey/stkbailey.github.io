@@ -35,6 +35,7 @@ events = pd.read_csv('data/events.csv', index_col='event_id')
 rsvps = pd.read_csv('data/rsvps.csv')
 {% endhighlight %}
 
+
 The group_id for PyNash is **11625832**, so we can limit our analysis to only those events in that list. 
 
 
