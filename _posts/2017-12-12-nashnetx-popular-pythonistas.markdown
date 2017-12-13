@@ -6,6 +6,8 @@ date:   2017-12-12 06:45:00
 comments: true
 ---
 
+*This is the third in a series of posts on using NetworkX to analyze Nashville MeetUp data. They are based off a [PyNash talk](https://www.meetup.com/PyNash/events/244713791/) I gave on 11/16, and all data is available on [Github](https://github.com/stkbailey/nashnetx).*
+
 Now, we come to the real thing. Who are the most important Pythonistas in Nashville?
 
 We will follow a similar setup to last time, but with a few minor twists. We will have to translate our (person, event) edges to (person, person) edges using a *bipartite* "projection". We also need to spend a little more time thinking through what implications this has for our measures.
