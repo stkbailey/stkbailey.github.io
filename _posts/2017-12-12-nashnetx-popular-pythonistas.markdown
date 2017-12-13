@@ -55,7 +55,7 @@ print('There are {} PyNash attendees.'.format(len(pynash_member_ids)))
 > There are 526 PyNash attendees.
     
 
-##### Build the graph with NetworkX
+#### Build the graph with NetworkX
 
 
 {% highlight python %}
@@ -71,7 +71,7 @@ node_type_dict = {n: ('member' if n in pynash_member_ids else 'event')
 nx.set_node_attributes(g, node_type_dict, 'node_type')
 {% endhighlight %}
 
-##### Plot the PyNash graph
+#### Plot the PyNash graph
 
 
 {% highlight python %}
@@ -96,7 +96,8 @@ plt.show()
 {% endhighlight %}
 
 
-![png](../assets/nashnetx/pynash-1.png)
+![png]({{"/assets/nashnetx/pynash-1.png" | absolute_url }})
+
 
 
 ### 2. Create a *member-to-member* graph from the *member-to-event* data.
@@ -146,7 +147,7 @@ gm = nx.bipartite.weighted_projected_graph(B=g, nodes=member_nodes, ratio=False)
 ge = nx.bipartite.weighted_projected_graph(g, event_nodes, False)
 {% endhighlight %}
 
-### Use "degree" and "betweenness centrality" to determine importance.
+### 3. Use "degree" and "betweenness centrality" to determine importance.
 
 Finally, we are going to measure different aspects of our graph. Most
 
@@ -239,7 +240,7 @@ plt.show()
 {% endhighlight %}
 
 
-![png](../assets/nashnetx/pynash-2.png)
+![png]({{"/assets/nashnetx/pynash-2.png" | absolute_url }})
 
 
 A few things become apparent within the PyNash graph:
@@ -396,41 +397,41 @@ print(pynash_rsvps.loc[pynash_rsvps.member_id==57907252]
      .value_counts() )
 {% endhighlight %}
 
->    **PyNash Attendance for Jason Myers**
->    PyNash Lunch!                                                                    23
->    PyNash: Virtualenv/Virtualenvwrapper(Bill Israel), Code Analysis(Jason Myers)     1
->    You and I and the PyNash API                                                      1
->    Name: name, dtype: int64
+>    **PyNash Attendance for Jason Myers**  
+>    PyNash Lunch!                                                                    23  
+>    PyNash: Virtualenv/Virtualenvwrapper(Bill Israel), Code Analysis(Jason Myers)     1  
+>    You and I and the PyNash API                                                      1  
+>    Name: name, dtype: int64   
 >    
 > 
-> **PyNash Attendance for Chad Upjohn**
->    PyNash Lunch!                                                                    5
->    Logging beyond /dev/null -- ELK Stack for Log Visualization and Analysis         1
->    A Beginners Guide to Supervised Machine Learning with scikit-learn               1
->    A Brief Introduction to Concurrency and Coroutines in Python 3.5                 1
->    Intro to Profiling in Python                                                     1
->    An October Two-fer: Refactoring, Extra Code Included / PDFs Against Humanity     1
->    Interactive Python Environments: IPython, Jupyter, and Beaker, Oh My!            1
->    A Gentle, Pythonic Introduction to Operating Systems                             1
->    PyNash: Virtualenv/Virtualenvwrapper(Bill Israel), Code Analysis(Jason Myers)    1
->    PyNash x Penny U: An Evening of Learning                                         1
->    Capacity and Stability Patterns                                                  1
->    An Introduction to Django Channels                                               1
->    Ü is for Üńîçřdé: Solving the Mystery and a TBD                                  1
->    Test Driving Pytest                                                              1
->    ?A Quick Sip from the Flask Microframework                                       1
->    Creating Better Beer Through Data Science                                        1
->    You and I and the PyNash API                                                     1
->    datetime in Python: What Time is it Anyway?                                      1
->    PyNash Fishbowl                                                                  1
->    Elasticsearch in an Evening                                                      1
->    Getting Started with Data Science using Python                                  1
->    Name: name, dtype: int64
+> **PyNash Attendance for Chad Upjohn**  
+>    PyNash Lunch!                                                                    5  
+>    Logging beyond /dev/null -- ELK Stack for Log Visualization and Analysis         1  
+>    A Beginners Guide to Supervised Machine Learning with scikit-learn               1  
+>    A Brief Introduction to Concurrency and Coroutines in Python 3.5                 1  
+>    Intro to Profiling in Python                                                     1  
+>    An October Two-fer: Refactoring, Extra Code Included / PDFs Against Humanity     1  
+>    Interactive Python Environments: IPython, Jupyter, and Beaker, Oh My!            1  
+>    A Gentle, Pythonic Introduction to Operating Systems                             1  
+>    PyNash: Virtualenv/Virtualenvwrapper(Bill Israel), Code Analysis(Jason Myers)    1  
+>    PyNash x Penny U: An Evening of Learning                                         1  
+>    Capacity and Stability Patterns                                                  1  
+>    An Introduction to Django Channels                                               1  
+>    Ü is for Üńîçřdé: Solving the Mystery and a TBD                                  1  
+>    Test Driving Pytest                                                              1  
+>    ?A Quick Sip from the Flask Microframework                                       1  
+>    Creating Better Beer Through Data Science                                        1  
+>    You and I and the PyNash API                                                     1  
+>    datetime in Python: What Time is it Anyway?                                      1  
+>    PyNash Fishbowl                                                                  1  
+>    Elasticsearch in an Evening                                                      1  
+>    Getting Started with Data Science using Python                                  1  
+>    Name: name, dtype: int64  
    
 
 The reason for Jason's uncharacteristically high centrality is that he has RSVPed to nearly all the lunches, while others have gone to higher "degree-granting" events. Consequently, Jason is deeply embedded within the social fabric of the graph (many links to the most important people), despite not having as broad of a reach himself.
 
-##### Draw Member Graph
+#### Draw Member Graph
 
 To conclude, let's take a quick look at the member graph to drive home the fact that PyNash is held together by a small group of highly connected individuals. First, we take a look at the graph representation.
 
@@ -459,7 +460,7 @@ plt.show()
 {% endhighlight %}
 
 
-![png](../assets/nashnetx/pynash-3.png)
+![png]({{"/assets/nashnetx/pynash-3.png" | absolute_url }})
 
 
 Next, let's check out the adjacency matrix, which can sometimes make edge patterns clearer. Let's sort by centrality to see what sorts of patterns we can make out in the edge relationships.
@@ -480,4 +481,4 @@ plt.title('Adjacency Matrix for PyNash,\nSorted by Centrality')
 plt.show()
 {% endhighlight %}
 
-![png](../assets/nashnetx/pynash-4.png)
+![png]({{"/assets/nashnetx/pynash-4.png" | absolute_url }})
