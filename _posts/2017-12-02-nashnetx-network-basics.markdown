@@ -12,11 +12,11 @@ To start working with NetworkX, we're going to build a graph for a single event.
 
 The event we'll be working with is:
 
-	event_id: 233228364
-	name: Tomato Art Festival
-	date: 2016-08-13 20:00:00
-	group: 20s in Nashville
-	yes_rsvps: 10
+> event_id: 233228364
+> name: Tomato Art Festival
+> date: 2016-08-13 20:00:00
+> group: 20s in Nashville
+> yes_rsvps: 10
 
 The member information will come from the `rsvps` data.
 

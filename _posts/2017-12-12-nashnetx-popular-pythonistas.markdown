@@ -2,9 +2,9 @@
 layout: post
 title:  "NashNetX: Popular Pythonistas"
 categories: data-science
+date:   2017-12-12 06:45:00
 comments: true
 ---
-date:   2017-12-16 06:00:00
 
 Now, we come to the real thing. Who are the most important Pythonistas in Nashville?
 
@@ -20,8 +20,7 @@ Our plan is to:
 
 First, we load our packages and full datasets.
 
-
-```python
+{% highlight python %}
 import pandas as pd
 import numpy as np
 
@@ -32,12 +31,12 @@ events = pd.read_csv('data/events.csv', index_col='event_id')
 
 # Read in edge data
 rsvps = pd.read_csv('data/rsvps.csv')
-```
+{% endhighlight %}
 
 The group_id for PyNash is **11625832**, so we can limit our analysis to only those events in that list. 
 
 
-```python
+{% highlight python %}
 # Get PyNash events
 pynash_id = 11625832
 pynash_event_ids = events.loc[events.group_urlname == 'PyNash'].index.tolist()
@@ -48,16 +47,16 @@ pynash_member_ids = pynash_rsvps['member_id'].unique().tolist()
 
 print('There are {} PyNash events.'.format(len(pynash_event_ids)))
 print('There are {} PyNash attendees.'.format(len(pynash_member_ids)))
-```
+{% endhighlight %}
 
-    There are 46 PyNash events.
-    There are 526 PyNash attendees.
+> There are 46 PyNash events.
+> There are 526 PyNash attendees.
     
 
 ##### Build the graph with NetworkX
 
 
-```python
+{% highlight python %}
 import networkx as nx
 
 g = nx.from_pandas_dataframe(pynash_rsvps, 
@@ -68,12 +67,12 @@ g = nx.from_pandas_dataframe(pynash_rsvps,
 node_type_dict = {n: ('member' if n in pynash_member_ids else 'event') 
                         for n in g.nodes}
 nx.set_node_attributes(g, node_type_dict, 'node_type')
-```
+{% endhighlight %}
 
 ##### Plot the PyNash graph
 
 
-```python
+{% highlight python %}
 import matplotlib.pyplot as plt
 from utils import setup_graph_plot
 
@@ -92,7 +91,7 @@ handles = [plt.Line2D(range(1), range(1), color="white", marker='o', markerfacec
 plt.legend(handles, ['Members', 'Events'], frameon=False)
 
 plt.show()
-```
+{% endhighlight %}
 
 
 ![png](../assets/nashnetx/pynash-1.png)
@@ -112,24 +111,24 @@ But let's recall what is special about a bipartite graph:
 We can test for bipartite-ness in NetworkX. We can also pull out the sets automatically.
 
 
-```python
+{% highlight python %}
 nx.is_bipartite(g)
-```
+{% endhighlight %}
 
 
 
 
-    True
+>    True
 
 
 
 
-```python
+{% highlight python %}
 member_nodes, event_nodes = nx.bipartite.sets(g)
 print('There are {} members and {} events.'.format(len(member_nodes), len(event_nodes)))
-```
+{% endhighlight %}
 
-    There are 526 members and 46 events.
+>    There are 526 members and 46 events.
     
 
 To get the projected graphs, we use the `weight_projected_graph` function. This will create a member graph with the following properties:
@@ -138,19 +137,19 @@ To get the projected graphs, we use the `weight_projected_graph` function. This 
 - Edges are the number of shared events between two members.
 
 
-```python
+{% highlight python %}
 gm = nx.bipartite.weighted_projected_graph(B=g, nodes=member_nodes, ratio=False)
 
 # You can do the same for events
 ge = nx.bipartite.weighted_projected_graph(g, event_nodes, False)
-```
+{% endhighlight %}
 
 ### Use "degree" and "betweenness centrality" to determine importance.
 
 Finally, we are going to measure different aspects of our graph. Most
 
 
-```python
+{% highlight python %}
 # Initialize df
 df_members = pd.DataFrame(index=gm.nodes)
 
@@ -161,7 +160,7 @@ df_members['centrality'] = pd.Series(nx.betweenness_centrality(gm))
 
 # Sample output
 df_members.head()
-```
+{% endhighlight %}
 
 
 
@@ -227,7 +226,7 @@ df_members.head()
 
 
 
-```python
+{% highlight python %}
 import seaborn as sns
 
 sns.pairplot(data=df_members, diag_kind='kde')
@@ -235,7 +234,7 @@ plt.suptitle('Distributions and Correlations \nBetween Graph Theory Measures',
              y=1.05, fontsize=18)
 
 plt.show()
-```
+{% endhighlight %}
 
 
 ![png](../assets/nashnetx/pynash-2.png)
@@ -250,10 +249,10 @@ A few things become apparent within the PyNash graph:
 But who is are they???
 
 
-```python
+{% highlight python %}
 top_ten = df_members.sort_values(by='centrality', ascending=False).head(10).join(members)
 top_ten[['name', 'city', 'num_events', 'degree', 'centrality']]
-```
+{% endhighlight %}
 
 
 
@@ -380,7 +379,7 @@ The answer lies in PyNash's event offerings, which break into two categories:
 Let's take a look at the attendance records for Jason Myers and Chad Upjohn:
 
 
-```python
+{% highlight python %}
 print('**PyNash Attendance for Jason Myers**')
 print(pynash_rsvps.loc[pynash_rsvps.member_id==30123762]
      .set_index('event_id')
@@ -393,39 +392,39 @@ print(pynash_rsvps.loc[pynash_rsvps.member_id==57907252]
      .set_index('event_id')
      .join(events).name
      .value_counts() )
-```
+{% endhighlight %}
 
-    **PyNash Attendance for Jason Myers**
-    PyNash Lunch!                                                                    23
-    PyNash: Virtualenv/Virtualenvwrapper(Bill Israel), Code Analysis(Jason Myers)     1
-    You and I and the PyNash API                                                      1
-    Name: name, dtype: int64
-    
-    
-    **PyNash Attendance for Chad Upjohn**
-    PyNash Lunch!                                                                    5
-    Logging beyond /dev/null -- ELK Stack for Log Visualization and Analysis         1
-    A Beginners Guide to Supervised Machine Learning with scikit-learn               1
-    A Brief Introduction to Concurrency and Coroutines in Python 3.5                 1
-    Intro to Profiling in Python                                                     1
-    An October Two-fer: Refactoring, Extra Code Included / PDFs Against Humanity     1
-    Interactive Python Environments: IPython, Jupyter, and Beaker, Oh My!            1
-    A Gentle, Pythonic Introduction to Operating Systems                             1
-    PyNash: Virtualenv/Virtualenvwrapper(Bill Israel), Code Analysis(Jason Myers)    1
-    PyNash x Penny U: An Evening of Learning                                         1
-    Capacity and Stability Patterns                                                  1
-    An Introduction to Django Channels                                               1
-    Ü is for Üńîçřdé: Solving the Mystery and a TBD                                  1
-    Test Driving Pytest                                                              1
-    ?A Quick Sip from the Flask Microframework                                       1
-    Creating Better Beer Through Data Science                                        1
-    You and I and the PyNash API                                                     1
-    datetime in Python: What Time is it Anyway?                                      1
-    PyNash Fishbowl                                                                  1
-    Elasticsearch in an Evening                                                      1
-     Getting Started with Data Science using Python                                  1
-    Name: name, dtype: int64
-    
+>    **PyNash Attendance for Jason Myers**
+>    PyNash Lunch!                                                                    23
+>    PyNash: Virtualenv/Virtualenvwrapper(Bill Israel), Code Analysis(Jason Myers)     1
+>    You and I and the PyNash API                                                      1
+>    Name: name, dtype: int64
+>    
+> 
+> **PyNash Attendance for Chad Upjohn**
+>    PyNash Lunch!                                                                    5
+>    Logging beyond /dev/null -- ELK Stack for Log Visualization and Analysis         1
+>    A Beginners Guide to Supervised Machine Learning with scikit-learn               1
+>    A Brief Introduction to Concurrency and Coroutines in Python 3.5                 1
+>    Intro to Profiling in Python                                                     1
+>    An October Two-fer: Refactoring, Extra Code Included / PDFs Against Humanity     1
+>    Interactive Python Environments: IPython, Jupyter, and Beaker, Oh My!            1
+>    A Gentle, Pythonic Introduction to Operating Systems                             1
+>    PyNash: Virtualenv/Virtualenvwrapper(Bill Israel), Code Analysis(Jason Myers)    1
+>    PyNash x Penny U: An Evening of Learning                                         1
+>    Capacity and Stability Patterns                                                  1
+>    An Introduction to Django Channels                                               1
+>    Ü is for Üńîçřdé: Solving the Mystery and a TBD                                  1
+>    Test Driving Pytest                                                              1
+>    ?A Quick Sip from the Flask Microframework                                       1
+>    Creating Better Beer Through Data Science                                        1
+>    You and I and the PyNash API                                                     1
+>    datetime in Python: What Time is it Anyway?                                      1
+>    PyNash Fishbowl                                                                  1
+>    Elasticsearch in an Evening                                                      1
+>    Getting Started with Data Science using Python                                  1
+>    Name: name, dtype: int64
+   
 
 The reason for Jason's uncharacteristically high centrality is that he has RSVPed to nearly all the lunches, while others have gone to higher "degree-granting" events. Consequently, Jason is deeply embedded within the social fabric of the graph (many links to the most important people), despite not having as broad of a reach himself.
 
@@ -434,7 +433,7 @@ The reason for Jason's uncharacteristically high centrality is that he has RSVPe
 To conclude, let's take a quick look at the member graph to drive home the fact that PyNash is held together by a small group of highly connected individuals. First, we take a look at the graph representation.
 
 
-```python
+{% highlight python %}
 import matplotlib as mpl
 from utils import setup_graph_plot
 
@@ -455,7 +454,7 @@ nx.draw_networkx_edges(gm, member_pos, alpha=0.008)
 plt.title('PyNash Members, Emphasizing Centrality')
 
 plt.show()
-```
+{% endhighlight %}
 
 
 ![png](../assets/nashnetx/pynash-3.png)
@@ -466,7 +465,7 @@ Next, let's check out the adjacency matrix, which can sometimes make edge patter
 As you go further down and right, individuals have a much higher number of edges. In fact, the last ten or fifteen rows/columns are connected to almost every other member in the graph -- these are our top Pythonistas. 
 
 
-```python
+{% highlight python %}
 fig, ax = setup_graph_plot(dpi=150)
 
 node_order = df_members.sort_values(by='centrality').index
@@ -477,6 +476,6 @@ ax.imshow(adjmat_binary, cmap='hot')
 
 plt.title('Adjacency Matrix for PyNash,\nSorted by Centrality')
 plt.show()
-```
+{% endhighlight %}
 
 ![png](../assets/nashnetx/pynash-4.png)
