@@ -2,7 +2,7 @@
 layout: post
 title:  "Printing 3D Brains at Vanderbilt"
 date:   2017-10-09 1:47:00
-categories: vanderbilt neuroimaging
+categories: vanderbilt 
 comments: true
 ---
 

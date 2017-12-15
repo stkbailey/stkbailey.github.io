@@ -2,7 +2,7 @@
 layout: post
 title:  "Neuroimaging on ACCRE"
 date:   2017-09-30 13:46:40
-categories: vanderbilt neuroimaging
+categories: vanderbilt 
 comments: true
 ---
 
