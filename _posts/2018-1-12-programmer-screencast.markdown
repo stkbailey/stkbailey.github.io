@@ -1,9 +1,9 @@
 ---
 layout: post
 title:  "Creating a programming screencast"
+date:   2018-1-13 08:00:00
 categories: python data-viz
 comments: true
-date:   2018-1-13 08:00:00
 ---
 
 I recently put together an audition of myself teaching a programming topic for the website [DataCamp](https://www.datacamp.com/), and I learned a lot! It was my first time doing a programming tutorial via screencast, and I thought I'd share a few pointers to people wanting to do the same.
