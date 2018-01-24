@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Accessing REDCap Data from Python"
-date:   2017-12-08 16:00:00
+date:   2017-1-19 16:00:00
 categories: vanderbilt
 comments: true
 ---
