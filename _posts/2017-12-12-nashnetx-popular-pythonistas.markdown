@@ -119,13 +119,7 @@ We can test for bipartite-ness in NetworkX. We can also pull out the sets automa
 nx.is_bipartite(g)
 {% endhighlight %}
 
-
-
-
 >    True
-
-
-
 
 {% highlight python %}
 member_nodes, event_nodes = nx.bipartite.sets(g)

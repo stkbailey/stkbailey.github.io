@@ -17,11 +17,11 @@ We'll still focus on our Pythonistas, but instead of looking at who holds PyNash
 3. Use network metrics to determine member importance.
 4. Visualize Nashville MeetUp communities.
 
-But before we get into the real meat... let's start with the end product -- the MeetUp relationship graph:
+But before we get into the real meat... let me give you a taste of where we're going -- the MeetUp relationship graph:
 
 ![png]({{"/assets/nashnetx/nashmeet-2.png" | absolute_url }})
 
-
+Here, each node represents a MeetUp group, and edges represent shared memberships. The location is based off of edge weights - so groups that share a lot of members cluster more closely together. Now - let's build it!
 
 ### 1. Load in and tailor the MeetUp RSVP data.
 

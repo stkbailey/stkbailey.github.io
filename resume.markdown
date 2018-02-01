@@ -4,6 +4,8 @@ title: Resume
 permalink: /resume/
 ---
 
+[*Click here to download the PDF version of my resume*]({{"/assets/BaileyStephen_020118.pdf" | absolute_url }})
+
 ### Education
 #### Ph.D. in Educational Cognitive Neuroscience
 *Vanderbilt University (2013 - Present)*  
