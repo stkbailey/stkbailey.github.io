@@ -36,18 +36,27 @@
 	"buffers":
 	[
 		{
-			"file": "/C/Users/stkba/Desktop/4_Nashville-Relationships.md",
-			"settings":
-			{
-				"buffer_size": 19364,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "about.markdown",
 			"settings":
 			{
 				"buffer_size": 950,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "_posts/2017-12-19-nashnetx-nashville-meetups.markdown",
+			"settings":
+			{
+				"buffer_size": 20843,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "resume.markdown",
+			"settings":
+			{
+				"buffer_size": 3440,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		}
@@ -84,6 +93,8 @@
 	},
 	"file_history":
 	[
+		"/C/Users/stkba/Documents/GitHub/stkbailey.github.io/_posts/2017-12-12-nashnetx-popular-pythonistas.markdown",
+		"/C/Users/stkba/Documents/GitHub/stkbailey.github.io/_posts/2017-12-19-nashnetx-nashville-meetups.markdown",
 		"/C/Users/stkba/Documents/GitHub/courses-biomedical-image-analysis/README.md",
 		"/C/Users/stkba/OneDrive/DataCamp_Course/slides/chapter_4_scripts.md",
 		"/C/Users/stkba/OneDrive/DataCamp_Course/slides/chapter_3_scripts.md",
@@ -106,7 +117,6 @@
 		"/C/Users/stkba/OneDrive - Vanderbilt/BME 377 - QFI/Untitled.ipynb",
 		"/C/Users/stkba/Documents/GitHub/stkbailey.github.io/_drafts/TBD-dax-xnat.md",
 		"/C/Users/stkba/Documents/GitHub/stkbailey.github.io/_posts/2017-06-15-3MT.markdown",
-		"/C/Users/stkba/Documents/GitHub/stkbailey.github.io/_posts/2017-12-12-nashnetx-popular-pythonistas.markdown",
 		"/C/Users/stkba/Documents/GitHub/stkbailey.github.io/_drafts/TBD-2017-review.md",
 		"/C/Users/stkba/OneDrive/DataCamp_Course/specs_v1.md",
 		"/C/Users/stkba/OneDrive - Vanderbilt/HBM_2018/abstract.md",
@@ -210,8 +220,7 @@
 		"/C/Users/stkba/OneDrive - Vanderbilt/DSyM/HMH_Decodables/G1_M01_W2_S2.txt",
 		"/C/Users/stkba/OneDrive - Vanderbilt/DSyM/HMH_Decodables/G1_M10_W3_S2.txt",
 		"/C/Users/stkba/OneDrive - Vanderbilt/DSyM/HMH_Decodables/G1_M09_W3_S2.txt",
-		"/C/Users/stkba/OneDrive - Vanderbilt/DSyM/HMH_Decodables/G1_M11_W1_S2.txt",
-		"/C/Users/stkba/OneDrive - Vanderbilt/DSyM/HMH_Decodables/G1_M11_W2_S3.txt"
+		"/C/Users/stkba/OneDrive - Vanderbilt/DSyM/HMH_Decodables/G1_M11_W1_S2.txt"
 	],
 	"find":
 	{
@@ -229,6 +238,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"png",
+			"```",
+			"```python",
 			"###",
 			"png",
 			"    ",
@@ -247,6 +259,8 @@
 		"regex": false,
 		"replace_history":
 		[
+			"{% endhighlight %}",
+			"{% highlight python %}",
 			"> ",
 			"{% endhighlight %}",
 			"> ",
@@ -265,41 +279,11 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/C/Users/stkba/Desktop/4_Nashville-Relationships.md",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 19364,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
 					"file": "about.markdown",
 					"semi_transient": false,
 					"settings":
@@ -313,6 +297,64 @@
 							[
 								0,
 								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "_posts/2017-12-19-nashnetx-nashville-meetups.markdown",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 20843,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1130,
+								1183
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 532.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "resume.markdown",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3440,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								54,
+								54
 							]
 						],
 						"settings":
