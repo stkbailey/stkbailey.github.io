@@ -12,21 +12,13 @@ This kernel ([runnable on Kaggle](https://www.kaggle.com/stkbailey/teaching-note
 
 
 {% highlight python %}
-import pathlib
 import imageio
-import numpy as np
-
-# Glob the training data and load a single image path
-training_paths = pathlib.Path('../input/stage1_train').glob('*/images/*.png')
-training_sorted = sorted([x for x in training_paths])
-im_path = training_sorted[45]
 im = imageio.imread(str(im_path))
 {% endhighlight %}
 
 ### Dealing with color
 
 The images in this dataset can be in RGB, RGBA and grayscale format, based on the "modality" in which they are acquired. For color images, there is a third dimension which encodes the "channel" (e.g. Red, Green, Blue). To make things simpler for this first pass, we can coerce all these images into grayscale using the `rgb2gray` function from `scikit-image`.
-
 
 {% highlight python %}
 # Print the image dimensions
@@ -38,10 +30,10 @@ im_gray = rgb2gray(im)
 print('New image shape: {}'.format(im_gray.shape))
 {% endhighlight %}
 
-    Original image shape: (520, 696, 4)
-    New image shape: (520, 696)
+>    Original image shape: (520, 696, 4)
+>    New image shape: (520, 696)
 
-![Images]( assets/dsb2018/basics-1.png | {{ site | absolute_url }} )
+![Original and grayscale images]( {{ "assets/dsb2018/basics-1.png" | absolute_url }} )
 
 
 ### Removing background
@@ -61,28 +53,8 @@ if np.sum(mask==0) < np.sum(mask==1):
 {% endhighlight %}
 
 
-{% highlight python %}
-plt.figure(figsize=(10,4))
+![Images]( {{ "assets/dsb2018/basics-2.png" | absolute_url }} )
 
-plt.subplot(1,2,1)
-im_pixels = im_gray.flatten()
-plt.hist(im_pixels,bins=50)
-plt.vlines(thresh_val, 0, 100000, linestyle='--')
-plt.ylim([0,50000])
-plt.title('Grayscale Histogram')
-
-plt.subplot(1,2,2)
-mask_for_display = np.where(mask, mask, np.nan)
-plt.imshow(im_gray, cmap='gray')
-plt.imshow(mask_for_display, cmap='rainbow', alpha=0.5)
-plt.axis('off')
-plt.title('Image w/ Mask')
-
-plt.show()
-{% endhighlight %}
-
-
-![Images]( assets/dsb2018/basics-2.png | {{ site | absolute_url }} )
 
 
 ### Deriving individual masks for each object
@@ -104,24 +76,7 @@ print('There are {} separate components / objects detected.'.format(nlabels))
 
     There are 76 separate components / objects detected.
     
-
-
-{% highlight python %}
-### Create a random colormap
-from matplotlib.colors import ListedColormap
-rand_cmap = ListedColormap(np.random.rand(256,3))
-
-labels_for_display = np.where(labels > 0, labels, np.nan)
-plt.imshow(im_gray, cmap='gray')
-plt.imshow(labels_for_display, cmap=rand_cmap)
-plt.axis('off')
-plt.title('Labeled Cells ({} Nuclei)'.format(nlabels))
-plt.show()
-{% endhighlight %}
-
-
-![Images]( assets/dsb2018/basics-3.png | {{ site | absolute_url }} )
-
+![Images]( {{ "assets/dsb2018/basics-3.png" | absolute_url }} )
 
 A quick glance reveals two problems (in this very simple image): 
 
@@ -153,7 +108,7 @@ print('There are now {} separate components / objects detected.'.format(nlabels)
     
 
 
-![Images]( assets/dsb2018/basics-4.png | {{ site | absolute_url }} )
+![Images]( {{ "assets/dsb2018/basics-4.png" | absolute_url }} )
 
 
 Label #2 has the "adjacent cell" problem: the two cells are being considered part of the same object. One thing we can do here is to see whether we can shrink the mask to "open up" the differences between the cells. This is called mask erosion. We can then re-dilate it to to recover the original proportions. 
@@ -167,6 +122,6 @@ cell_mask_opened = ndimage.binary_opening(cell_mask, iterations=8)
 {% endhighlight %}
 
 
-![Images]( assets/dsb2018/basics-5.png | {{ site | absolute_url }} )
+![Images]( {{ "assets/dsb2018/basics-5.png" | absolute_url }} )
 
-
+We can then loop through the labels and create masks for each image -- but this is specific to the competition and has been cut from this post. (See the [Kaggle kernel](https://www.kaggle.com/stkbailey/teaching-notebook-for-total-imaging-newbies) if interested.) Hopefully soon I will have some neural network tutorials to share!
