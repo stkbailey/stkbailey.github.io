@@ -6,7 +6,7 @@ date:   2017-12-19 06:45:00
 comments: true
 ---
 
-*This is the third in a series of posts on using NetworkX to analyze Nashville MeetUp data. They are based off a [PyNash talk](https://www.meetup.com/PyNash/events/244713791/) I gave on 11/16, and all data is available on [Github](https://github.com/stkbailey/nashnetx).*
+*This is the fourth in a series of posts on using NetworkX to analyze Nashville MeetUp data. They are based off a [PyNash talk](https://www.meetup.com/PyNash/events/244713791/) I gave on 11/16, and all data is available on [Github](https://github.com/stkbailey/nashnetx).*
 
 Analyzing one MeetUp is straightforward, and we don't realize many of the benefits of graph theory measures. Now, let's look at a more complex network: the entire Nashville MeetUp scene. 
 
