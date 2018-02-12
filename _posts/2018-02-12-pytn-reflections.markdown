@@ -8,7 +8,7 @@ comments: true
 
 I've been to many conferences as part of my PhD studies, but I can happily say that PyTN 2018 was the most enjoyable, worthwhile conference I've been to yet. I was constantly meeting new people doing interesting work in Nashville, and it made the Python Data Science community seem both larger and more accessible than it has before. 
 
-You can find the slides for my talk, **Principles of Network Analysis with NetworkX**, [embedded online here](https://vanderbilt365-my.sharepoint.com/:p:/g/personal/bailesk1_vanderbilt_edu/EefqHnnhzAZPmtyGXUARtXQBSIURVE53eH41nvbzvpbvrQ?e=89mHsJ) ([or with notebooks, etc. on Github](https://github.com/stkbailey/nashnetx/presentations)). Even better, you can play around with the code and data by forking the kernels [on Kaggle](https://www.kaggle.com/stkbailey/nashville-meetup). 
+You can find the slides for my talk, **Principles of Network Analysis with NetworkX**, [embedded online here](https://vanderbilt365-my.sharepoint.com/:p:/g/personal/bailesk1_vanderbilt_edu/EefqHnnhzAZPmtyGXUARtXQBSIURVE53eH41nvbzvpbvrQ?e=89mHsJ) ([or with notebooks, etc. on Github](https://github.com/stkbailey/nashnetx)). Even better, you can play around with the code and data by forking the kernels [on Kaggle](https://www.kaggle.com/stkbailey/nashville-meetup). 
 
 Some of my personal highlights from the talks were:
 
