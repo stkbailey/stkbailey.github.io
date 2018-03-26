@@ -1,0 +1,31 @@
+---
+layout: post
+title:  "3MT 2018"
+date:   2018-03-25 01:00:00
+categories: vanderbilt
+comments: true
+---
+
+For the fourth year in a row, I participated in Vanderbilt's Three Minute Thesis (3MT) competition, and I finally made it to the finals! 
+
+<!--
+Here's a link to the better of my two performances...
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/4TrJWAe0r70" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+-->
+
+And here's a transcript of my talk:
+
+> Anger. Frustration. A sense of futility. Does this describe your evening commute? Or does it describe a struggling reader as they take the ACT? The two may be more similar than you think. 
+>
+> Dyslexia, or difficulty reading, is a problem mapping letters to sounds, a process that occurs in the brain. And the brain is organized a lot like a city: there are individual brain cells, called neurons, that are connected to each other in much the same way buildings are connected by roads. Clusters of these cells form networks that perform specific functions such as vision and attention, like clusters of buildings form neighborhoods with certain personalities -- trendy or touristy. 
+>
+> But some brain areas are not part of one neighborhood. Instead, they straddle many, and in this way they form a sort of highway system through the brain that is important for connecting distant neighborhoods. These areas are called hubs.
+> 
+> The complete roadmap of the brain is called the "connectome", and I'm part of a new wave of neuroscientists who are interested in how individual differences in our connectomes set us up to perform certain skills better or worse. We can model the connectome using functional magnetic resonance imaging -- a person simply needs to sit still in a scanner for 10 minutes, and we can get this roadmap.
+>
+> Now, there has been a lot of research into what makes individuals with dyslexia, and twenty years of neuroimaging research has identified a set of brain areas that *on average* seem to function differently. However, there is a lot of individual variability, and most of the time the measurements are found by having people read in the scanner. 
+>
+> For my dissertation, I took summary results from the past two decades and I mapped them onto the connectome. What we found was that the areas identified disproportionately landed on the "highway" system. And this makes sense because reading is like rush hour in the brain: in few other activities does so much information have to trasnfer between these different systems. Even slight inefficiencies in the highway system - a pothole or a crash - can cause a traffic pile-up and, perhaps, some neuronal road rage.
+>
+> It's my lab's hope and future goal to leverage the connectomics models to further explore the basis of dyslexia, and perhaps, to identify struggling readers before they even start to read. Thank you.
