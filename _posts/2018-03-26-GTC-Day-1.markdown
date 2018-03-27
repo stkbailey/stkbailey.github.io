@@ -16,7 +16,7 @@ The first day of the NVIDIA GPU Technology Conference is about to close, and I a
 
 - Got to see a self-driving truck for the first time. Looking up at it is intimidating: it's giant rack of lights and cameras would make it the perfect interrogation background. 
 
-![png]({{"/assets/gtc2018/truck.jpg" | absolute_url }})
+![png]({{"/assets/gtc2018/truck.JPG" | absolute_url }})
 
 - Healthcare really seems poised to be transformed by deep learning. There are now forays into applying it "in the wild" - a presenter from Winning Health in China discussed how they have built an integrated platform to which they can add in new models as they're developed - they'e already integrated the NIH Chest X-Ray set from last year. No word on performance, though. 
 
