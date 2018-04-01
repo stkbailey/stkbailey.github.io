@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "GPU Technology Conference - Day 4"
+date:   2018-03-30 12:00:00
+categories: data-science
+comments: true
+---
+
+GTC 2018 was unquestionably the best conference of my graduate career. The diversity of attendees (at least in terms of occupation) made the conference vibrant and useful. Unlike other conferences where you tire of the talks after 45 minutes, you could attend so many different types of sessions that you were never bored. I took tutorials, heard about image segmentation, learned about the healthcare ecosystem, ate a lot of pretzel sticks, played some VR games, crushed a chocolate bar, chatted with presenters. It was fantastic.
+
+This is such a great time to be coming out of my PhD training. There are opportunities everywhere, and even though AI is just one of many quantitative tools for the job, you can't help  but feel that as the world gets more connected, it's just going to be more useful. 
+
+I will say, though, that it's a bit overwhelming. I am now going back to Nashville, where I will use traditional linear models and hypothesis tests to finish my dissertation: a far cry from the complexity of R-CNNs and recurrent neural networks. But one conversation I had gives me heart: a gentleman from OSU was actually complaining about the kids coming out of undergrad who primarily had deep learning experience. It's the fundamentals, he says, that are important. If you can grasp the basics, you can adapt and improve as new models become available. 
+
+I feel so fortunate to have had the chance to attend GTC. It was the pinnacle of a year of diving into the data science field, building contacts in Nashville and elsewhere (thanks, Penny U!), and preparing myself for a career outside academia. Until we meet again, Silicon Valley (and Jensen Huang), I hope you keep sharing the knowledge wealth. 
