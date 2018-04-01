@@ -6,7 +6,9 @@ categories: vanderbilt
 comments: true
 ---
 
-For the fourth year in a row, I participated in Vanderbilt's Three Minute Thesis (3MT) competition, and I finally made it to the finals! 
+For the fourth year in a row, I participated in Vanderbilt's Three Minute Thesis (3MT) competition, and I finally made it to the finals! Once the link gets posted, I'll put up the video. But for now...
+
+![Finalists]({{"/assets/3mt/3MT_finalists_2018.jpg" | absolute_url }})
 
 <!--
 Here's a link to the better of my two performances...

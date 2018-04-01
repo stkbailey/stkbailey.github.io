@@ -14,6 +14,8 @@ More thoughts from the conference, which has been an amazing display of technolo
 
 - The session concluded with remote control driving of a car -- a move directly stolen from Black Panther, but with far fewer bad guys killed. 
 
+![Clara, NVIDIA's medical imaging segmentation tool]({{ "assets/gtc2018/28-healthcare-gtc-blog.gif" | absolute_url }})
+
 My takeaways from the healthcare sessions are this: the technology needed to process and "harvest" data from medical images is there, but how we integrate into the healthcare ecosystem is still a LONG way from being ready. Key challenges include:
 
 - What does the data mean? We can take a CT of the heart, reconstruct a mesh of the left ventricle and calculate all sorts of new values: deformability, texture, volume. But there's still a lot of research needed to know how this affects clinical outcomes. 
