@@ -43,11 +43,18 @@ permalink: /resume/
 - Organized logistics of two week-long conferences for more than 90 attendees and more than 10 other large professional development events.
 
 ### Teaching and Talking
-#### PyTennessee 2018: "Principles of Network Analysis with NetworkX"
-One-hour tutorial at PyTennessee (2/5/18).
 
-#### "Identifying Popular Pythonistas with NetworkX"
-One-hour talk given at PyNash monthly gathering (11/16/17) and at Nashville Software School (11/30/17). Resources and slides available on [Github](https://github.com/stkbailey/nashnetx/presentations).
+#### "Reorganization of resting-state networks while reading and listening: a developmental perspective"
+Oral presentation to be given at the Organization for Human Brain Mapping's 2018 annual meeting (6/20/18). 
+
+#### DataCamp Course: Introduction to Biomedical Image Analysis
+Course to be released mid-2018. Details to come when completed.
+
+#### "Deconvoluting convolutions: a case study in image analysis"
+Talk given to Nashville's Data Science Meetup (4/24/18). Assets on [GitHub](https://github.com/stkbailey/deconv-conv).
+
+#### "Principles of Network Analysis with NetworkX"
+One-hour tutorial at PyTennessee (2/5/18), PyNash (11/16/17) and Nashville Software School (11/30/17). Assets on [Github](https://github.com/stkbailey/nashnetx/presentations).
 
 #### Conexion Americas & Nashville Adult Literacy Council		
 *Teacher, Adult English Learner Class (2016 - 2017)*  
