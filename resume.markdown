@@ -12,7 +12,7 @@ permalink: /resume/
 *Dissertation: "Connecting Brain Networks to the Cognitive Components of Reading Comprehension"*  
 - Awarded **[National Institute of Health F31 Research Fellowship](https://projectreporter.nih.gov/project_info_description.cfm?aid=9328269&icde=35806628)**
 - Endorsement in Statistical/Quantitative Methods
-- Completed 5-course **[Applied Data Science in Python](https://www.coursera.org/specializations/data-science-python)** Coursera Specialization
+- Completed **[Deep Learning](https://www.coursera.org/specializations/deep-learning)** and **[Applied Data Science in Python](https://www.coursera.org/specializations/data-science-python)** Coursera Specializations
 
 #### B.S. in Chemistry & B.A. in Philosophy
 *Samford University (2007 - 2011)*

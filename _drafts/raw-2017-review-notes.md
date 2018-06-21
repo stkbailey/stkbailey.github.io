@@ -14,10 +14,7 @@ Daniel has hit several milestones this year:
 Danielle and I hit other milestones: 
 - First air conditioning unit to replace
 
-
 2018 holds a lot of promise for our family:  I am on the cusp of becoming an adult (once again) and will graduate from Vanderbilt University this summer.
-
-I've spent a lot of time
 
 We are also expecting a second child, gender TBD. The due date is May 22.
 
@@ -30,7 +27,7 @@ March
 April
 	- Finished teaching at Conexion Americas
 May
-	- Bisit Bob and Garnet in Asheville
+	- Visit Bob and Garnet in Asheville
 	- Visit to OH
 June
 	- Started an internship at Metro Nashville

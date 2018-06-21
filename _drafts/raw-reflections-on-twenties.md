@@ -1,0 +1,6 @@
+My twenties were a time of adventure, ambition and wandering. 
+
+Point of pride
+- Marriage: it has been over a decade since I first said, "Good morning!" to my wife. As a twenty-year old, we started dating, first with an uncomfortably competitive tennis match, then with comfortably delicious pizza nights. We have spent a lot of time, words and tears building a strong relationship, and I'm so proud of what we have as a foundation for our growing family. 
+- Children: With two young bucks on the loose, I have to say that I am loving being a parent. There's an idea out there that the first six years build a sort of "intrinsic" sense of who you are and your degree of comfort in the world. I'm proud of the time I've been able to devote to fathering Daniel, and am looking forward to continuing this adventure with Will as well. I've learned about devotion, the miracles of the small things and of a gentle authority. 
+- Expertise: I took nearly a decade of searching, but I've finally found the domain of expertise that I can happily call "my home". Data science is interdisciplinary and rapidly evolving. It touches on everything and always presents new opportunities for growth. But 

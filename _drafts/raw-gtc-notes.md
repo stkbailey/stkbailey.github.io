@@ -1,7 +1,3 @@
-
-
-
-
 1. The role of data in achieving precision and value in healthcare. Gregory Hager, Director of Malone Center at Johns Hopkins.
 	- Healthare is a 3 trillion dollar industry -- accounts for about 18% of the GDP. Up to 1/3 of this can be chalked up to system inefficiencies. Further, medical erros are under-reported and could be considered the 3rd leading cause of death in the US. Thus, there's lots of opportunity.
 	- Deep learning can be used for analyzing surgeries, especially those that have a lot of errors (a lot of re-visits). These include back surgeries, chronic rhinositis. By getting population-level understanding of morphological measurements of the back and nose, we can then map individual-subject measurements into this population space, determine whether a surgery can be effective.

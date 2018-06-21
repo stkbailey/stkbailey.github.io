@@ -7,42 +7,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "_posts/2018-03-28-GTC-Days-23.markdown",
-			"settings":
-			{
-				"buffer_size": 3097,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "_posts/2018-03-30-GTC-Days-4.markdown",
-			"settings":
-			{
-				"buffer_size": 1983,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "_drafts/patrick-ball.markdown",
-			"settings":
-			{
-				"buffer_size": 1450,
-				"encoding": "UTF-8",
-				"line_ending": "Windows",
-				"name": "On selecting a problem and dataset:"
-			}
-		},
-		{
-			"file": "_posts/2018-03-25-3mt.markdown",
-			"settings":
-			{
-				"buffer_size": 3039,
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -76,15 +40,31 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/stkba/Documents/GitHub/stkbailey.github.io",
-		"/C/Users/stkba/Documents/GitHub/stkbailey.github.io/_posts",
-		"/C/Users/stkba/Documents/GitHub/stkbailey.github.io/assets",
-		"/C/Users/stkba/Documents/GitHub/stkbailey.github.io/assets/3mt",
-		"/C/Users/stkba/Documents/GitHub/stkbailey.github.io/assets/gtc2018",
-		"/C/Users/stkba/Documents/GitHub/stkbailey.github.io/assets/nashnetx"
+		"/C/Users/bailesk1/Documents/GitHub/stkbailey.github.io",
+		"/C/Users/bailesk1/Documents/GitHub/stkbailey.github.io/_drafts"
 	],
 	"file_history":
 	[
+		"/C/Users/bailesk1/Documents/GitHub/stkbailey.github.io/_posts/2018-05-02-paul-tang.markdown",
+		"/C/Users/bailesk1/Documents/GitHub/stkbailey.github.io/_drafts/phd_tent_camp.md",
+		"/C/Users/bailesk1/Documents/GitHub/stkbailey.github.io/_drafts/raw-nissan-notes.markdown",
+		"/C/Users/bailesk1/Documents/GitHub/stkbailey.github.io/_drafts/raw-2017-review-notes.md",
+		"/C/Users/bailesk1/Documents/GitHub/stkbailey.github.io/_drafts/raw-reflections-on-twenties.md",
+		"/C/Users/bailesk1/Documents/GitHub/stkbailey.github.io/_drafts/raw-gtc-notes.md",
+		"/C/Users/bailesk1/Documents/GitHub/stkbailey.github.io/_drafts/2018-06-21-ohbm-2018.md",
+		"/C/Users/bailesk1/Documents/GitHub/stkbailey.github.io/_drafts/disciplines.md",
+		"/C/Users/bailesk1/Documents/GitHub/stkbailey.github.io/_drafts/TBD-2017-review.md",
+		"/C/Users/bailesk1/Documents/GitHub/stkbailey.github.io/posts.markdown",
+		"/C/Users/bailesk1/Documents/GitHub/stkbailey.github.io/_posts/2018_04-16_paul-tang.markdown",
+		"/C/Users/bailesk1/Documents/GitHub/stkbailey.github.io/_drafts/2018_04-16_paul-tang.markdown",
+		"/C/Users/bailesk1/Documents/GitHub/stkbailey.github.io/_drafts/paul_tang.markdown",
+		"/C/Users/bailesk1/Documents/GitHub/stkbailey.github.io/resume.markdown",
+		"/C/Users/bailesk1/Documents/GitHub/stkbailey.github.io/_drafts/ohbm_reflectionsmd.md",
+		"/C/Users/bailesk1/Desktop/singapore",
+		"/C/Users/bailesk1/Documents/GitHub/stkbailey.github.io/_posts/2018-03-28-GTC-Days-23.markdown",
+		"/C/Users/bailesk1/Documents/GitHub/stkbailey.github.io/_posts/2018-03-30-GTC-Days-4.markdown",
+		"/C/Users/bailesk1/Documents/GitHub/stkbailey.github.io/_posts/2018-03-25-3mt.markdown",
+		"/C/Users/bailesk1/Documents/GitHub/stkbailey.github.io/_drafts/patrick-ball.markdown",
 		"/C/Users/stkba/Documents/GitHub/stkbailey.github.io/_posts/2017-12-19-nashnetx-nashville-meetups.markdown",
 		"/C/Users/stkba/Documents/GitHub/stkbailey.github.io/assets/3mt/3MT_finalists_2018.jpg",
 		"/C/Users/stkba/Documents/GitHub/stkbailey.github.io/_posts/2018-03-25-3mt.markdown",
@@ -166,122 +146,8 @@
 	"groups":
 	[
 		{
-			"selected": 2,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "_posts/2018-03-28-GTC-Days-23.markdown",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3097,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1386,
-								1386
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "_posts/2018-03-30-GTC-Days-4.markdown",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1983,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								639,
-								639
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "_drafts/patrick-ball.markdown",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1450,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1450,
-								1450
-							]
-						],
-						"settings":
-						{
-							"auto_name": "On selecting a problem and dataset:",
-							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "_posts/2018-03-25-3mt.markdown",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3039,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								310,
-								380
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -291,7 +157,7 @@
 	},
 	"input":
 	{
-		"height": 37.0
+		"height": 37.3333333333
 	},
 	"layout":
 	{

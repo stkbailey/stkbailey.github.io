@@ -1,5 +1,5 @@
 ---
-title: "Big Data Analytics w/ Danielle Beringer and Jason Snap"
+title: "Big Data Analytics w/ Danielle Beringer"
 ---
 
 Had a great opportunity to chat with two folks from Nissan as part of Vanderbilt's Data Science Colloquium. Danielle Beringer... Jason Snap...
