@@ -6,7 +6,7 @@ categories: data-science
 comments: true
 ---
 
-The April Flexner Discovery Lecture was given by Dr. Paul Tang, ___ of IBM Watson Health. His goal: to "put AI in its place", to "harness" it by ensuring *people* are in front, with computers in the background. The main points of his talk were the following:
+The April Flexner Discovery Lecture was given by Dr. Paul Tang, VP and Chief Transformation Officer of IBM Watson Health. His goal: to "put AI in its place", to "harness" it by ensuring *people* are in front, with computers in the background. The main points of his talk were the following:
 
 1. The medical world has changed dramatically in the past 20 years, but not the tools and training.
 2. Harnessing AI requires understanding the appropriate problem to solve (foraging, synthesizing evidence-based medicine). 
