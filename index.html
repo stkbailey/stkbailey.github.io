@@ -13,11 +13,11 @@ layout: default
 
     <img src={{ "/assets/resume-cv/Stephen_Bailey_EBRL.jpg" | prepend: site.baseurl }} alt="bailey-headshot" style="float: right; height: 30%; width: 30%; padding: 10px;"> 
 
-    Currently, I am a NIH Research Fellow at Vanderbilt University. I am passionate about democratizing science and is an enthusiastic member of the Python community. My main focus right now is on leveraging medical imaging technology to better understand health and disease.
+    <p> Currently, I am a NIH Research Fellow at Vanderbilt University. I am passionate about democratizing science and is an enthusiastic member of the Python community. My main focus right now is on leveraging medical imaging technology to better understand health and disease.</p>
 
-    Other interests include computer science, education, philosophy, psychology and, more recently, child-rearing. 
+    <p>Other interests include computer science, education, philosophy, psychology and, more recently, child-rearing.</p>
 
-    If you're interested in connecting, please reach out -- would love to chat.
+    <p>If you're interested in connecting, please reach out via one of the links below -- would love to chat.</p>
 
   </div>
 
@@ -28,7 +28,7 @@ layout: default
   <h3 class="post-title">Latest Post</h3>
 
   <ul class="post-list">
-    {% for post in site.posts limit: 2 %}
+    {% for post in site.posts limit: 1 %}
       <li>
         <div style="padding: 0 0 0 0; margin: 0 0 0 0">
           <span class="post-meta" style="padding: 0 0 0 0; margin: 0 0 0 0">{{ post.date | date: "%b %-d, %Y" }}</span>
