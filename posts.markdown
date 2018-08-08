@@ -23,7 +23,7 @@ permalink: /posts/
 {% for post in site.posts %}
   {% if post.url %}
   <li>
-    </span><a class="post-page-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+    <span class="post-page-meta"> • </span><a class="post-page-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
   </li>
   {% endif %}
 {% endfor %}
