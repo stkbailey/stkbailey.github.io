@@ -28,7 +28,7 @@ import pandas as pd
 import numpy as np
 
 # Download the data from Github
-raw = pd.read_csv('{{ "/assets/matplotlib_michigan/AGI2014_Michigan.csv')
+raw = pd.read_csv('{{ "/assets/matplotlib_michigan/AGI2014_Michigan.csv" | prepend: site.baseurl }}')
 
 # Selecta few important columns and rename them 
 col_rename = {'zipcode': 'RegionName', 'N1': 'num_returns', 'agi_stub': 'agi_group'}
@@ -201,7 +201,7 @@ We're going to make a couple of plots:
 
 I also made this plot **interactive** -- at the push of a button, you can select which number of bedrooms you want to use. Unfortunately, this feature isn't available in Jekyll, so you'll have to take my word for it. 
 
-For the sake of brevity, I'm only going to show you the code for the overall plot and button functionality. B
+For the sake of brevity, I'm only going to show you the code for the overall plot and button functionality.
 
 #### Setup the figure using GridSpec
 GridSpec is a nifty tool to give you tighter control over figures with multiple subplots. It creates a grid over your figure and gives you the ability to specify which portions should be covered by new figures.
