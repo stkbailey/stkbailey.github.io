@@ -136,7 +136,7 @@ zdf = pd.DataFrame()
 
 for numbeds in np.arange(1,6):
     # Read in data to a temporary dataframe and assign bed number
-    zillow_path = '{{ "/assets/matplotlib_michigan/Zillow_{}b.csv'.format(numbeds) " | site.baseurl }}"
+    zillow_path = '{{ "/assets/matplotlib_michigan/Zillow_\{\}b.csv'.format(numbeds) " | site.baseurl }}"
     tdf = pd.read_csv(zillow_path)
     tdf['beds'] = numbeds
 
