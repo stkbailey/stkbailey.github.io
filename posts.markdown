@@ -4,6 +4,7 @@ title: Posts
 permalink: /posts/
 ---
 
+<!--
 {% for category in site.categories %}
   <span class="post-page-header">{{ category | first }}</span>
   <ul class="post-page-list">
@@ -18,8 +19,8 @@ permalink: /posts/
   {% endfor %}
   </ul>
 {% endfor %}
+-->
 
-<!--
 <ul class="post-page-list">
 {% for post in site.posts %}
   {% if post.url %}
@@ -30,4 +31,3 @@ permalink: /posts/
 {% endfor %}
 </ul>
 <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
--->
