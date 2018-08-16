@@ -9,7 +9,7 @@ comments: true
 As I mentioned in a previous post, I did some data reporting at MNPS this past summer. One of the fun problems I got to solve one day was how to plot data by school, on a map in Power BI. Here we are going to use a couple of Python tools to make a database of Latitude / Longitude locations for the MNPS schools. 
 
 Our strategy is:
-- Curate a list of addresses for each school (which can be found [here]({{"/assets/SchoolCrosswalk_v1.xlsx" | absolute_url }}))
+- Curate a list of addresses for each school (which can be found [here]({{"/assets/SchoolCrosswalk_v1.xlsx" | site.url }}))
 - Query Google Maps for each address
 - Map the addresses / coordinates to the existing school crosswalk
 - Save it as a new file

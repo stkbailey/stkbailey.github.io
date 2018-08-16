@@ -11,13 +11,13 @@ comments: true
 ### Introduction
 **Are home prices in wealthier areas more susceptible to economic variability?** For example -- when there is a recession, there's a strong possibility that it will be the largest houses that people stop paying for, rather than the smaller ones. 
 
-The housing data was pulled from Zillow, a real estate tracking website. This data covers the period 1997-2016, and is broken out by the house size (number of beds) and zip code. Zillow hosts a [nice database]((https://www.zillow.com/mi/home-values/), although only aggregated results are available. The datasets I use here are available on [Github]({{ "/assets/matplotlib_michigan" | prepend: site.baseurl }}). This data includes a "Metro" field, which associates all zip codes near Ann Arbor with the city, and this is what I used to filter on. 
+The housing data was pulled from Zillow, a real estate tracking website. This data covers the period 1997-2016, and is broken out by the house size (number of beds) and zip code. Zillow hosts a [nice database]((https://www.zillow.com/mi/home-values/), although only aggregated results are available. The datasets I use here are available on [Github]({{ "/assets/matplotlib_michigan" | prepend: site.url }}). This data includes a "Metro" field, which associates all zip codes near Ann Arbor with the city, and this is what I used to filter on. 
 
 The second dataset was pulled from the IRS website and contains aggregated tax return data by zip code. This was filtered by the Ann Arbor zip codes found in the housing data. To find out the "high wealth" zip codes, I took the number of returns filed with adjusted gross incomes greater than $200,000, and I divided it by the total number of returns. This is a rough approximation for the distribution of wealth in a given zip code, but it is rough. The IRS has some [nice data](https://www.irs.gov/uac/soi-tax-stats-historic-table-2) I encourage you to check out. Again, the data used here is available on this repo. 
 
 This is a long post, so let's show you the final product first!
 
-![4br]({{ "/assets/matplotlib_michigan/4br.png" | prepend: site.baseurl }})
+![4br]({{ "/assets/matplotlib_michigan/4br.png" | prepend: site.url }})
 
 ### Build the Income Distributions
 
@@ -28,7 +28,7 @@ import pandas as pd
 import numpy as np
 
 # Download the data from Github
-raw = pd.read_csv('{{ "/assets/matplotlib_michigan/AGI2014_Michigan.csv" | prepend: site.baseurl }}')
+raw = pd.read_csv('{{ "/assets/matplotlib_michigan/AGI2014_Michigan.csv" | prepend: site.url }}')
 
 # Selecta few important columns and rename them 
 col_rename = {'zipcode': 'RegionName', 'N1': 'num_returns', 'agi_stub': 'agi_group'}
@@ -136,7 +136,7 @@ zdf = pd.DataFrame()
 
 for numbeds in np.arange(1,6):
     # Read in data to a temporary dataframe and assign bed number
-    zillow_path = '{{ "/assets/matplotlib_michigan/Zillow_b.csv'.format(numbeds) " | site.baseurl }}"
+    zillow_path = '{{ "/assets/matplotlib_michigan/Zillow_b.csv'.format(numbeds) " | site.url }}"
     tdf = pd.read_csv(zillow_path)
     tdf['beds'] = numbeds
 
@@ -281,9 +281,9 @@ bb4.on_clicked(callback.drawBR4)
 
 Voila! Now, we just have to make sure that the figure is drawn in an interactive frame, e.g. by setting the `%matplotlib notebook`  flag in a Jupyter Notebook.
 
-![1br]({{ "/assets/matplotlib_michigan/1br.png" | site.baseurl }})
-![2br]({{ "/assets/matplotlib_michigan/2br.png" | site.baseurl }})
-![3br]({{ "/assets/matplotlib_michigan/3br.png" | site.baseurl }})
+![1br]({{ "/assets/matplotlib_michigan/1br.png" | site.url }})
+![2br]({{ "/assets/matplotlib_michigan/2br.png" | site.url }})
+![3br]({{ "/assets/matplotlib_michigan/3br.png" | site.url }})
 
 ### Additional code
 
