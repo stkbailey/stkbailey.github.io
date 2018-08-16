@@ -12,4 +12,4 @@ I always found the creativity hilarious, so to commemorate the joke, I scraped t
 
 Scraping and plots done in Python. [The script is available as a GitHub Gist](https://gist.github.com/stkbailey/026176085c6aaa07dd21dcaf30976ee8).
 
-![]({{"/assets/gordon/gh-names.jpg" | absolute_url }})
+![]({{"/assets/gordon/gh-names.jpg" | prepend:site.absolute_url }})
