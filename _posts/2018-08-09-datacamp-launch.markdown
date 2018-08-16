@@ -8,7 +8,7 @@ comments: true
 
 It's launched! After eight months of development, my [DataCamp.com course on Biomedical Image Analysis](http://www.datacamp.com/courses/biomedical-image-analysis-in-python) is live and ready for viewing. 
 
-![datacamp-header]({{ "assets/misc/datacamp-header.PNG" | prepend: site.url }})
+![datacamp-header]({{ "/assets/misc/datacamp-header.PNG" | prepend: site.url }})
 
 I worked on the course in the hopes that someone like me - a graduate student entering the field for the first time - would be able to learn the ropes in an accessible and comprehensive way. The course covers a number of fundamental topics, including:
 
