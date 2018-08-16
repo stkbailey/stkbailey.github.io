@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "It's launched!""
+title: "It's launched!"
 date: 2018-08-09 12:00:00
 categories: data-science
 comments: true
