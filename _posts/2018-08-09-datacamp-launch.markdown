@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "It's launched!"
+title: "DataCamp course is launched!"
 date: 2018-08-09 12:00:00
 categories: data-science
 comments: true
@@ -10,7 +10,7 @@ It's launched! After eight months of development, my [DataCamp.com course on Bio
 
 ![datacamp-header]({{ "/assets/misc/datacamp-header.PNG" | prepend: site.url }})
 
-I worked on the course in the hopes that someone like me - a graduate student entering the field for the first time - would be able to learn the ropes in an accessible and comprehensive way. The course covers a number of fundamental topics, including:
+I worked on the course in the hopes that someone like me - a novice in the field - would be able to learn the ropes in an accessible and comprehensive way. The course covers a number of fundamental topics, including:
 
 * Slicing multi-dimensional data
 * Understanding intensity distributions
