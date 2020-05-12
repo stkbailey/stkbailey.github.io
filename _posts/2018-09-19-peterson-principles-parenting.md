@@ -1,10 +1,12 @@
 ---
-layout: list
+layout: post
 title: "Principles of Parenting"
-source: "Jordan Peterson, 12 Rules for Life"
-date: 2018-09-19 12:00:00
+date:  2018-09-18 12:00:00
+categories: lists
 comments: true
 ---
+
+5 rules for parenting, from 12 Rules for Life
 
 1. Limit the rules.
 2. Use minimum necessary force.

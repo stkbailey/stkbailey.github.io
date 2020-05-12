@@ -1,10 +1,12 @@
 ---
-layout: list
+layout: post
 title: "12 Rules for Life"
-source: "Jordan Peterson, 12 Rules for Life"
-date: 2018-09-18 12:00:00
+date:  2018-09-09 12:00:00
+categories: lists
 comments: true
 ---
+
+Jordan Peterson, 12 Rules for Life
 
 1. Stand up straight with your shoulders back.
 2. Treat yourself like someone you are responsible for helping.
