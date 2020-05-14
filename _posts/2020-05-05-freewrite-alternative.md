@@ -6,7 +6,7 @@ categories: [hobbies, reviews]
 comments: true
 ---
 
-For two years I eyed the [Freewrite](www.getfreewrite.com), a sexy electronic
+For two years I eyed the [Freewrite](https://www.getfreewrite.com), a sexy electronic
 typewriter that promised me it would make me write more by ditching all the
 distracting, trivial things that laptops provide. No browser, no Slack, no
 programming console... no work or play, just time for me to focus on my writing

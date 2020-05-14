@@ -7,7 +7,7 @@ comments: true
 ---
 
 This post is a summary of some reflections I've had on informal networking through
-[Penny University](www.pennyuniversity.org), an organic little community that has
+[Penny University](https://www.pennyuniversity.org), an organic little community that has
 a vision of a virtuous "teaching and learning" cycle for personal development.
 
 At a high level, I believe a Penny University platform would be a cross-between
