@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "The Freewrite Alternative"
+title: "Penny U Thoughts"
 date:  2020-04-07 12:00:00
-categories: [hobbies, reviews]
+categories: [random]
 comments: true
 ---
 
