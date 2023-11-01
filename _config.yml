@@ -1,9 +1,9 @@
 # Site settings
-title: Subject To Change
+title: stkbailey.github.io
 author: Stephen Bailey
 email: stkbailey@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Personal website for Stephen Bailey. <br>Projects, conversations and more.
+  Personal website for Stephen Bailey.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://stkbailey.github.io" # the base hostname & protocol for your site
 github_username:  stkbailey
