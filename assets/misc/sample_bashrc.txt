@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# Load neuroimaging-related packages
+# Run this code once to save a "default" environment
+module load GCC/5.4.0-2.26 OpenMPI/1.10.3 Anaconda3 FSL/5.0.10 FreeSurfer/5.3.0-centos6_x86_64 MATLAB git/2.12.2
+
+# Activate your python 2 conda environment
+source activate py2
+
+# Set Freesurfer subjects directory 
+export SUBJECTS_DIR=~/freesurfer-subjects
+
+# Set alias to start Matlab in terminal (just type `mat` to launch)
+alias mat="matlab -nosplash -nodesktop "
+
+# Add AFNI to path
+export PATH=/scratch/cutting/software/afni/:$PATH

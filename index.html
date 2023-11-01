@@ -1,0 +1,52 @@
+---
+layout: default
+---
+
+
+<div class="home">
+
+  <article class="post-content">
+  
+  
+  <div style="padding: 0 0 0 0; margin: 0 0 0 0">
+
+    <img src={{ "/assets/resume-cv/Stephen_Bailey_EBRL.jpg" | prepend: site.baseurl }} alt="bailey-headshot" style="float: right; height: 35%; width: 35%; padding: 20px;"> 
+
+    <p> You've reached the personal web page for Stephen Bailey. This site houses various projects and reflections that I'm interested in cataloging. In most cases, they are filled with typos, half-baked ideas and factual inaccuracies. You get what you pay for around here!
+
+    <p>I am passionate about democratizing science and an enthusiastic member of the Python and data science communities.</p>
+
+    </p>The things absorbing my attention right now are: </p>
+
+    <ul>
+      <li> Kubernetes and Argo </li>
+      <li> Epistemology, ethics and data science </li>
+      <li> Teaching a toddler to read </li>
+      <li> Improving my writing </li>
+    </ul>
+
+    <p>If you're interested in connecting, please reach out via LinkedIn. I would love to network with you.</p>
+
+  </div>
+
+  <br>
+  <hr>
+  <br>
+
+  <h3 class="post-title">Latest Post</h3>
+
+  <ul class="post-list">
+    {% for post in site.posts limit: 1 %}
+      <li>
+        <div style="padding: 0 0 0 0; margin: 0 0 0 0">
+          <span class="post-meta" style="padding: 0 0 0 0; margin: 0 0 0 0">{{ post.date | date: "%b %-d, %Y" }}</span>
+          <h2 style="padding: 0 0 0 0; margin: 0 0 0 0"><a class="post-link" href="{{ post.url | prepend: site.baseurl }}" style="padding: 0 0;">{{ post.title }}</a></h2>
+          <span class="post-excerpt" style="padding: 0 0 0 0; margin: 0 0 0 0">{{ post.content | markdownify | strip_html | truncatewords: 100 }}</span>
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>

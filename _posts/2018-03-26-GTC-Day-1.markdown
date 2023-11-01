@@ -1,0 +1,23 @@
+---
+layout: post
+title:  "GPU Technology Conference - Day 1"
+date:   2018-03-26 12:00:00
+categories: data-science
+comments: true
+---
+
+The first day of the NVIDIA GPU Technology Conference is about to close, and I am impressed. There's an amazing variety here: cutting-edge research, high-level overviews, outstanding tutorials. Below are some notes and thoughts, in no particular order:
+
+- Today has also been the first time I've ever had to wait in line for the men's bathroom. 
+
+- Tennessee had some great representation! At a talk on the state of AI in healthcare, Gregory Hager, the director of the Malone Center at Hopkins cited Vanderbilt as a model for creating an environment where revolutionary change could happen, because they have a focus on merging engineering and healthcare. Another slide that showed the list of top healthcare companies had many from Nashville / Franklin, including Healthstream, M-Model and Intersystems.
+
+- Keras seems to be the toolbox to learn. Josh Gregory, a Tensorflow advocate from Google, basically told an audience as much in a presentation, citing the fact that you can go deeper when you need to, but can iterate more quickly with Keras. 
+
+- Got to see a self-driving truck for the first time. Looking up at it is intimidating: it's giant rack of lights and cameras would make it the perfect interrogation background. 
+
+![png]({{"/assets/gtc2018/truck.JPG" | absolute_url }})
+
+- Healthcare really seems poised to be transformed by deep learning. There are now forays into applying it "in the wild" - a presenter from Winning Health in China discussed how they have built an integrated platform to which they can add in new models as they're developed - they'e already integrated the NIH Chest X-Ray set from last year. No word on performance, though. 
+
+- The image segmentation approaches presented were impressive. But the best part seems to be that, once trained, it's rather fast to segment an image compared to traditional methods - 100% faster, in some cases. 

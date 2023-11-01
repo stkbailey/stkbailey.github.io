@@ -1,0 +1,27 @@
+---
+layout: post
+title:  "GPU Technology Conference - Days 2-3"
+date:   2018-03-28 12:00:00
+categories: data-science
+comments: true
+---
+
+More thoughts from the conference, which has been an amazing display of technology and ingenuity. The impact of these technologies, especially in healthcare, is still building, but the real-time object detection, impressive robotics and amazing VR was really impressive. 
+
+- Day 2 began with the keynote lecture, which had a line worse than any theme park ride I've been on. It must have snaked on for half a mile, around the convention center, through two hotels. Worth the wait? I would say so - but then again I paid $1000 to see it.
+
+- The framing of the keynote was interesting: NVIDIA's core market is in graphics, especially in games, and they introduced ray tracing technology right off the bat -- "the culmination of a decade of engineering". For someone with no knowledge of graphics, it was a bit of a surprise first topic, and more educational than I expected. Did you know that the vibrancy of human flesh is due to subsurface sampling of light? That was my first takeaway from the keynote of one of the most valuable companies in the US.
+
+- The session concluded with remote control driving of a car -- a move directly stolen from Black Panther, but with far fewer bad guys killed. 
+
+![Clara, NVIDIA's medical imaging segmentation tool]({{ "assets/gtc2018/28-healthcare-gtc-blog.gif" | absolute_url }})
+
+My takeaways from the healthcare sessions are this: the technology needed to process and "harvest" data from medical images is there, but how we integrate into the healthcare ecosystem is still a LONG way from being ready. Key challenges include:
+
+- What does the data mean? We can take a CT of the heart, reconstruct a mesh of the left ventricle and calculate all sorts of new values: deformability, texture, volume. But there's still a lot of research needed to know how this affects clinical outcomes. 
+
+- Imaging analysis is only one aspect of a radiologist's job. They also have to schedule patients, order scans, communicate with patients... In some ways, the image analysis is the most sophisticated but also the most black and white thing they do. AI is still far from removing the need for radiologist.
+
+- One of the biggest but least sexy opportunities to revolutionize healthcare is in eliminating the most mundane, tedious, dumbest tasks. Scheduling patients efficiently, or spotting when a patient is going to need to come in againg before they leave the hospital would eliminate a lot of waste on all ends.
+
+- The best environments to roll out these sorts of innovations will be in university settings. Some folks from Ohio State University gave a terrific lecture on how they're integrating these AI technologies into radiologist's workflows... and spoiler alert, it's not some mind-blowing VR experience. It basically amounts to flagging certain images that might be more critical than others -- a little color-coded tag. But it has a direct impact on the work that radiologists are doing, and potentially on patient outcomes.
